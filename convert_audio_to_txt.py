@@ -8,11 +8,6 @@ import sounddevice as sd
 nombre_archivo='cancion.wav'
 data, freq = sf.read(nombre_archivo)
 
-#se reproduce el audio original
-print("Audio dos canales")
-sd.play(data, freq)
-status = sd.wait() 
-
 #se crean lista
 derecha=[]
 izquierda=[]
@@ -29,22 +24,5 @@ for j in range(len(data)):
 with open('audio_original.txt', 'w') as archivo:
     for item in mono:
         archivo.write("%.6f\n" % item)
-
-#CAMBIAR EL NOMBRE DEL ARCHIVO con reverberacion o sin reverberacion
-audio_salida = 'audio_original.txt'
-#Aqui se deberia leer el archivo de salida luego de que se le realice la reverberacion o se le quite la reverberacion
-with open(audio_salida, "r") as f:
-    data = f.read()
-    f.close()
-    data = data.split('\n')
-    for i in range(0, len(data)):
-        data[i] = str(data[i])
-    del data[-1]
-dataw = [float(i) for i in data]
-
-#se reproduce el audio con reverberacion o sin reverberacion dependiendo de la formula que se le aplique al audio original         
-print("Audio Mono, solo un canal")
-sd.play(dataw, freq)
-status = sd.wait() 
 
 
