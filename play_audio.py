@@ -5,7 +5,7 @@ import soundfile as sf
 import sounddevice as sd
 
 #se carga el nombre del archivo, CAMBIAR EL NOMBRE DEL ARCHIVO
-nombre_archivo='cancion.wav'
+nombre_archivo='intput.wav'
 data, freq = sf.read(nombre_archivo)
 
 #se reproduce el audio original
