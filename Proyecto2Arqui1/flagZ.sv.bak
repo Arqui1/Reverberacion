@@ -1,0 +1,11 @@
+module flagZ #(parameter bits = 32)
+					(input logic [2:0] s,
+					input logic [bits-1:0] result,
+					output logic flag);
+	
+	assign flag = (result == '0) & (ALUControl == 3'b000
+												| ALUControl == 3'b001
+												| ALUControl == 3'b010
+												| ALUControl == 3'b011);
+
+endmodule

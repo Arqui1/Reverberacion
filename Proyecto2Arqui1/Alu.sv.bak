@@ -1,0 +1,45 @@
+module Alu #(parameter bits=32)(input logic [3:0] s,
+										input logic [bits-1:0] a,b,
+										output logic [bits-1:0] outAlu,
+										output logic [3:0] flag);
+
+	logic [bits-1:0] andO, orO, xorO, shiftl, shiftr, sumO, resO multO, divO, modO, notO;
+	logic cout, flagN, flagZ, flagO, foaux;
+	logic [3:0] flagAux;
+	
+	//aritmetica
+	sumALU #(bits) sumAlu(a,b,sumO,cout);
+	resALU #(bits) resAlu(a,b,resO);
+	mulALU #(bits) mulAlu(a,b,multO,foaux);
+	divALU #(bits) divAlu(a,b,divO);
+
+	andALU #(bits) andAlu(a,b,andO);
+	orALU #(bits) orAlu(a,b,orO);
+	
+	//flags
+	flagN #(bits) fN(s,sumresO,multO,divO,flagN);
+	flagZ #(bits) fZ(s,sumresO,multO,divO,modO,flagZ);
+	flagO #(bits) fO(a,b,sumresO,s,foaux,flagO);
+	
+	//Corrimientos
+	shiftL #(bits) sl(a,4'b0001,shiftl);
+	shiftR #(bits) sr(a,4'b0001,shiftr);
+//	corrimCirc #(bits) cc(a,b[3:0],cCOut);
+	
+	assign flagAux = {cout, flagN, flagZ, flagO};
+	
+	muxflag mf(s,flagAux,flag);
+	
+	muxALU #(bits) muxalu(s,
+							sumO,
+							resO,
+							multO,
+							divO,
+							andO,
+							orO,
+							shiftl,
+							shiftr,
+							b,
+							outAlu);
+	
+endmodule

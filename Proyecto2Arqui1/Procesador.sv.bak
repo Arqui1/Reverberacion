@@ -1,0 +1,9 @@
+module Procesador(input logic clk,rst,SongSelector
+						output logic MemWrite,
+						output logic [3:0] flags,
+						output logic [7:0] pc,
+						output logic [31:0] RD2, result);
+	
+	
+	
+endmodule

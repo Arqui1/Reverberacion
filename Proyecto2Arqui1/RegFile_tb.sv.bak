@@ -1,0 +1,13 @@
+module RegFile_tb();
+	logic clk, rst, WE3;
+	logic [3:0] A1, A2, A3;
+	logic [31:0] WD3,R15,RD1, RD2;
+	
+	always
+	begin
+		#5 clk=!clk;
+	end
+	
+	initial
+	begin
+		clk = 0;

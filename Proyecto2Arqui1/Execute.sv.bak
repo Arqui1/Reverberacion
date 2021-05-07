@@ -1,0 +1,7 @@
+module Execute (input logic clk, rst,FlagWE,RegWriteE,MemtoRegE,
+						MemWriteE,BranchE,ALUSrcE,NoWriteE,CondE,
+						input logic [31:0]immExtE,RD2E,RD1E,
+						output logic [31:0] ALUResultE,
+						output logic PCSrcE,RegWE,MentoRE,MemWE);
+						
+	

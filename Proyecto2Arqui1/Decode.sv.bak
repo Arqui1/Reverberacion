@@ -1,0 +1,16 @@
+module Decode (input logic clk,rst,
+					input logic [31:0]instr,pc,
+					output logic [3:0] WA3D,RD1,RD2,
+					output logic [31:0] extend);
+					
+	ControlUnit  CU(	instr[31:30], instr[2:0], instr[29], instr[3],
+					aluop,sel_opera, sel_operb, sel_dato, cond, reg_re, reg_we, mem_re, mem_wb, sFlag, B);
+          
+	FileRegister FR(	clk, reg_we3, instruction[23:19], instruction[18:14],instruction[28:24],rdIn ,wd3,
+					RData1, RData2, RData3);		
+
+					
+	sign_ext SE(instruction[18:4],imm);
+			
+	assign RDestini = instruction[28:24];								
+endmodule
