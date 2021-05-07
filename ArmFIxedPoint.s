@@ -6,70 +6,64 @@ mov r11, #0x4f0
 mov r12, #0x500		//direccion de memoria
 
 mov r1, #0b00100000	// 0.100000 --> 0.5
-mov r1, r1, lsl #2
 str r1, [r11]
 add r11, r11, #4
 
 mov r1, #0b10001101	// 0.001101 -->  0.203125
-mov r1, r1, lsl #2
 str r1, [r11]
 add r11, r11, #4
 
 mov r11, #0x4f0
 mov r10, #0			//contador
+
 fixedpoint:
+ldr r1, [r11]			//obtengo el primer numero
 
-ldr r1, [r11]
+mov r2, r1, lsr #6		//tengo los bits mas significativos signo y entero
+mov r2, r2, lsl #6		//corriento a la izquierda de 6 bits
+str r2, [r12]			//se almacena en r12
+add r12, r12, #4		//se suma 4 a r12, siguiente pos de memoria
 
-mov r2, r1, lsr #9	//bit de signo
-str r2, [r12]
-add r12, r12, #4
+mov r3, r1				//en r3 se almacena lo de r1
+and r3, r3, #0b00111111	//and para obtener la parte fraccionaria	
+str r3, [r12]			//se almacena en r12
+add r12, r12, #4		//se suma 4 a r12, siguiente pos de memoria
 
-mov r3, r1, lsr #8	
-and r3, r3, #1		//bit de entero 
-str r3, [r12]
-add r12, r12, #4
-
-add r4, r2, r3
-mov r5, #0b1000000000
-//mul r5, r5, r5
-mul r4, r5, r4
-sub r4, r1, r4		//bits decimales
-str r4, [r12]
-add r12, r12, #4
-
-add r11, r11, #4
-add r10, r10, #1
-cmp r10, #2
+add r11, r11, #4		//suma a direccion de memoria donde estan los numeros del stream
+add r10, r10, #1		//suma al contador
+cmp r10, #2				//comparador para el salto condicional
 beq sumaFp
 
 b fixedpoint
 
-//Suma en punto flotante
+//Suma en punto flotante para dos numeros seguidos (se tiene que arreglar para que siga la formula)
 sumaFp:
-//suma de signo
-mov r12, #0x500		//direccion de memoria
-ldr r1, [r12]
-add r12, r12, #12
+//suma de signo y parte entera
+mov r12, #0x500		//direccion de memoria 
+ldr r1, [r12]		
+add r12, r12, #8
 ldr r2, [r12]
-add r1, r1, r2		//suma en r1
+add r1, r1, r2		//suma en r1 falta
+add r12, r12, #8
+str r1, [r12]
 
-
-//suma de parte entera
+//suma de parte fraccionaria
 mov r12, #0x500		//direccion de memoria
 add r12, r12, #4
 ldr r2, [r12]
-add r12, r12, #12
-ldr r3, [r12]
-add r2, r2, r3		//suma en r2
-
-//suma de parte decimal
-mov r12, #0x500		//direccion de memoria
 add r12, r12, #8
 ldr r3, [r12]
-add r12, r12, #12
-ldr r4, [r12]
-add r3, r3, r4		//suma en r3
+add r2, r2, r3		//suma en r2
+add r12, r12, #8
+str r2, [r12]
 
+//union de sumas
+mov r12, #0x510		//direccion de memoria
+ldr r1, [r12]
+add r12, r12, #4
+ldr r2, [r12]
+orr r3, r1, r2
+add r12, r12, #4
+str r3, [r12]
 
 //Multiplicacion en punto flotante
