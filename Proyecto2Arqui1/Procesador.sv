@@ -1,5 +1,4 @@
 module Procesador(input logic clk,rst,SongSelector,
-						//output logic MemWrite,
 						output logic [31:0] ResultW);
 	
 	logic FlagWD,MemtoRegD,ALUSrcD,RegWriteD,BranchD,MemWriteD,NoWriteD,
@@ -8,23 +7,23 @@ module Procesador(input logic clk,rst,SongSelector,
 			MemWriteM,MemtoRegM,RegWriteM,PCSrcM,
 			MemtoRegW,RegWriteW,PCSrcW;
 	logic [3:0] ALUControlD,ALUControlE,WA3E,WA3M,WA3W;
-	logic [31:0] pcmas1,pcNext;
+	logic [31:0] pc,pcmas1,pcNext;
 	logic [31:0] instrF,instrD,RD1D,RD2D,immExtD,
 					 immExtE,RD2E,RD1E,ALUResultE,
 					 WriteDataM,ALUResultM,RDataM,
-					 ALUResultW,RDataW,ResultW;
+					 ALUResultW,RDataW;//ResultW;
 	
 	
 	mux_ #(8) muxPC(PCSrcW,pcmas1,ResultW,pcNext);
 	
 	//Etapa de Fetch
-	Fetc fetch(clk,rst,pcNext,instrF,pcmas1);
+	Fetch fetch(clk,rst,pcNext,instrF,pc,pcmas1);
 	
 	pipeLine #(32) pipeInstrFtoD(clk,rst,instrF,instrD);
 	
 	
 	//Etapa de Decode
-	Decode decode(clk,rst,RegWriteW,instrD,pcmas1,ResultW,WA3W,ALUControlD,
+	Decode decode(clk,rst,RegWriteW,instrD,pc,ResultW,WA3W,ALUControlD,
 					  immExtD,RD1D,RD2D,FlagWD,RegWriteD,MemtoRegD,
 					  MemWriteD,BranchD,ALUSrcD,NoWriteD);
 						
@@ -56,7 +55,5 @@ module Procesador(input logic clk,rst,SongSelector,
 	
 	//Etapa de Write Back
 	mux_ #(32) muxMemoryOrAlu(MemtoRegW,ALUResultW,RDataW,ResultW);
-	
-	//De aqui pa riba complete solo falta verificar con un testbench
 	
 endmodule

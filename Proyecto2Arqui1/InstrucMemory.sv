@@ -3,7 +3,7 @@ module InstrucMemory(input logic [31:0] address,
 
 	logic [31:0] ROM[1023:0];
 	initial
-		$readmemh("C:/Files/ROM.txt",ROM);
+		$readmemh("C:/QuartusProjects/Files/ROM.txt",ROM);
 		assign instruc = ROM[address[31:0]];
 
 endmodule

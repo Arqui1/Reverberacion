@@ -10,35 +10,416 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:05 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Alu.sv 
+# -- Compiling module Alu
+# 
+# Top level modules:
+# 	Alu
+# End time: 13:36:05 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/andALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:06 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/andALU.sv 
+# -- Compiling module andALU
+# 
+# Top level modules:
+# 	andALU
+# End time: 13:36:06 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/divALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:06 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/divALU.sv 
+# -- Compiling module divALU
+# 
+# Top level modules:
+# 	divALU
+# End time: 13:36:06 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/flagZ.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:07 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/flagZ.sv 
+# -- Compiling module flagZ
+# 
+# Top level modules:
+# 	flagZ
+# End time: 13:36:07 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:07 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv 
+# -- Compiling module mulALU
+# 
+# Top level modules:
+# 	mulALU
+# End time: 13:36:07 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/muxALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:07 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/muxALU.sv 
+# -- Compiling module muxALU
+# 
+# Top level modules:
+# 	muxALU
+# End time: 13:36:07 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/orALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:08 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/orALU.sv 
+# -- Compiling module orALU
+# 
+# Top level modules:
+# 	orALU
+# End time: 13:36:08 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/RegFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:08 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/RegFile.sv 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 13:36:08 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/resALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:08 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/resALU.sv 
+# -- Compiling module resALU
+# 
+# Top level modules:
+# 	resALU
+# End time: 13:36:09 on May 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:09 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv 
+# -- Compiling module shiftL
+# 
+# Top level modules:
+# 	shiftL
+# End time: 13:36:09 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:09 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv 
+# -- Compiling module shiftR
+# 
+# Top level modules:
+# 	shiftR
+# End time: 13:36:09 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:09 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv 
+# -- Compiling module sumALU
+# 
+# Top level modules:
+# 	sumALU
+# End time: 13:36:09 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/flagN.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:09 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/flagN.sv 
+# -- Compiling module flagN
+# 
+# Top level modules:
+# 	flagN
+# End time: 13:36:10 on May 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/flagO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:10 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/flagO.sv 
+# -- Compiling module flagO
+# 
+# Top level modules:
+# 	flagO
+# End time: 13:36:10 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/PC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:10 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/PC.sv 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 13:36:10 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/sumador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:10 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/sumador.sv 
+# -- Compiling module sumador
+# 
+# Top level modules:
+# 	sumador
+# End time: 13:36:11 on May 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:11 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv 
+# -- Compiling module muxflag
+# 
+# Top level modules:
+# 	muxflag
+# End time: 13:36:11 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/mux_.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:11 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/mux_.sv 
+# -- Compiling module mux_
+# 
+# Top level modules:
+# 	mux_
+# End time: 13:36:11 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:11 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv 
+# -- Compiling module Procesador
+# 
+# Top level modules:
+# 	Procesador
+# End time: 13:36:11 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:12 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv 
+# -- Compiling module Fetch
+# 
+# Top level modules:
+# 	Fetch
+# End time: 13:36:12 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:12 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv 
+# -- Compiling module pipeLine
+# 
+# Top level modules:
+# 	pipeLine
+# End time: 13:36:12 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Decode.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:12 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Decode.sv 
+# -- Compiling module Decode
+# 
+# Top level modules:
+# 	Decode
+# End time: 13:36:12 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:12 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Extend.sv 
+# -- Compiling module Extend
+# 
+# Top level modules:
+# 	Extend
+# End time: 13:36:13 on May 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:13 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 13:36:13 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:13 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv 
+# -- Compiling module pipeDecotoExe
+# 
+# Top level modules:
+# 	pipeDecotoExe
+# End time: 13:36:13 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:58:55 on May 06,2021
+# Start time: 13:36:13 on May 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv 
 # -- Compiling module pipeContUnitDtoE
 # 
 # Top level modules:
 # 	pipeContUnitDtoE
-# End time: 14:58:55 on May 06,2021, Elapsed time: 0:00:00
+# End time: 13:36:13 on May 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE_tb.sv}
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Execute.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:58:57 on May 06,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE_tb.sv 
-# -- Compiling module pipeContUnitDtoE_tb
-# ** Warning: C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE_tb.sv(39): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# Start time: 13:36:14 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Execute.sv 
+# -- Compiling module Execute
 # 
 # Top level modules:
-# 	pipeContUnitDtoE_tb
-# End time: 14:58:57 on May 06,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# 	Execute
+# End time: 13:36:14 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:14 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv 
+# -- Compiling module CondUnit
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  pipeContUnitDtoE_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" pipeContUnitDtoE_tb 
-# Start time: 14:58:57 on May 06,2021
+# Top level modules:
+# 	CondUnit
+# End time: 13:36:14 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:14 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv 
+# -- Compiling module flipflop
+# 
+# Top level modules:
+# 	flipflop
+# End time: 13:36:14 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:14 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv 
+# -- Compiling module CondCheck
+# 
+# Top level modules:
+# 	CondCheck
+# End time: 13:36:15 on May 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:15 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv 
+# -- Compiling module pipeExetoMem
+# 
+# Top level modules:
+# 	pipeExetoMem
+# End time: 13:36:15 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:15 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv 
+# -- Compiling module pipeCondUnitEtoM
+# 
+# Top level modules:
+# 	pipeCondUnitEtoM
+# End time: 13:36:15 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:15 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv 
+# -- Compiling module pipeMemtoWBack
+# 
+# Top level modules:
+# 	pipeMemtoWBack
+# End time: 13:36:15 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:16 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv 
+# -- Compiling module DataMemory
+# 
+# Top level modules:
+# 	DataMemory
+# End time: 13:36:16 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:16 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv 
+# -- Compiling module InstrucMemory
+# 
+# Top level modules:
+# 	InstrucMemory
+# End time: 13:36:16 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:16 on May 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/Proyecto2Arqui1" C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv 
+# -- Compiling module Procesador_tb
+# 
+# Top level modules:
+# 	Procesador_tb
+# End time: 13:36:16 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Procesador_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Procesador_tb 
+# Start time: 13:36:16 on May 08,2021
 # Loading sv_std.std
-# Loading work.pipeContUnitDtoE_tb
+# Loading work.Procesador_tb
+# Loading work.Procesador
+# Loading work.mux_
+# Loading work.Fetch
+# Loading work.PC
+# Loading work.sumador
+# Loading work.InstrucMemory
+# Loading work.pipeLine
+# Loading work.Decode
+# Loading work.ControlUnit
+# Loading work.RegFile
+# Loading work.Extend
+# Loading work.pipeDecotoExe
 # Loading work.pipeContUnitDtoE
+# Loading work.Execute
+# Loading work.Alu
+# Loading work.sumALU
+# Loading work.resALU
+# Loading work.mulALU
+# Loading work.divALU
+# Loading work.andALU
+# Loading work.orALU
+# Loading work.flagN
+# Loading work.flagZ
+# Loading work.flagO
+# Loading work.shiftL
+# Loading work.shiftR
+# Loading work.muxflag
+# Loading work.muxALU
+# Loading work.CondUnit
+# Loading work.flipflop
+# Loading work.CondCheck
+# Loading work.pipeExetoMem
+# Loading work.pipeCondUnitEtoM
+# Loading work.DataMemory
+# Loading work.pipeMemtoWBack
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/mux_.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/muxPC File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/mux_.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/muxPC File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'out'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/mux_.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/muxPC File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (32) for port 'address'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/DataRAM File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 51
 # 
 # add wave *
 # view structure
@@ -46,5 +427,30 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 15:03:54 on May 06,2021, Elapsed time: 0:04:57
-# Errors: 0, Warnings: 0
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/WE3
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/A1
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/A2
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/A3
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/WD3
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/R15
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/RD1
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/RD2
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/regF
+add wave -position end  sim:/Procesador_tb/processor/decode/instr
+add wave -position end  sim:/Procesador_tb/processor/decode/pc
+add wave -position end  sim:/Procesador_tb/processor/DataRAM/address
+add wave -position end  sim:/Procesador_tb/processor/DataRAM/WData
+add wave -position end  sim:/Procesador_tb/processor/DataRAM/RData
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/mux_.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/muxPC File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/mux_.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/muxPC File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'out'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/mux_.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/muxPC File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (32) for port 'address'. The port definition is at: C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/DataRAM File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 51
+run -all
+# End time: 13:41:39 on May 08,2021, Elapsed time: 0:05:23
+# Errors: 0, Warnings: 4

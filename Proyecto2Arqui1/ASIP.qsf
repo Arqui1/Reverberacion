@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY pipeContUnitDtoE
+set_global_assignment -name TOP_LEVEL_ENTITY Procesador
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:39:41  MAY 02, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -79,7 +79,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH pipeContUnitDtoE_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Procesador_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME Alu_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Alu_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Alu_tb -section_id Alu_tb
@@ -110,6 +110,16 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Decode_tb -section_id Dec
 set_global_assignment -name SYSTEMVERILOG_FILE pipeContUnitDtoE.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Execute.sv
 set_global_assignment -name SYSTEMVERILOG_FILE pipeContUnitDtoE_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME pipeContUnitDtoE_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id pipeContUnitDtoE_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME pipeContUnitDtoE_tb -section_id pipeContUnitDtoE_tb
+set_global_assignment -name SYSTEMVERILOG_FILE CondUnit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flipflop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CondCheck.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pipeExetoMem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pipeCondUnitEtoM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pipeMemtoWBack.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Procesador_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -118,14 +128,9 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ControlUnit_tb.sv -section_id Co
 set_global_assignment -name EDA_TEST_BENCH_FILE pipeDecotoExe_tb.sv -section_id pipeDecotoExe_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE RegFile_tb.sv -section_id RegFile_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Decode_tb.sv -section_id Decode_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME pipeContUnitDtoE_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id pipeContUnitDtoE_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME pipeContUnitDtoE_tb -section_id pipeContUnitDtoE_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE pipeContUnitDtoE_tb.sv -section_id pipeContUnitDtoE_tb
-set_global_assignment -name SYSTEMVERILOG_FILE CondUnit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE flipflop.sv
-set_global_assignment -name SYSTEMVERILOG_FILE CondCheck.sv
-set_global_assignment -name SYSTEMVERILOG_FILE pipeExetoMem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE pipeCondUnitEtoM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE pipeMemtoWBack.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME Procesador_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Procesador_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Procesador_tb -section_id Procesador_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Procesador_tb.sv -section_id Procesador_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

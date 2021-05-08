@@ -3,10 +3,10 @@ module RegFile (input logic clk, rst, WE3,
 					input logic [31:0] WD3,R15,
 					output logic [31:0] RD1, RD2);
 	
-	logic [31:0] regF [14:0] = '{default:0};
+	logic [31:0] regF [14:0];
 	int n;
 		
-	always_ff @(posedge clk) begin
+	always_ff @(negedge clk) begin
 		if(rst)begin
 			for (n = 0; n < 15; n = n + 1) begin
 				regF[n] <= 32'b0;
@@ -24,7 +24,7 @@ module RegFile (input logic clk, rst, WE3,
 		end
       else begin
 			if(A1==4'b1111)
-            RD1 = R15;
+            RD1 = R15 - 32'b1;
 			else
 				RD1 = regF[A1];
 		end
@@ -38,5 +38,3 @@ module RegFile (input logic clk, rst, WE3,
 	end
 	
 endmodule
-
-//Ojo con este RegFile
