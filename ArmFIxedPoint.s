@@ -1,6 +1,9 @@
 .global _start
 _start:
 
+.global _start
+_start:
+
 //Descomposicion de punto flotante
 mov r11, #0x4f0
 mov r12, #0x500		//direccion de memoria
@@ -67,3 +70,24 @@ add r12, r12, #4
 str r3, [r12]
 
 //Multiplicacion en punto flotante
+mulFP:
+//Multiplicacion de parte entera y bit de signo
+mov r11, #0x520
+mov r12, #0x500		//direccion de memoria 
+ldr r1, [r12]		
+add r12, r12, #8
+ldr r2, [r12]
+mul r1, r1, r2		//multiplicacion en r1
+str r1, [r11]
+
+add r11, r11, #4
+mov r12, #0x500		//direccion de memoria
+add r12, r12, #4
+ldr r2, [r12]
+add r12, r12, #8
+ldr r3, [r12]
+mul r2, r2, r3		//multiplicacion en r2
+
+mov r2, r2, lsr #6	//el lsr debe de ser la suma de la cantidad de numeros que tienen los binarios entre 2
+add r12, r12, #8
+str r2, [r11]
