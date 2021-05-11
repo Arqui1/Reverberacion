@@ -1,4 +1,4 @@
-module Procesador(input logic clk,rst,SongSelector,
+module Procesador(input logic clk,rst,modeSelector,
 						output logic [31:0] ResultW);
 	
 	logic FlagWD,MemtoRegD,ALUSrcD,RegWriteD,BranchD,MemWriteD,NoWriteD,
@@ -13,7 +13,7 @@ module Procesador(input logic clk,rst,SongSelector,
 	logic [31:0] pc,pcmas1,pcNext,pcNextPrev,pcD;
 	logic [31:0] instrF,instrD,RD1D,RD2D,immExtD,
 					 immExtE,RD2E,RD1E,ALUResultE,SrcAE,SrcBE,
-					 WriteDataM,ALUResultM,RDataM,
+					 WriteDataM,ALUResultM,RDataM,RDataM1,RDataM2,
 					 ALUResultW,RDataW;//ResultW;
 	
 	
@@ -21,7 +21,7 @@ module Procesador(input logic clk,rst,SongSelector,
 	mux_ #(32) muxPC2(PCSrcE,pcNextPrev,ALUResultE,pcNext);
 	
 	//Etapa de Fetch----------------------------------------------------------
-	Fetch fetch(clk,rst,Stall,pcNext,instrF,pc,pcmas1);
+	Fetch fetch(clk,rst,Stall,modeSelector,pcNext,instrF,pc,pcmas1);
 	//------------------------------------------------------------------------
 	
 	//PipeLine de la etapa de Fetch a Decode----------------------------------
@@ -68,7 +68,9 @@ module Procesador(input logic clk,rst,SongSelector,
 	//------------------------------------------------------------------------
 											
 	//Etapa de Memory---------------------------------------------------------
-	DataMemory DataRAM(clk,MemWriteM,ALUResultM,WriteDataM,RDataM);
+	DataMemory  DataRAM1(clk,MemWriteM,ALUResultM,WriteDataM,RDataM1);
+	DataMemory2 DataRAM2(clk,MemWriteM,ALUResultM,WriteDataM,RDataM2);
+	mux_ #(32) muxModeMem(modeSelector,RDataM1,RDataM2,RDataM);
 	//------------------------------------------------------------------------
 	
 	//PipeLine de la etapa de Memory a Write Back-----------------------------

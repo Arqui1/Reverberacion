@@ -1,9 +1,9 @@
 module Procesador_tb();
 
-logic clk,rst,SongSelector;
+logic clk,rst,modeSelector;
 logic [31:0] ResultW;
 
-Procesador processor(clk,rst,SongSelector,ResultW);
+Procesador processor(clk,rst,modeSelector,ResultW);
 
 always
 	begin
@@ -16,7 +16,7 @@ always
 		rst = 1;
 		#2
 		rst = 0;
-		SongSelector = 0;
+		modeSelector = 0;
 	end
 
 endmodule

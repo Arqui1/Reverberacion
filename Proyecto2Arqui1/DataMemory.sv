@@ -7,7 +7,7 @@ logic [31:0] RAM[26214:0];
 
 initial
 begin
-		$readmemh("C:/Files/RAM/Image/part0.txt", RAM);
+		$readmemh("C:/QuartusProjects/Files/RAM1.txt", RAM);
 end
 
 always_ff @(negedge clk)

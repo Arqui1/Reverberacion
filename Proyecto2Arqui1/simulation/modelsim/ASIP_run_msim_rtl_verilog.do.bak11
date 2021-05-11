@@ -43,6 +43,8 @@ vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjec
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv}
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv}
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv}
+vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv}
+vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv}
 
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv}
 
