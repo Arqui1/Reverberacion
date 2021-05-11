@@ -4,7 +4,7 @@ module ControlUnit(input logic Inmed,
 						output logic FlagW,RegWrite,MemtoReg,MemWrite,
 						Branch,ALUSrc,NoWrite,RegSrcA1,RegSrcA2,
 						output logic [3:0] ALUControl);
-							
+
 logic [8:0]generalOut;
 logic ALUOp;
 
@@ -32,9 +32,9 @@ logic ALUOp;
           generalOut = 9'bxxxxxxxxx;
 		endcase
 	end
-		
+
 assign{RegSrcA1,RegSrcA2,NoWrite,ALUSrc,MemtoReg,RegWrite,MemWrite,Branch,ALUOp} = generalOut;
-	
+
 always_comb begin
 	if(ALUOp) begin
 			case(func)
@@ -55,7 +55,6 @@ always_comb begin
 	ALUControl = 4'b0000;
 	FlagW = 1'b0;
 	end
-	
 end
 
 endmodule

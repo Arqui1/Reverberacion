@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri May 07 22:19:33 2021
+Analysis & Synthesis Status : Successful - Mon May 10 23:24:05 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : ASIP
 Top-level Entity Name : Procesador
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 731
+Total registers : 574
 Total pins : 35
 Total virtual pins : 0
-Total block memory bits : 847,072
-Total DSP Blocks : 2
+Total block memory bits : 838,880
+Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

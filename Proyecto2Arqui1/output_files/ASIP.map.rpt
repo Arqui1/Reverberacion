@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ASIP
-Fri May 07 22:19:33 2021
+Mon May 10 23:24:05 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,50 +14,56 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis DSP Block Usage Summary
- 10. Registers Removed During Synthesis
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
  12. Registers Packed Into Inferred Megafunctions
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated
- 15. Source assignments for Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0|altsyncram_nkd1:auto_generated
- 16. Parameter Settings for User Entity Instance: mux_:muxPC
+ 15. Parameter Settings for User Entity Instance: mux_:muxPC1
+ 16. Parameter Settings for User Entity Instance: mux_:muxPC2
  17. Parameter Settings for User Entity Instance: Fetch:fetch|PC:pcflipflop
  18. Parameter Settings for User Entity Instance: Fetch:fetch|sumador:add1
  19. Parameter Settings for User Entity Instance: pipeLine:pipeInstrFtoD
- 20. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA1
- 21. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA2
- 22. Parameter Settings for User Entity Instance: pipeDecotoExe:pipeDtoE
- 23. Parameter Settings for User Entity Instance: Execute:execute|mux_:muxRegOrInmExt
- 24. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU
- 25. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|sumALU:sumAlu
- 26. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|resALU:resAlu
- 27. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|mulALU:mulAlu
- 28. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|divALU:divAlu
- 29. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|andALU:andAlu
- 30. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|orALU:orAlu
- 31. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|flagN:fN
- 32. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|flagZ:fZ
- 33. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|flagO:fO
- 34. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|shiftL:sl
- 35. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|shiftR:sr
- 36. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|muxALU:muxalu
- 37. Parameter Settings for User Entity Instance: Execute:execute|CondUnit:unidadCond|flipflop:ff1
- 38. Parameter Settings for User Entity Instance: Execute:execute|CondUnit:unidadCond|flipflop:ff2
- 39. Parameter Settings for User Entity Instance: pipeExetoMem:pipeEtoM
- 40. Parameter Settings for User Entity Instance: mux_:muxMemoryOrAlu
- 41. Parameter Settings for Inferred Entity Instance: DataMemory:DataRAM|altsyncram:RAM_rtl_0
- 42. Parameter Settings for Inferred Entity Instance: Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0
- 43. Parameter Settings for Inferred Entity Instance: Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0
- 44. altsyncram Parameter Settings by Entity Instance
- 45. Port Connectivity Checks: "DataMemory:DataRAM"
- 46. Port Connectivity Checks: "Decode:decode|mux_:muxA1"
- 47. Port Connectivity Checks: "Fetch:fetch|sumador:add1"
- 48. Port Connectivity Checks: "mux_:muxPC"
- 49. Post-Synthesis Netlist Statistics for Top Partition
- 50. Elapsed Time Per Partition
- 51. Analysis & Synthesis Messages
- 52. Analysis & Synthesis Suppressed Messages
+ 20. Parameter Settings for User Entity Instance: pipeLine:pipePCFtoD
+ 21. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA1
+ 22. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA2
+ 23. Parameter Settings for User Entity Instance: pipeDecotoExe:pipeDtoE
+ 24. Parameter Settings for User Entity Instance: pipeLine:pipeRA1DtoE
+ 25. Parameter Settings for User Entity Instance: pipeLine:pipeRA2DtoE
+ 26. Parameter Settings for User Entity Instance: pipeLine:pipeOpDtoE
+ 27. Parameter Settings for User Entity Instance: mux3_1:muxRD1E
+ 28. Parameter Settings for User Entity Instance: mux3_1:muxRD2E
+ 29. Parameter Settings for User Entity Instance: Execute:execute|mux_:muxRegOrInmExt
+ 30. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU
+ 31. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|sumALU:sumAlu
+ 32. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|resALU:resAlu
+ 33. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|mulALU:mulAlu
+ 34. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|divALU:divAlu
+ 35. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|andALU:andAlu
+ 36. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|orALU:orAlu
+ 37. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|flagN:fN
+ 38. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|flagZ:fZ
+ 39. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|flagO:fO
+ 40. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|shiftL:sl
+ 41. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|shiftR:sr
+ 42. Parameter Settings for User Entity Instance: Execute:execute|Alu:ALU|muxALU:muxalu
+ 43. Parameter Settings for User Entity Instance: Execute:execute|CondUnit:unidadCond|flipflop:ff1
+ 44. Parameter Settings for User Entity Instance: Execute:execute|CondUnit:unidadCond|flipflop:ff2
+ 45. Parameter Settings for User Entity Instance: pipeExetoMem:pipeEtoM
+ 46. Parameter Settings for User Entity Instance: mux_:muxMemoryOrAlu
+ 47. Parameter Settings for Inferred Entity Instance: DataMemory:DataRAM|altsyncram:RAM_rtl_0
+ 48. altsyncram Parameter Settings by Entity Instance
+ 49. Port Connectivity Checks: "DataMemory:DataRAM"
+ 50. Port Connectivity Checks: "pipeLine:pipeOpDtoE"
+ 51. Port Connectivity Checks: "pipeLine:pipeRA2DtoE"
+ 52. Port Connectivity Checks: "pipeLine:pipeRA1DtoE"
+ 53. Port Connectivity Checks: "Decode:decode|mux_:muxA1"
+ 54. Port Connectivity Checks: "Fetch:fetch|sumador:add1"
+ 55. Post-Synthesis Netlist Statistics for Top Partition
+ 56. Elapsed Time Per Partition
+ 57. Analysis & Synthesis Messages
+ 58. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -84,17 +90,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 07 22:19:33 2021       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 10 23:24:05 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ASIP                                        ;
 ; Top-level Entity Name           ; Procesador                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 731                                         ;
+; Total registers                 ; 574                                         ;
 ; Total pins                      ; 35                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 847,072                                     ;
-; Total DSP Blocks                ; 2                                           ;
+; Total block memory bits         ; 838,880                                     ;
+; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -204,76 +210,71 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+---------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path            ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                   ; Library ;
-+---------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
-; DataMemory.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv                               ;         ;
-; Alu.sv                                      ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Alu.sv                                      ;         ;
-; andALU.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/andALU.sv                                   ;         ;
-; divALU.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/divALU.sv                                   ;         ;
-; flagZ.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flagZ.sv                                    ;         ;
-; InstrucMemory.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv                            ;         ;
-; mulALU.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv                                   ;         ;
-; muxALU.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/muxALU.sv                                   ;         ;
-; orALU.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/orALU.sv                                    ;         ;
-; RegFile.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/RegFile.sv                                  ;         ;
-; resALU.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/resALU.sv                                   ;         ;
-; shiftL.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv                                   ;         ;
-; shiftR.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv                                   ;         ;
-; sumALU.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv                                   ;         ;
-; flagN.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flagN.sv                                    ;         ;
-; flagO.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flagO.sv                                    ;         ;
-; PC.sv                                       ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/PC.sv                                       ;         ;
-; sumador.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/sumador.sv                                  ;         ;
-; muxflag.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv                                  ;         ;
-; mux_.sv                                     ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/mux_.sv                                     ;         ;
-; Procesador.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv                               ;         ;
-; Fetch.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv                                    ;         ;
-; pipeLine.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv                                 ;         ;
-; Decode.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Decode.sv                                   ;         ;
-; Extend.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Extend.sv                                   ;         ;
-; ControlUnit.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv                              ;         ;
-; pipeDecotoExe.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv                            ;         ;
-; pipeContUnitDtoE.sv                         ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv                         ;         ;
-; Execute.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Execute.sv                                  ;         ;
-; CondUnit.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv                                 ;         ;
-; flipflop.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv                                 ;         ;
-; CondCheck.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv                                ;         ;
-; pipeExetoMem.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv                             ;         ;
-; pipeCondUnitEtoM.sv                         ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv                         ;         ;
-; pipeMemtoWBack.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv                           ;         ;
-; /files/ram/image/part0.txt                  ; yes             ; Auto-Found File                                       ; /files/ram/image/part0.txt                                                     ;         ;
-; /quartusprojects/files/rom.txt              ; yes             ; Auto-Found File                                       ; /quartusprojects/files/rom.txt                                                 ;         ;
-; altsyncram.tdf                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
-; stratix_ram_block.inc                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
-; lpm_mux.inc                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
-; lpm_decode.inc                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; aglobal201.inc                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc          ;         ;
-; a_rdenreg.inc                               ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
-; altrom.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc              ;         ;
-; altram.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc              ;         ;
-; altdpram.inc                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc            ;         ;
-; db/altsyncram_i2s1.tdf                      ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_i2s1.tdf                      ;         ;
-; db/asip.ram0_datamemory_5d7c1658.hdl.mif    ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/QuartusProjects/Proyecto2Arqui1/db/asip.ram0_datamemory_5d7c1658.hdl.mif    ;         ;
-; db/decode_8la.tdf                           ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/decode_8la.tdf                           ;         ;
-; db/mux_5hb.tdf                              ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/mux_5hb.tdf                              ;         ;
-; db/altsyncram_nkd1.tdf                      ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_nkd1.tdf                      ;         ;
-; db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/QuartusProjects/Proyecto2Arqui1/db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif ;         ;
-; lpm_divide.tdf                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf          ;         ;
-; abs_divider.inc                             ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc         ;         ;
-; sign_div_unsign.inc                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc     ;         ;
-; db/lpm_divide_3dm.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/lpm_divide_3dm.tdf                       ;         ;
-; db/sign_div_unsign_9nh.tdf                  ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/sign_div_unsign_9nh.tdf                  ;         ;
-; db/alt_u_div_o2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/alt_u_div_o2f.tdf                        ;         ;
-+---------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                 ; Library ;
++------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
+; DataMemory.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv                             ;         ;
+; Alu.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Alu.sv                                    ;         ;
+; andALU.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/andALU.sv                                 ;         ;
+; divALU.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/divALU.sv                                 ;         ;
+; flagZ.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flagZ.sv                                  ;         ;
+; InstrucMemory.sv                         ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv                          ;         ;
+; mulALU.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv                                 ;         ;
+; muxALU.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/muxALU.sv                                 ;         ;
+; orALU.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/orALU.sv                                  ;         ;
+; RegFile.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/RegFile.sv                                ;         ;
+; resALU.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/resALU.sv                                 ;         ;
+; shiftL.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv                                 ;         ;
+; shiftR.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv                                 ;         ;
+; sumALU.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv                                 ;         ;
+; flagN.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flagN.sv                                  ;         ;
+; flagO.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flagO.sv                                  ;         ;
+; PC.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/PC.sv                                     ;         ;
+; sumador.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/sumador.sv                                ;         ;
+; muxflag.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv                                ;         ;
+; mux_.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/mux_.sv                                   ;         ;
+; Procesador.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv                             ;         ;
+; Fetch.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv                                  ;         ;
+; pipeLine.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv                               ;         ;
+; Decode.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Decode.sv                                 ;         ;
+; Extend.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Extend.sv                                 ;         ;
+; ControlUnit.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv                            ;         ;
+; pipeDecotoExe.sv                         ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv                          ;         ;
+; pipeContUnitDtoE.sv                      ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv                       ;         ;
+; Execute.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/Execute.sv                                ;         ;
+; CondUnit.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv                               ;         ;
+; flipflop.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv                               ;         ;
+; CondCheck.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv                              ;         ;
+; pipeExetoMem.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv                           ;         ;
+; pipeCondUnitEtoM.sv                      ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv                       ;         ;
+; pipeMemtoWBack.sv                        ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv                         ;         ;
+; ForwardUnit.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/ForwardUnit.sv                            ;         ;
+; mux3_1.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv                                 ;         ;
+; StallUnit.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv                              ;         ;
+; /files/ram/image/part0.txt               ; yes             ; Auto-Found File                                       ; /files/ram/image/part0.txt                                                   ;         ;
+; /quartusprojects/files/rom.txt           ; yes             ; Auto-Found File                                       ; /quartusprojects/files/rom.txt                                               ;         ;
+; altsyncram.tdf                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal201.inc                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
+; a_rdenreg.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                               ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                               ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                             ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_i2s1.tdf                   ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_i2s1.tdf                    ;         ;
+; db/asip.ram0_datamemory_5d7c1658.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/QuartusProjects/Proyecto2Arqui1/db/asip.ram0_datamemory_5d7c1658.hdl.mif  ;         ;
+; db/decode_8la.tdf                        ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/decode_8la.tdf                         ;         ;
+; db/mux_5hb.tdf                           ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/mux_5hb.tdf                            ;         ;
++------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -281,111 +282,346 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1278      ;
+; Estimate of Logic utilization (ALMs needed) ; 418       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1997      ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 498       ;
-;     -- 5 input functions                    ; 622       ;
-;     -- 4 input functions                    ; 550       ;
-;     -- <=3 input functions                  ; 326       ;
+; Combinational ALUT usage for logic          ; 589       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 110       ;
+;     -- 5 input functions                    ; 306       ;
+;     -- 4 input functions                    ; 2         ;
+;     -- <=3 input functions                  ; 171       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 731       ;
+; Dedicated logic registers                   ; 574       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 35        ;
 ; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 847072    ;
+; Total block memory bits                     ; 838880    ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 2         ;
+; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 891       ;
-; Total fan-out                               ; 14862     ;
-; Average fan-out                             ; 5.02      ;
+; Maximum fan-out                             ; 702       ;
+; Total fan-out                               ; 7093      ;
+; Average fan-out                             ; 5.21      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
-+-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                               ; Entity Name         ; Library Name ;
-+-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Procesador                                     ; 1997 (0)            ; 731 (0)                   ; 847072            ; 2          ; 35   ; 0            ; |Procesador                                                                                                                                       ; Procesador          ; work         ;
-;    |DataMemory:DataRAM|                         ; 36 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM                                                                                                                    ; DataMemory          ; work         ;
-;       |altsyncram:RAM_rtl_0|                    ; 36 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0                                                                                               ; altsyncram          ; work         ;
-;          |altsyncram_i2s1:auto_generated|       ; 36 (0)              ; 2 (2)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated                                                                ; altsyncram_i2s1     ; work         ;
-;             |decode_8la:decode2|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|decode_8la:decode2                                             ; decode_8la          ; work         ;
-;             |mux_5hb:mux3|                      ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|mux_5hb:mux3                                                   ; mux_5hb             ; work         ;
-;    |Decode:decode|                              ; 365 (0)             ; 480 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode                                                                                                                         ; Decode              ; work         ;
-;       |ControlUnit:CU|                          ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|ControlUnit:CU                                                                                                          ; ControlUnit         ; work         ;
-;       |RegFile:RF|                              ; 345 (345)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|RegFile:RF                                                                                                              ; RegFile             ; work         ;
-;       |mux_:muxA1|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA1                                                                                                              ; mux_                ; work         ;
-;       |mux_:muxA2|                              ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA2                                                                                                              ; mux_                ; work         ;
-;    |Execute:execute|                            ; 1525 (0)            ; 1 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |Procesador|Execute:execute                                                                                                                       ; Execute             ; work         ;
-;       |Alu:ALU|                                 ; 1465 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU                                                                                                               ; Alu                 ; work         ;
-;          |divALU:divAlu|                        ; 1105 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|divALU:divAlu                                                                                                 ; divALU              ; work         ;
-;             |lpm_divide:Div0|                   ; 1105 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;                |lpm_divide_3dm:auto_generated|  ; 1105 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0|lpm_divide_3dm:auto_generated                                                   ; lpm_divide_3dm      ; work         ;
-;                   |sign_div_unsign_9nh:divider| ; 1105 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider                       ; sign_div_unsign_9nh ; work         ;
-;                      |alt_u_div_o2f:divider|    ; 1105 (1105)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider ; alt_u_div_o2f       ; work         ;
-;          |mulALU:mulAlu|                        ; 14 (14)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|mulALU:mulAlu                                                                                                 ; mulALU              ; work         ;
-;          |muxALU:muxalu|                        ; 174 (174)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu                                                                                                 ; muxALU              ; work         ;
-;          |resALU:resAlu|                        ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|resALU:resAlu                                                                                                 ; resALU              ; work         ;
-;          |shiftL:sl|                            ; 67 (67)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl                                                                                                     ; shiftL              ; work         ;
-;          |shiftR:sr|                            ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr                                                                                                     ; shiftR              ; work         ;
-;          |sumALU:sumAlu|                        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|sumALU:sumAlu                                                                                                 ; sumALU              ; work         ;
-;       |CondUnit:unidadCond|                     ; 28 (2)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|CondUnit:unidadCond                                                                                                   ; CondUnit            ; work         ;
-;          |flipflop:ff2|                         ; 26 (26)             ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|CondUnit:unidadCond|flipflop:ff2                                                                                      ; flipflop            ; work         ;
-;       |mux_:muxRegOrInmExt|                     ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|mux_:muxRegOrInmExt                                                                                                   ; mux_                ; work         ;
-;    |Fetch:fetch|                                ; 31 (0)              ; 9 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch                                                                                                                           ; Fetch               ; work         ;
-;       |InstrucMemory:ROM|                       ; 23 (23)             ; 1 (1)                     ; 8192              ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory:ROM                                                                                                         ; InstrucMemory       ; work         ;
-;          |altsyncram:ROM_rtl_0|                 ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0                                                                                    ; altsyncram          ; work         ;
-;             |altsyncram_nkd1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0|altsyncram_nkd1:auto_generated                                                     ; altsyncram_nkd1     ; work         ;
-;       |PC:pcflipflop|                           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|PC:pcflipflop                                                                                                             ; PC                  ; work         ;
-;       |sumador:add1|                            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|sumador:add1                                                                                                              ; sumador             ; work         ;
-;    |mux_:muxMemoryOrAlu|                        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxMemoryOrAlu                                                                                                                   ; mux_                ; work         ;
-;    |pipeCondUnitEtoM:pipeCondEtoM|              ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeCondUnitEtoM:pipeCondEtoM                                                                                                         ; pipeCondUnitEtoM    ; work         ;
-;    |pipeContUnitDtoE:pipeCUDtoE|                ; 0 (0)               ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeContUnitDtoE:pipeCUDtoE                                                                                                           ; pipeContUnitDtoE    ; work         ;
-;    |pipeDecotoExe:pipeDtoE|                     ; 8 (8)               ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeDecotoExe:pipeDtoE                                                                                                                ; pipeDecotoExe       ; work         ;
-;    |pipeExetoMem:pipeEtoM|                      ; 0 (0)               ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeExetoMem:pipeEtoM                                                                                                                 ; pipeExetoMem        ; work         ;
-;    |pipeMemtoWBack:pipeMtoW|                    ; 0 (0)               ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeMemtoWBack:pipeMtoW                                                                                                               ; pipeMemtoWBack      ; work         ;
-+-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                          ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Entity Name      ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------+------------------+--------------+
+; |Procesador                               ; 589 (1)             ; 574 (0)                   ; 838880            ; 0          ; 35   ; 0            ; |Procesador                                                                                           ; Procesador       ; work         ;
+;    |DataMemory:DataRAM|                   ; 36 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM                                                                        ; DataMemory       ; work         ;
+;       |altsyncram:RAM_rtl_0|              ; 36 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0                                                   ; altsyncram       ; work         ;
+;          |altsyncram_i2s1:auto_generated| ; 36 (0)              ; 2 (2)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated                    ; altsyncram_i2s1  ; work         ;
+;             |decode_8la:decode2|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|decode_8la:decode2 ; decode_8la       ; work         ;
+;             |mux_5hb:mux3|                ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|mux_5hb:mux3       ; mux_5hb          ; work         ;
+;    |Decode:decode|                        ; 18 (0)              ; 256 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode                                                                             ; Decode           ; work         ;
+;       |ControlUnit:CU|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|ControlUnit:CU                                                              ; ControlUnit      ; work         ;
+;       |RegFile:RF|                        ; 9 (9)               ; 256 (256)                 ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|RegFile:RF                                                                  ; RegFile          ; work         ;
+;       |mux_:muxA1|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA1                                                                  ; mux_             ; work         ;
+;       |mux_:muxA2|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA2                                                                  ; mux_             ; work         ;
+;    |Execute:execute|                      ; 170 (0)             ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute                                                                           ; Execute          ; work         ;
+;       |Alu:ALU|                           ; 126 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU                                                                   ; Alu              ; work         ;
+;          |muxALU:muxalu|                  ; 61 (61)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu                                                     ; muxALU           ; work         ;
+;          |resALU:resAlu|                  ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|resALU:resAlu                                                     ; resALU           ; work         ;
+;          |sumALU:sumAlu|                  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|sumALU:sumAlu                                                     ; sumALU           ; work         ;
+;       |CondUnit:unidadCond|               ; 12 (2)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|CondUnit:unidadCond                                                       ; CondUnit         ; work         ;
+;          |flipflop:ff2|                   ; 10 (10)             ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|CondUnit:unidadCond|flipflop:ff2                                          ; flipflop         ; work         ;
+;       |mux_:muxRegOrInmExt|               ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|mux_:muxRegOrInmExt                                                       ; mux_             ; work         ;
+;    |Fetch:fetch|                          ; 51 (0)              ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch                                                                               ; Fetch            ; work         ;
+;       |InstrucMemory:ROM|                 ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory:ROM                                                             ; InstrucMemory    ; work         ;
+;       |PC:pcflipflop|                     ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|PC:pcflipflop                                                                 ; PC               ; work         ;
+;       |sumador:add1|                      ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|sumador:add1                                                                  ; sumador          ; work         ;
+;    |ForwardUnit:forwardU|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|ForwardUnit:forwardU                                                                      ; ForwardUnit      ; work         ;
+;    |StallUnit:ldrHazard|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|StallUnit:ldrHazard                                                                       ; StallUnit        ; work         ;
+;    |mux3_1:muxRD1E|                       ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux3_1:muxRD1E                                                                            ; mux3_1           ; work         ;
+;    |mux3_1:muxRD2E|                       ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux3_1:muxRD2E                                                                            ; mux3_1           ; work         ;
+;    |mux_:muxMemoryOrAlu|                  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxMemoryOrAlu                                                                       ; mux_             ; work         ;
+;    |mux_:muxPC2|                          ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxPC2                                                                               ; mux_             ; work         ;
+;    |pipeCondUnitEtoM:pipeCondEtoM|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeCondUnitEtoM:pipeCondEtoM                                                             ; pipeCondUnitEtoM ; work         ;
+;    |pipeContUnitDtoE:pipeCUDtoE|          ; 3 (3)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeContUnitDtoE:pipeCUDtoE                                                               ; pipeContUnitDtoE ; work         ;
+;    |pipeDecotoExe:pipeDtoE|               ; 135 (135)           ; 75 (75)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeDecotoExe:pipeDtoE                                                                    ; pipeDecotoExe    ; work         ;
+;    |pipeExetoMem:pipeEtoM|                ; 0 (0)               ; 67 (67)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeExetoMem:pipeEtoM                                                                     ; pipeExetoMem     ; work         ;
+;    |pipeLine:pipeInstrFtoD|               ; 1 (1)               ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeInstrFtoD                                                                    ; pipeLine         ; work         ;
+;    |pipeLine:pipeOpDtoE|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeOpDtoE                                                                       ; pipeLine         ; work         ;
+;    |pipeLine:pipePCFtoD|                  ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipePCFtoD                                                                       ; pipeLine         ; work         ;
+;    |pipeLine:pipeRA1DtoE|                 ; 1 (1)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeRA1DtoE                                                                      ; pipeLine         ; work         ;
+;    |pipeLine:pipeRA2DtoE|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeRA2DtoE                                                                      ; pipeLine         ; work         ;
+;    |pipeMemtoWBack:pipeMtoW|              ; 0 (0)               ; 70 (70)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeMemtoWBack:pipeMtoW                                                                   ; pipeMemtoWBack   ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                          ;
-+----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------------------+
-; Name                                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                         ;
-+----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------------------+
-; DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 26215        ; 32           ; 26215        ; 32           ; 838880 ; db/ASIP.ram0_DataMemory_5d7c1658.hdl.mif    ;
-; Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0|altsyncram_nkd1:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 1024         ; 32           ; --           ; --           ; 32768  ; db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif ;
-+----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                            ;
++-----------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------+
+; Name                                                                              ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                      ;
++-----------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------+
+; DataMemory:DataRAM|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 26215        ; 32           ; 26215        ; 32           ; 838880 ; db/ASIP.ram0_DataMemory_5d7c1658.hdl.mif ;
++-----------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------+
 
 
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Two Independent 18x18           ; 1           ;
-; Sum of two 18x18                ; 1           ;
-; Total number of DSP blocks      ; 2           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 3           ;
-+---------------------------------+-------------+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++---------------------------------------------+-----------------------------------------------+
+; Register name                               ; Reason for Removal                            ;
++---------------------------------------------+-----------------------------------------------+
+; pipeDecotoExe:pipeDtoE|immExt[17..31]       ; Merged with pipeDecotoExe:pipeDtoE|immExt[16] ;
+; pipeContUnitDtoE:pipeCUDtoE|NoWrite         ; Merged with pipeContUnitDtoE:pipeCUDtoE|FlagW ;
+; pipeLine:pipeInstrFtoD|state[1,2,23,25]     ; Merged with pipeLine:pipeInstrFtoD|state[29]  ;
+; pipeLine:pipeInstrFtoD|state[12,14,16,17]   ; Merged with pipeLine:pipeInstrFtoD|state[21]  ;
+; pipeLine:pipeInstrFtoD|state[9,10,15]       ; Merged with pipeLine:pipeInstrFtoD|state[20]  ;
+; pipeLine:pipeInstrFtoD|state[5,11]          ; Merged with pipeLine:pipeInstrFtoD|state[13]  ;
+; pipeLine:pipeInstrFtoD|state[29]            ; Stuck at GND due to stuck port data_in        ;
+; pipeContUnitDtoE:pipeCUDtoE|ALUControl[1,2] ; Stuck at GND due to stuck port data_in        ;
+; pipeDecotoExe:pipeDtoE|WA3[3]               ; Stuck at GND due to stuck port data_in        ;
+; pipeExetoMem:pipeEtoM|WA3[3]                ; Stuck at GND due to stuck port data_in        ;
+; pipeMemtoWBack:pipeMtoW|WA3[3]              ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][0]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][0]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][0]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][0]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][0]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][0]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][0]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][1]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][1]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][1]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][1]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][1]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][1]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][1]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][2]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][2]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][2]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][2]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][2]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][2]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][2]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][3]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][3]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][3]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][3]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][3]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][3]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][3]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][4]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][4]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][4]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][4]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][4]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][4]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][4]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][5]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][5]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][5]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][5]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][5]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][5]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][5]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][6]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][6]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][6]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][6]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][6]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][6]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][6]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][7]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][7]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][7]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][7]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][7]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][7]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][7]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][8]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][8]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][8]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][8]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][8]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][8]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][8]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][9]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][9]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][9]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][9]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][9]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][9]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][9]         ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][10]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][10]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][10]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][10]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][10]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][10]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][10]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][11]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][11]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][11]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][11]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][11]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][11]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][11]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][12]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][12]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][12]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][12]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][12]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][12]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][12]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][13]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][13]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][13]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][13]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][13]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][13]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][13]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][14]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][14]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][14]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][14]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][14]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][14]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][14]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][15]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][15]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][15]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][15]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][15]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][15]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][15]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][16]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][16]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][16]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][16]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][16]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][16]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][16]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][17]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][17]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][17]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][17]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][17]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][17]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][17]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][18]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][18]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][18]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][18]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][18]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][18]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][18]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][19]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][19]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][19]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][19]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][19]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][19]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][19]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][20]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][20]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][20]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][20]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][20]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][20]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][20]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][21]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][21]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][21]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][21]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][21]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][21]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][21]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][22]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][22]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][22]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][22]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][22]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][22]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][22]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][23]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][23]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][23]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][23]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][23]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][23]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][23]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][24]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][24]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][24]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][24]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][24]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][24]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][24]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][25]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][25]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][25]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][25]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][25]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][25]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][25]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][26]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][26]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][26]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][26]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][26]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][26]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][26]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][27]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][27]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][27]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][27]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][27]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][27]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][27]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][28]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][28]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][28]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][28]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][28]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][28]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][28]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][29]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][29]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][29]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][29]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][29]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][29]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][29]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][30]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][30]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][30]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][30]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][30]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][30]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][30]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[14][31]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[13][31]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[12][31]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[11][31]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[10][31]       ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[9][31]        ; Stuck at GND due to stuck port data_in        ;
+; Decode:decode|RegFile:RF|regF[8][31]        ; Stuck at GND due to stuck port data_in        ;
+; pipeDecotoExe:pipeDtoE|immExt[6,8]          ; Merged with pipeDecotoExe:pipeDtoE|immExt[0]  ;
+; pipeLine:pipeRA1DtoE|state[1]               ; Merged with pipeLine:pipeRA1DtoE|state[3]     ;
+; pipeContUnitDtoE:pipeCUDtoE|Branch          ; Merged with pipeLine:pipeRA1DtoE|state[3]     ;
+; pipeDecotoExe:pipeDtoE|immExt[5,10,15]      ; Merged with pipeDecotoExe:pipeDtoE|immExt[4]  ;
+; pipeDecotoExe:pipeDtoE|immExt[9,11,12,16]   ; Merged with pipeDecotoExe:pipeDtoE|immExt[7]  ;
+; Total Number of Removed Registers = 270     ;                                               ;
++---------------------------------------------+-----------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                     ;
-+----------------------------------------+-----------------------------------------------+
-; Register name                          ; Reason for Removal                            ;
-+----------------------------------------+-----------------------------------------------+
-; Fetch:fetch|PC:pcflipflop|q[8..31]     ; Stuck at GND due to stuck port data_in        ;
-; pipeDecotoExe:pipeDtoE|immExt[16..30]  ; Merged with pipeDecotoExe:pipeDtoE|immExt[31] ;
-; pipeContUnitDtoE:pipeCUDtoE|NoWrite    ; Merged with pipeContUnitDtoE:pipeCUDtoE|FlagW ;
-; Total Number of Removed Registers = 40 ;                                               ;
-+----------------------------------------+-----------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                 ;
++----------------------------------+---------------------------+--------------------------------------------------------------+
+; Register name                    ; Reason for Removal        ; Registers Removed due to This Register                       ;
++----------------------------------+---------------------------+--------------------------------------------------------------+
+; pipeLine:pipeInstrFtoD|state[29] ; Stuck at GND              ; pipeContUnitDtoE:pipeCUDtoE|ALUControl[2],                   ;
+;                                  ; due to stuck port data_in ; pipeContUnitDtoE:pipeCUDtoE|ALUControl[1]                    ;
+; pipeDecotoExe:pipeDtoE|WA3[3]    ; Stuck at GND              ; pipeExetoMem:pipeEtoM|WA3[3], pipeMemtoWBack:pipeMtoW|WA3[3] ;
+;                                  ; due to stuck port data_in ;                                                              ;
++----------------------------------+---------------------------+--------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -393,59 +629,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 731   ;
-; Number of registers using Synchronous Clear  ; 545   ;
-; Number of registers using Synchronous Load   ; 40    ;
-; Number of registers using Asynchronous Clear ; 249   ;
+; Total registers                              ; 574   ;
+; Number of registers using Synchronous Clear  ; 391   ;
+; Number of registers using Synchronous Load   ; 64    ;
+; Number of registers using Asynchronous Clear ; 316   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 480   ;
+; Number of registers using Clock Enable       ; 338   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                         ;
-+-------------------------------------+-----------------------------------------+------+
-; Register Name                       ; Megafunction                            ; Type ;
-+-------------------------------------+-----------------------------------------+------+
-; DataMemory:DataRAM|RData[0..31]     ; DataMemory:DataRAM|RAM_rtl_0            ; RAM  ;
-; pipeLine:pipeInstrFtoD|state[0..31] ; Fetch:fetch|InstrucMemory:ROM|ROM_rtl_0 ; RAM  ;
-+-------------------------------------+-----------------------------------------+------+
++-----------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                          ;
++---------------------------------+------------------------------+------+
+; Register Name                   ; Megafunction                 ; Type ;
++---------------------------------+------------------------------+------+
+; DataMemory:DataRAM|RData[0..31] ; DataMemory:DataRAM|RAM_rtl_0 ; RAM  ;
++---------------------------------+------------------------------+------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[0][7]           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[1][13]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[2][19]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[3][9]           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[4][20]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[5][29]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[6][19]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[7][5]           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[8][21]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[9][27]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[10][6]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[11][6]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[12][6]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[13][6]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[14][6]          ;
-; 17:1               ; 32 bits   ; 352 LEs       ; 320 LEs              ; 32 LEs                 ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD2[12]                ;
-; 18:1               ; 32 bits   ; 384 LEs       ; 320 LEs              ; 64 LEs                 ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD1[22]                ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl|ShiftLeft0  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
-; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl|ShiftLeft0  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
-; 23:1               ; 12 bits   ; 180 LEs       ; 120 LEs              ; 60 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux12   ;
-; 23:1               ; 12 bits   ; 180 LEs       ; 120 LEs              ; 60 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux27   ;
-; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux3    ;
-; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux29   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Procesador|pipeContUnitDtoE:pipeCUDtoE|ALUControl[3]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[0][1]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[1][22]        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[2][2]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[3][21]        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[4][3]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[5][23]        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[6][5]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[7][1]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Procesador|Fetch:fetch|PC:pcflipflop|q[5]              ;
+; 3:1                ; 50 bits   ; 100 LEs       ; 0 LEs                ; 100 LEs                ; Yes        ; |Procesador|pipeLine:pipePCFtoD|state[15]               ;
+; 11:1               ; 32 bits   ; 224 LEs       ; 64 LEs               ; 160 LEs                ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD1[29]              ;
+; 18:1               ; 32 bits   ; 384 LEs       ; 160 LEs              ; 224 LEs                ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD2[1]               ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|mux3_1:muxRD2E|Mux6                         ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux27 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|mux3_1:muxRD1E|Mux27                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -457,22 +681,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+---------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Source assignments for Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0|altsyncram_nkd1:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                         ;
-+---------------------------------+--------------------+------+--------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
-+---------------------------------+--------------------+------+--------------------------------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_:muxPC1 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; bits           ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_:muxPC ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; bits           ; 8     ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_:muxPC2 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; bits           ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -506,6 +731,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeLine:pipePCFtoD ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; bits           ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA1 ;
 +----------------+-------+----------------------------------------------+
@@ -533,6 +768,56 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; bits           ; 32    ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeLine:pipeRA1DtoE ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; bits           ; 4     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeLine:pipeRA2DtoE ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; bits           ; 4     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeLine:pipeOpDtoE ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; bits           ; 2     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux3_1:muxRD1E ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; bits           ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux3_1:muxRD2E ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; bits           ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -777,119 +1062,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0 ;
-+------------------------------------+---------------------------------------------+------------------+
-; Parameter Name                     ; Value                                       ; Type             ;
-+------------------------------------+---------------------------------------------+------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                           ; Untyped          ;
-; AUTO_CARRY_CHAINS                  ; ON                                          ; AUTO_CARRY       ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                         ; IGNORE_CARRY     ;
-; AUTO_CASCADE_CHAINS                ; ON                                          ; AUTO_CASCADE     ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                         ; IGNORE_CASCADE   ;
-; WIDTH_BYTEENA                      ; 1                                           ; Untyped          ;
-; OPERATION_MODE                     ; ROM                                         ; Untyped          ;
-; WIDTH_A                            ; 32                                          ; Untyped          ;
-; WIDTHAD_A                          ; 10                                          ; Untyped          ;
-; NUMWORDS_A                         ; 1024                                        ; Untyped          ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                ; Untyped          ;
-; ADDRESS_ACLR_A                     ; NONE                                        ; Untyped          ;
-; OUTDATA_ACLR_A                     ; NONE                                        ; Untyped          ;
-; WRCONTROL_ACLR_A                   ; NONE                                        ; Untyped          ;
-; INDATA_ACLR_A                      ; NONE                                        ; Untyped          ;
-; BYTEENA_ACLR_A                     ; NONE                                        ; Untyped          ;
-; WIDTH_B                            ; 1                                           ; Untyped          ;
-; WIDTHAD_B                          ; 1                                           ; Untyped          ;
-; NUMWORDS_B                         ; 1                                           ; Untyped          ;
-; INDATA_REG_B                       ; CLOCK1                                      ; Untyped          ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                      ; Untyped          ;
-; RDCONTROL_REG_B                    ; CLOCK1                                      ; Untyped          ;
-; ADDRESS_REG_B                      ; CLOCK1                                      ; Untyped          ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                ; Untyped          ;
-; BYTEENA_REG_B                      ; CLOCK1                                      ; Untyped          ;
-; INDATA_ACLR_B                      ; NONE                                        ; Untyped          ;
-; WRCONTROL_ACLR_B                   ; NONE                                        ; Untyped          ;
-; ADDRESS_ACLR_B                     ; NONE                                        ; Untyped          ;
-; OUTDATA_ACLR_B                     ; NONE                                        ; Untyped          ;
-; RDCONTROL_ACLR_B                   ; NONE                                        ; Untyped          ;
-; BYTEENA_ACLR_B                     ; NONE                                        ; Untyped          ;
-; WIDTH_BYTEENA_A                    ; 1                                           ; Untyped          ;
-; WIDTH_BYTEENA_B                    ; 1                                           ; Untyped          ;
-; RAM_BLOCK_TYPE                     ; AUTO                                        ; Untyped          ;
-; BYTE_SIZE                          ; 8                                           ; Untyped          ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ; Untyped          ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                        ; Untyped          ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                        ; Untyped          ;
-; INIT_FILE                          ; db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif ; Untyped          ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                      ; Untyped          ;
-; MAXIMUM_DEPTH                      ; 0                                           ; Untyped          ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                      ; Untyped          ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                      ; Untyped          ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                      ; Untyped          ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                      ; Untyped          ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                             ; Untyped          ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                             ; Untyped          ;
-; ENABLE_ECC                         ; FALSE                                       ; Untyped          ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                       ; Untyped          ;
-; WIDTH_ECCSTATUS                    ; 3                                           ; Untyped          ;
-; DEVICE_FAMILY                      ; Cyclone V                                   ; Untyped          ;
-; CBXI_PARAMETER                     ; altsyncram_nkd1                             ; Untyped          ;
-+------------------------------------+---------------------------------------------+------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0 ;
-+------------------------+----------------+--------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                         ;
-+------------------------+----------------+--------------------------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                                      ;
-; LPM_WIDTHD             ; 32             ; Untyped                                                      ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                      ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                      ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                      ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                      ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                      ;
-; CBXI_PARAMETER         ; lpm_divide_3dm ; Untyped                                                      ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                      ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                      ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                 ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                               ;
-+------------------------+----------------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                               ;
-+-------------------------------------------+----------------------------------------------------+
-; Name                                      ; Value                                              ;
-+-------------------------------------------+----------------------------------------------------+
-; Number of entity instances                ; 2                                                  ;
-; Entity Instance                           ; DataMemory:DataRAM|altsyncram:RAM_rtl_0            ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                                          ;
-;     -- WIDTH_A                            ; 32                                                 ;
-;     -- NUMWORDS_A                         ; 26215                                              ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
-;     -- WIDTH_B                            ; 32                                                 ;
-;     -- NUMWORDS_B                         ; 26215                                              ;
-;     -- ADDRESS_REG_B                      ; CLOCK0                                             ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                           ;
-; Entity Instance                           ; Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0 ;
-;     -- OPERATION_MODE                     ; ROM                                                ;
-;     -- WIDTH_A                            ; 32                                                 ;
-;     -- NUMWORDS_A                         ; 1024                                               ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
-;     -- WIDTH_B                            ; 1                                                  ;
-;     -- NUMWORDS_B                         ; 1                                                  ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                             ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ;
-+-------------------------------------------+----------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                    ;
++-------------------------------------------+-----------------------------------------+
+; Name                                      ; Value                                   ;
++-------------------------------------------+-----------------------------------------+
+; Number of entity instances                ; 1                                       ;
+; Entity Instance                           ; DataMemory:DataRAM|altsyncram:RAM_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                               ;
+;     -- WIDTH_A                            ; 32                                      ;
+;     -- NUMWORDS_A                         ; 26215                                   ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                            ;
+;     -- WIDTH_B                            ; 32                                      ;
+;     -- NUMWORDS_B                         ; 26215                                   ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                            ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                ;
++-------------------------------------------+-----------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -899,6 +1089,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; address ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (18 bits) it drives.  The 14 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "pipeLine:pipeOpDtoE" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; en   ; Input ; Info     ; Stuck at GND          ;
++------+-------+----------+-----------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "pipeLine:pipeRA2DtoE" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; en   ; Input ; Info     ; Stuck at GND           ;
++------+-------+----------+------------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "pipeLine:pipeRA1DtoE" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; en   ; Input ; Info     ; Stuck at GND           ;
++------+-------+----------+------------------------+
 
 
 +------------------------------------------------------+
@@ -920,53 +1137,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_:muxPC"                                                                                                                                                                        ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; A    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; B    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out  ; Output ; Warning  ; Output or bidir port (8 bits) is smaller than the port expression (32 bits) it drives.  The 24 most-significant bit(s) in the port expression will be connected to GND.            ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 731                         ;
-;     CLR               ; 144                         ;
-;     CLR SCLR          ; 65                          ;
-;     CLR SLD           ; 40                          ;
-;     ENA SCLR          ; 480                         ;
+; arriav_ff             ; 574                         ;
+;     CLR               ; 117                         ;
+;     CLR SCLR          ; 53                          ;
+;     CLR SCLR SLD      ; 32                          ;
+;     CLR SLD           ; 32                          ;
+;     ENA CLR           ; 32                          ;
+;     ENA CLR SCLR      ; 50                          ;
+;     ENA SCLR          ; 256                         ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 1997                        ;
-;     arith             ; 682                         ;
-;         0 data inputs ; 63                          ;
-;         1 data inputs ; 16                          ;
-;         2 data inputs ; 14                          ;
-;         4 data inputs ; 94                          ;
-;         5 data inputs ; 495                         ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 1309                        ;
-;         2 data inputs ; 82                          ;
-;         3 data inputs ; 147                         ;
-;         4 data inputs ; 455                         ;
-;         5 data inputs ; 127                         ;
-;         6 data inputs ; 498                         ;
-;     shared            ; 5                           ;
-;         0 data inputs ; 2                           ;
-;         2 data inputs ; 2                           ;
-;         4 data inputs ; 1                           ;
-; arriav_mac            ; 2                           ;
+; arriav_lcell_comb     ; 589                         ;
+;     arith             ; 97                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 32                          ;
+;         5 data inputs ; 64                          ;
+;     normal            ; 492                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 122                         ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 242                         ;
+;         6 data inputs ; 110                         ;
 ; boundary_port         ; 35                          ;
-; stratixv_ram_block    ; 160                         ;
+; stratixv_ram_block    ; 128                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 89.60                       ;
-; Average LUT depth     ; 45.51                       ;
+; Max LUT depth         ; 10.30                       ;
+; Average LUT depth     ; 4.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -975,7 +1176,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:11     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -985,7 +1186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri May 07 22:18:56 2021
+    Info: Processing started: Mon May 10 23:23:36 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1077,26 +1278,40 @@ Info (12021): Found 1 design units, including 1 entities, in source file pipemem
     Info (12023): Found entity 1: pipeMemtoWBack File: C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file procesador_tb.sv
     Info (12023): Found entity 1: Procesador_tb File: C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file forwardunit.sv
+    Info (12023): Found entity 1: ForwardUnit File: C:/QuartusProjects/Proyecto2Arqui1/ForwardUnit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux3_1.sv
+    Info (12023): Found entity 1: mux3_1 File: C:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file stallunit.sv
+    Info (12023): Found entity 1: StallUnit File: C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv Line: 1
 Info (12127): Elaborating entity "Procesador" for the top level hierarchy
-Info (12128): Elaborating entity "mux_" for hierarchy "mux_:muxPC" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 17
-Info (12128): Elaborating entity "Fetch" for hierarchy "Fetch:fetch" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 20
-Info (12128): Elaborating entity "PC" for hierarchy "Fetch:fetch|PC:pcflipflop" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 7
-Info (12128): Elaborating entity "sumador" for hierarchy "Fetch:fetch|sumador:add1" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 8
-Info (12128): Elaborating entity "InstrucMemory" for hierarchy "Fetch:fetch|InstrucMemory:ROM" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 9
-Warning (10850): Verilog HDL warning at InstrucMemory.sv(6): number of words (11) in memory file does not match the number of elements in the address range [0:1023] File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 6
+Info (12128): Elaborating entity "mux_" for hierarchy "mux_:muxPC1" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 20
+Info (12128): Elaborating entity "Fetch" for hierarchy "Fetch:fetch" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 24
+Info (12128): Elaborating entity "PC" for hierarchy "Fetch:fetch|PC:pcflipflop" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 6
+Info (12128): Elaborating entity "sumador" for hierarchy "Fetch:fetch|sumador:add1" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 7
+Info (12128): Elaborating entity "InstrucMemory" for hierarchy "Fetch:fetch|InstrucMemory:ROM" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 8
+Warning (10850): Verilog HDL warning at InstrucMemory.sv(6): number of words (9) in memory file does not match the number of elements in the address range [0:1023] File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 6
 Warning (10030): Net "ROM.data_a" at InstrucMemory.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 4
 Warning (10030): Net "ROM.waddr_a" at InstrucMemory.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 4
 Warning (10030): Net "ROM.we_a" at InstrucMemory.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 4
-Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeInstrFtoD" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 22
-Info (12128): Elaborating entity "Decode" for hierarchy "Decode:decode" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 28
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeInstrFtoD" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 28
+Info (12128): Elaborating entity "Decode" for hierarchy "Decode:decode" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 36
 Info (12128): Elaborating entity "ControlUnit" for hierarchy "Decode:decode|ControlUnit:CU" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 13
 Info (12128): Elaborating entity "mux_" for hierarchy "Decode:decode|mux_:muxA1" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 15
 Info (12128): Elaborating entity "RegFile" for hierarchy "Decode:decode|RegFile:RF" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 18
 Info (12128): Elaborating entity "Extend" for hierarchy "Decode:decode|Extend:EI" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 20
-Info (12128): Elaborating entity "pipeDecotoExe" for hierarchy "pipeDecotoExe:pipeDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 31
-Info (12128): Elaborating entity "pipeContUnitDtoE" for hierarchy "pipeContUnitDtoE:pipeCUDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 37
-Info (12128): Elaborating entity "Execute" for hierarchy "Execute:execute" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 42
-Info (12128): Elaborating entity "mux_" for hierarchy "Execute:execute|mux_:muxRegOrInmExt" File: C:/QuartusProjects/Proyecto2Arqui1/Execute.sv Line: 11
+Info (12128): Elaborating entity "pipeDecotoExe" for hierarchy "pipeDecotoExe:pipeDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 41
+Info (12128): Elaborating entity "pipeContUnitDtoE" for hierarchy "pipeContUnitDtoE:pipeCUDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 46
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeRA1DtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(6): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 6
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(9): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 9
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(11): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 11
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeOpDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(6): truncated value with size 32 to match size of target (2) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 6
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(9): truncated value with size 32 to match size of target (2) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 9
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(11): truncated value with size 32 to match size of target (2) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 11
+Info (12128): Elaborating entity "mux3_1" for hierarchy "mux3_1:muxRD1E" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 54
+Info (12128): Elaborating entity "Execute" for hierarchy "Execute:execute" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 59
 Info (12128): Elaborating entity "Alu" for hierarchy "Execute:execute|Alu:ALU" File: C:/QuartusProjects/Proyecto2Arqui1/Execute.sv Line: 13
 Info (12128): Elaborating entity "sumALU" for hierarchy "Execute:execute|Alu:ALU|sumALU:sumAlu" File: C:/QuartusProjects/Proyecto2Arqui1/Alu.sv Line: 11
 Info (12128): Elaborating entity "resALU" for hierarchy "Execute:execute|Alu:ALU|resALU:resAlu" File: C:/QuartusProjects/Proyecto2Arqui1/Alu.sv Line: 12
@@ -1117,37 +1332,15 @@ Info (12128): Elaborating entity "CondCheck" for hierarchy "Execute:execute|Cond
 Warning (10036): Verilog HDL or VHDL warning at CondCheck.sv(5): object "neg" assigned a value but never read File: C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv Line: 5
 Warning (10036): Verilog HDL or VHDL warning at CondCheck.sv(5): object "carry_" assigned a value but never read File: C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv Line: 5
 Warning (10036): Verilog HDL or VHDL warning at CondCheck.sv(5): object "overflow" assigned a value but never read File: C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv Line: 5
-Info (12128): Elaborating entity "pipeExetoMem" for hierarchy "pipeExetoMem:pipeEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 45
-Info (12128): Elaborating entity "pipeCondUnitEtoM" for hierarchy "pipeCondUnitEtoM:pipeCondEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 48
-Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DataRAM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 51
+Info (12128): Elaborating entity "pipeExetoMem" for hierarchy "pipeExetoMem:pipeEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 64
+Info (12128): Elaborating entity "pipeCondUnitEtoM" for hierarchy "pipeCondUnitEtoM:pipeCondEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 67
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DataRAM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 71
 Warning (10850): Verilog HDL warning at DataMemory.sv(10): number of words (172) in memory file does not match the number of elements in the address range [0:26214] File: C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv Line: 10
-Info (12128): Elaborating entity "pipeMemtoWBack" for hierarchy "pipeMemtoWBack:pipeMtoW" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 54
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "pcNext[31]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[30]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[29]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[28]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[27]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[26]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[25]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[24]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[23]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[22]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[21]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[20]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[19]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[18]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[17]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[16]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[15]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[14]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[13]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[12]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[11]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[10]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[9]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-    Warning (12110): Net "pcNext[8]" is missing source, defaulting to GND File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 10
-Info (19000): Inferred 2 megafunctions from design logic
+Info (12128): Elaborating entity "pipeMemtoWBack" for hierarchy "pipeMemtoWBack:pipeMtoW" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 76
+Info (12128): Elaborating entity "ForwardUnit" for hierarchy "ForwardUnit:forwardU" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 84
+Info (12128): Elaborating entity "StallUnit" for hierarchy "StallUnit:ldrHazard" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 85
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/QuartusProjects/Proyecto2Arqui1/db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "DataMemory:DataRAM|RAM_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 32
@@ -1165,19 +1358,6 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/ASIP.ram0_DataMemory_5d7c1658.hdl.mif
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "Fetch:fetch|InstrucMemory:ROM|ROM_rtl_0" 
-        Info (286033): Parameter OPERATION_MODE set to ROM
-        Info (286033): Parameter WIDTH_A set to 32
-        Info (286033): Parameter WIDTHAD_A set to 10
-        Info (286033): Parameter NUMWORDS_A set to 1024
-        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
-        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
-        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
-        Info (286033): Parameter INDATA_ACLR_A set to NONE
-        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif
-Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Execute:execute|Alu:ALU|divALU:divAlu|Div0" File: C:/QuartusProjects/Proyecto2Arqui1/divALU.sv Line: 3
 Info (12130): Elaborated megafunction instantiation "DataMemory:DataRAM|altsyncram:RAM_rtl_0"
 Info (12133): Instantiated megafunction "DataMemory:DataRAM|altsyncram:RAM_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1202,53 +1382,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/deco
     Info (12023): Found entity 1: decode_8la File: C:/QuartusProjects/Proyecto2Arqui1/db/decode_8la.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_5hb.tdf
     Info (12023): Found entity 1: mux_5hb File: C:/QuartusProjects/Proyecto2Arqui1/db/mux_5hb.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0"
-Info (12133): Instantiated megafunction "Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "ROM"
-    Info (12134): Parameter "WIDTH_A" = "32"
-    Info (12134): Parameter "WIDTHAD_A" = "10"
-    Info (12134): Parameter "NUMWORDS_A" = "1024"
-    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
-    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
-    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nkd1.tdf
-    Info (12023): Found entity 1: altsyncram_nkd1 File: C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_nkd1.tdf Line: 28
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/QuartusProjects/Proyecto2Arqui1/db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif" contains "don't care" values -- overwriting them with 0s File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/QuartusProjects/Proyecto2Arqui1/db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif" contains "don't care" values -- overwriting them with 0s File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12130): Elaborated megafunction instantiation "Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0" File: C:/QuartusProjects/Proyecto2Arqui1/divALU.sv Line: 3
-Info (12133): Instantiated megafunction "Execute:execute|Alu:ALU|divALU:divAlu|lpm_divide:Div0" with the following parameter: File: C:/QuartusProjects/Proyecto2Arqui1/divALU.sv Line: 3
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "32"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3dm.tdf
-    Info (12023): Found entity 1: lpm_divide_3dm File: C:/QuartusProjects/Proyecto2Arqui1/db/lpm_divide_3dm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/QuartusProjects/Proyecto2Arqui1/db/sign_div_unsign_9nh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
-    Info (12023): Found entity 1: alt_u_div_o2f File: C:/QuartusProjects/Proyecto2Arqui1/db/alt_u_div_o2f.tdf Line: 23
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "Fetch:fetch|InstrucMemory:ROM|altsyncram:ROM_rtl_0|altsyncram_nkd1:auto_generated|ALTSYNCRAM" File: C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_nkd1.tdf Line: 665
 Info (144001): Generated suppressed messages file C:/QuartusProjects/Proyecto2Arqui1/output_files/ASIP.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SongSelector" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 1
-Info (21057): Implemented 2789 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1138 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 2592 logic cells
-    Info (21064): Implemented 160 RAM segments
-    Info (21062): Implemented 2 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Fri May 07 22:19:33 2021
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:01:02
+    Info (21061): Implemented 975 logic cells
+    Info (21064): Implemented 128 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Mon May 10 23:24:05 2021
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:54
 
 
 +------------------------------------------+

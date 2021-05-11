@@ -1,12 +1,12 @@
 module Decode (input logic clk,rst,WE3,
 					input logic [31:0]instr,pc,WD3,
 					input logic [3:0] A3,
-					output logic [3:0]ALUControl,
+					output logic [3:0]ALUControl,RA1,RA2,
 					output logic [31:0]immExt,RD1,RD2,
 					output logic FlagW,RegWrite,MemtoReg,MemWrite,Branch,ALUSrc,NoWrite);
 					
 	logic RegSrcA1,RegSrcA2;
-	logic [3:0] RA1,RA2;
+//	logic [3:0] RA1,RA2;
 	
 	ControlUnit  CU(instr[4],instr[31:30],instr[3:0],
 					FlagW,RegWrite,MemtoReg,MemWrite,Branch,

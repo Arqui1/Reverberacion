@@ -24,7 +24,7 @@ module RegFile (input logic clk, rst, WE3,
 		end
       else begin
 			if(A1==4'b1111)
-            RD1 = R15 - 32'b1;
+            RD1 = R15;
 			else
 				RD1 = regF[A1];
 		end

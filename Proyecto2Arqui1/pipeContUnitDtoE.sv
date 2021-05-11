@@ -1,4 +1,4 @@
-module pipeContUnitDtoE (input logic clk,rst,FlagWD,RegWriteD,MemtoRegD,
+module pipeContUnitDtoE (input logic clk,rst,flush,FlagWD,RegWriteD,MemtoRegD,
 										MemWriteD,BranchD,ALUSrcD,NoWriteD, CondD,
 								input logic [3:0] ALUControlD,
 								output logic FlagWE,RegWriteE,MemtoRegE,MemWriteE,
@@ -11,6 +11,11 @@ logic [3:0] ALUControl;
 
 always_ff @ (posedge clk, posedge rst) begin
 	if (rst) begin
+		{FlagW,RegWrite,MemtoReg,MemWrite,
+		Branch,ALUSrc,NoWrite,Cond} = 8'b0;
+		ALUControl = 4'b0;
+	end
+	else if (flush) begin
 		{FlagW,RegWrite,MemtoReg,MemWrite,
 		Branch,ALUSrc,NoWrite,Cond} = 8'b0;
 		ALUControl = 4'b0;

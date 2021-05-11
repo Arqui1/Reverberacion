@@ -1,5 +1,6 @@
 module pipeDecotoExe #(parameter bits = 32) 
-	(input logic clk,rst,input logic [bits-1:0] immExtD,RD2D,RD1D,
+	(input logic clk,rst,flush,
+	input logic [bits-1:0] immExtD,RD2D,RD1D,
 	input logic [3:0] WA3D,
 	output logic [bits-1:0] immExtE, RD2E,RD1E,
 	output logic [3:0] WA3E);
@@ -11,6 +12,12 @@ logic [3:0] WA3 = 4'h0;
 
 always_ff @ (posedge clk, posedge rst) begin
 	if (rst) begin
+		immExt = 32'b0;
+		RD2 = 32'b0;
+		RD1 = 32'b0;
+		WA3 = 4'b0;
+	end
+	else if (flush) begin
 		immExt = 32'b0;
 		RD2 = 32'b0;
 		RD1 = 32'b0;

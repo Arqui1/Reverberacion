@@ -38,6 +38,9 @@ vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjec
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv}
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv}
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv}
+vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/ForwardUnit.sv}
+vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv}
+vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv}
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv}
 vlog -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1 {C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv}
 
