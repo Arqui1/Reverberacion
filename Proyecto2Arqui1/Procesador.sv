@@ -1,7 +1,8 @@
 module Procesador(input logic clk,rst,modeSelector,
-						output logic [31:0] ResultW);
+						output logic txtE,
+						output logic [31:0] SrcBE);
 	
-	logic FlagWD,MemtoRegD,ALUSrcD,RegWriteD,BranchD,MemWriteD,NoWriteD,
+	logic FlagWD,MemtoRegD,ALUSrcD,RegWriteD,BranchD,MemWriteD,NoWriteD,txtD,
 			FlagWE,RegWriteE,MemtoRegE,MemWriteE,BranchE,ALUSrcE,NoWriteE,CondE,
 			PCSrcE,RegWE,MentoRE,MemWE,
 			MemWriteM,MemtoRegM,RegWriteM,PCSrcM,
@@ -11,10 +12,10 @@ module Procesador(input logic clk,rst,modeSelector,
 	logic [3:0] ALUControlD,ALUControlE,WA3E,WA3M,WA3W,
 					RA1D,RA2D,RA1E,RA2E;
 	logic [31:0] pc,pcmas1,pcNext,pcNextPrev,pcD;
-	logic [31:0] instrF,instrD,RD1D,RD2D,immExtD,
-					 immExtE,RD2E,RD1E,ALUResultE,SrcAE,SrcBE,
+	logic [31:0] instrF,instrD,RD1D,immExtD,RD2D,
+					 immExtE,RD1E,ALUResultE,SrcAE,RD2E,//SrcBE,
 					 WriteDataM,ALUResultM,RDataM,RDataM1,RDataM2,
-					 ALUResultW,RDataW;//ResultW;
+					 ALUResultW,RDataW,ResultW;
 	
 	
 	mux_ #(32) muxPC1(PCSrcW,pcmas1,ResultW,pcNextPrev);
@@ -33,7 +34,7 @@ module Procesador(input logic clk,rst,modeSelector,
 	//Etapa de Decode---------------------------------------------------------
 	Decode decode(clk,rst,RegWriteW,instrD,pcD,ResultW,WA3W,ALUControlD,
 					  RA1D,RA2D,immExtD,RD1D,RD2D,FlagWD,RegWriteD,MemtoRegD,
-					  MemWriteD,BranchD,ALUSrcD,NoWriteD);
+					  MemWriteD,BranchD,ALUSrcD,NoWriteD,txtD);
 	//------------------------------------------------------------------------
 	
 	//PipeLine de la etapa de Decode a Execute--------------------------------
@@ -48,6 +49,7 @@ module Procesador(input logic clk,rst,modeSelector,
 	pipeLine #(4) pipeRA1DtoE(clk,rst,1'b0,(Stall|PCSrcE),RA1D,RA1E);
 	pipeLine #(4) pipeRA2DtoE(clk,rst,1'b0,(Stall|PCSrcE),RA2D,RA2E);
 	pipeLine #(2) pipeOpDtoE(clk,rst,1'b0,(Stall|PCSrcE),instrD[31:30],OpE);
+	pipeLine #(1) pipetxtDtoE(clk,rst,1'b0,(Stall|PCSrcE),txtD,txtE);
 	//------------------------------------------------------------------------
 	
 	//Etapa de Execute--------------------------------------------------------

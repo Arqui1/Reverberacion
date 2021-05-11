@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ASIP
-Tue May 11 01:33:28 2021
+Tue May 11 05:26:33 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -15,25 +15,25 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Registers Packed Into Inferred Megafunctions
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_rgr1:auto_generated
- 15. Source assignments for DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_mdr1:auto_generated
- 16. Parameter Settings for User Entity Instance: mux_:muxPC1
- 17. Parameter Settings for User Entity Instance: mux_:muxPC2
- 18. Parameter Settings for User Entity Instance: Fetch:fetch|PC:pcflipflop
- 19. Parameter Settings for User Entity Instance: Fetch:fetch|sumador:add1
- 20. Parameter Settings for User Entity Instance: Fetch:fetch|mux_:muxMode
- 21. Parameter Settings for User Entity Instance: pipeLine:pipeInstrFtoD
- 22. Parameter Settings for User Entity Instance: pipeLine:pipePCFtoD
- 23. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA1
- 24. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA2
- 25. Parameter Settings for User Entity Instance: pipeDecotoExe:pipeDtoE
- 26. Parameter Settings for User Entity Instance: pipeLine:pipeRA1DtoE
- 27. Parameter Settings for User Entity Instance: pipeLine:pipeRA2DtoE
- 28. Parameter Settings for User Entity Instance: pipeLine:pipeOpDtoE
+ 10. General Register Statistics
+ 11. Registers Packed Into Inferred Megafunctions
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_n5s1:auto_generated
+ 14. Source assignments for DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated
+ 15. Parameter Settings for User Entity Instance: mux_:muxPC1
+ 16. Parameter Settings for User Entity Instance: mux_:muxPC2
+ 17. Parameter Settings for User Entity Instance: Fetch:fetch|PC:pcflipflop
+ 18. Parameter Settings for User Entity Instance: Fetch:fetch|sumador:add1
+ 19. Parameter Settings for User Entity Instance: Fetch:fetch|mux_:muxMode
+ 20. Parameter Settings for User Entity Instance: pipeLine:pipeInstrFtoD
+ 21. Parameter Settings for User Entity Instance: pipeLine:pipePCFtoD
+ 22. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA1
+ 23. Parameter Settings for User Entity Instance: Decode:decode|mux_:muxA2
+ 24. Parameter Settings for User Entity Instance: pipeDecotoExe:pipeDtoE
+ 25. Parameter Settings for User Entity Instance: pipeLine:pipeRA1DtoE
+ 26. Parameter Settings for User Entity Instance: pipeLine:pipeRA2DtoE
+ 27. Parameter Settings for User Entity Instance: pipeLine:pipeOpDtoE
+ 28. Parameter Settings for User Entity Instance: pipeLine:pipetxtDtoE
  29. Parameter Settings for User Entity Instance: mux3_1:muxRD1E
  30. Parameter Settings for User Entity Instance: mux3_1:muxRD2E
  31. Parameter Settings for User Entity Instance: Execute:execute|mux_:muxRegOrInmExt
@@ -60,15 +60,16 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  52. altsyncram Parameter Settings by Entity Instance
  53. Port Connectivity Checks: "DataMemory2:DataRAM2"
  54. Port Connectivity Checks: "DataMemory:DataRAM1"
- 55. Port Connectivity Checks: "pipeLine:pipeOpDtoE"
- 56. Port Connectivity Checks: "pipeLine:pipeRA2DtoE"
- 57. Port Connectivity Checks: "pipeLine:pipeRA1DtoE"
- 58. Port Connectivity Checks: "Decode:decode|mux_:muxA1"
- 59. Port Connectivity Checks: "Fetch:fetch|sumador:add1"
- 60. Post-Synthesis Netlist Statistics for Top Partition
- 61. Elapsed Time Per Partition
- 62. Analysis & Synthesis Messages
- 63. Analysis & Synthesis Suppressed Messages
+ 55. Port Connectivity Checks: "pipeLine:pipetxtDtoE"
+ 56. Port Connectivity Checks: "pipeLine:pipeOpDtoE"
+ 57. Port Connectivity Checks: "pipeLine:pipeRA2DtoE"
+ 58. Port Connectivity Checks: "pipeLine:pipeRA1DtoE"
+ 59. Port Connectivity Checks: "Decode:decode|mux_:muxA1"
+ 60. Port Connectivity Checks: "Fetch:fetch|sumador:add1"
+ 61. Post-Synthesis Netlist Statistics for Top Partition
+ 62. Elapsed Time Per Partition
+ 63. Analysis & Synthesis Messages
+ 64. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -95,14 +96,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 11 01:33:27 2021       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 11 05:26:32 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ASIP                                        ;
 ; Top-level Entity Name           ; Procesador                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 356                                         ;
-; Total pins                      ; 35                                          ;
+; Total registers                 ; 821                                         ;
+; Total pins                      ; 36                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,677,760                                   ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -279,11 +280,11 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_rgr1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_rgr1.tdf                    ;         ;
+; db/altsyncram_n5s1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_n5s1.tdf                    ;         ;
 ; db/asip.ram0_datamemory2_9b9dc690.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/QuartusProjects/Proyecto2Arqui1/db/asip.ram0_datamemory2_9b9dc690.hdl.mif ;         ;
 ; db/decode_8la.tdf                         ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/decode_8la.tdf                         ;         ;
 ; db/mux_5hb.tdf                            ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/mux_5hb.tdf                            ;         ;
-; db/altsyncram_mdr1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_mdr1.tdf                    ;         ;
+; db/altsyncram_i2s1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_i2s1.tdf                    ;         ;
 ; db/asip.ram0_datamemory_5d7c1658.hdl.mif  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/QuartusProjects/Proyecto2Arqui1/db/asip.ram0_datamemory_5d7c1658.hdl.mif  ;         ;
 +-------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
 
@@ -293,71 +294,85 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 241       ;
+; Estimate of Logic utilization (ALMs needed) ; 930       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 355       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 66        ;
-;     -- 5 input functions                    ; 134       ;
-;     -- 4 input functions                    ; 9         ;
-;     -- <=3 input functions                  ; 146       ;
+; Combinational ALUT usage for logic          ; 1199      ;
+;     -- 7 input functions                    ; 4         ;
+;     -- 6 input functions                    ; 596       ;
+;     -- 5 input functions                    ; 195       ;
+;     -- 4 input functions                    ; 173       ;
+;     -- <=3 input functions                  ; 231       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 356       ;
+; Dedicated logic registers                   ; 821       ;
 ;                                             ;           ;
-; I/O pins                                    ; 35        ;
+; I/O pins                                    ; 36        ;
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 1677760   ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 612       ;
-; Total fan-out                               ; 6642      ;
-; Average fan-out                             ; 6.41      ;
+; Maximum fan-out                             ; 1077      ;
+; Total fan-out                               ; 13214     ;
+; Average fan-out                             ; 5.63      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Entity Name      ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+------------------+--------------+
-; |Procesador                               ; 355 (0)             ; 356 (0)                   ; 1677760           ; 0          ; 35   ; 0            ; |Procesador                                                                                       ; Procesador       ; work         ;
-;    |DataMemory2:DataRAM2|                 ; 32 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2                                                                  ; DataMemory2      ; work         ;
-;       |altsyncram:RAM_rtl_0|              ; 32 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2|altsyncram:RAM_rtl_0                                             ; altsyncram       ; work         ;
-;          |altsyncram_rgr1:auto_generated| ; 32 (0)              ; 2 (2)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_rgr1:auto_generated              ; altsyncram_rgr1  ; work         ;
-;             |mux_5hb:mux3|                ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_rgr1:auto_generated|mux_5hb:mux3 ; mux_5hb          ; work         ;
-;    |DataMemory:DataRAM1|                  ; 32 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1                                                                   ; DataMemory       ; work         ;
-;       |altsyncram:RAM_rtl_0|              ; 32 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0                                              ; altsyncram       ; work         ;
-;          |altsyncram_mdr1:auto_generated| ; 32 (0)              ; 2 (2)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_mdr1:auto_generated               ; altsyncram_mdr1  ; work         ;
-;             |mux_5hb:mux3|                ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_mdr1:auto_generated|mux_5hb:mux3  ; mux_5hb          ; work         ;
-;    |Decode:decode|                        ; 6 (0)               ; 128 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode                                                                         ; Decode           ; work         ;
-;       |RegFile:RF|                        ; 4 (4)               ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|RegFile:RF                                                              ; RegFile          ; work         ;
-;       |mux_:muxA2|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA2                                                              ; mux_             ; work         ;
-;    |Execute:execute|                      ; 64 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute                                                                       ; Execute          ; work         ;
-;       |Alu:ALU|                           ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU                                                               ; Alu              ; work         ;
-;          |sumALU:sumAlu|                  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|sumALU:sumAlu                                                 ; sumALU           ; work         ;
-;       |mux_:muxRegOrInmExt|               ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|mux_:muxRegOrInmExt                                                   ; mux_             ; work         ;
-;    |Fetch:fetch|                          ; 17 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch                                                                           ; Fetch            ; work         ;
-;       |InstrucMemory:ROM1|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory:ROM1                                                        ; InstrucMemory    ; work         ;
-;       |PC:pcflipflop|                     ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|PC:pcflipflop                                                             ; PC               ; work         ;
-;       |mux_:muxMode|                      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|mux_:muxMode                                                              ; mux_             ; work         ;
-;       |sumador:add1|                      ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|sumador:add1                                                              ; sumador          ; work         ;
-;    |ForwardUnit:forwardU|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|ForwardUnit:forwardU                                                                  ; ForwardUnit      ; work         ;
-;    |StallUnit:ldrHazard|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|StallUnit:ldrHazard                                                                   ; StallUnit        ; work         ;
-;    |mux3_1:muxRD1E|                       ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux3_1:muxRD1E                                                                        ; mux3_1           ; work         ;
-;    |mux3_1:muxRD2E|                       ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux3_1:muxRD2E                                                                        ; mux3_1           ; work         ;
-;    |mux_:muxMemoryOrAlu|                  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxMemoryOrAlu                                                                   ; mux_             ; work         ;
-;    |mux_:muxModeMem|                      ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxModeMem                                                                       ; mux_             ; work         ;
-;    |pipeCondUnitEtoM:pipeCondEtoM|        ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeCondUnitEtoM:pipeCondEtoM                                                         ; pipeCondUnitEtoM ; work         ;
-;    |pipeContUnitDtoE:pipeCUDtoE|          ; 3 (3)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeContUnitDtoE:pipeCUDtoE                                                           ; pipeContUnitDtoE ; work         ;
-;    |pipeDecotoExe:pipeDtoE|               ; 34 (34)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeDecotoExe:pipeDtoE                                                                ; pipeDecotoExe    ; work         ;
-;    |pipeExetoMem:pipeEtoM|                ; 0 (0)               ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeExetoMem:pipeEtoM                                                                 ; pipeExetoMem     ; work         ;
-;    |pipeLine:pipeInstrFtoD|               ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeInstrFtoD                                                                ; pipeLine         ; work         ;
-;    |pipeLine:pipeRA1DtoE|                 ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeRA1DtoE                                                                  ; pipeLine         ; work         ;
-;    |pipeLine:pipeRA2DtoE|                 ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeRA2DtoE                                                                  ; pipeLine         ; work         ;
-;    |pipeMemtoWBack:pipeMtoW|              ; 0 (0)               ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeMemtoWBack:pipeMtoW                                                               ; pipeMemtoWBack   ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                           ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name      ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+------------------+--------------+
+; |Procesador                               ; 1199 (1)            ; 821 (0)                   ; 1677760           ; 0          ; 36   ; 0            ; |Procesador                                                                                            ; Procesador       ; work         ;
+;    |DataMemory2:DataRAM2|                 ; 32 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2                                                                       ; DataMemory2      ; work         ;
+;       |altsyncram:RAM_rtl_0|              ; 32 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2|altsyncram:RAM_rtl_0                                                  ; altsyncram       ; work         ;
+;          |altsyncram_n5s1:auto_generated| ; 32 (0)              ; 2 (2)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_n5s1:auto_generated                   ; altsyncram_n5s1  ; work         ;
+;             |mux_5hb:mux3|                ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_n5s1:auto_generated|mux_5hb:mux3      ; mux_5hb          ; work         ;
+;    |DataMemory:DataRAM1|                  ; 36 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1                                                                        ; DataMemory       ; work         ;
+;       |altsyncram:RAM_rtl_0|              ; 36 (0)              ; 2 (0)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0                                                   ; altsyncram       ; work         ;
+;          |altsyncram_i2s1:auto_generated| ; 36 (0)              ; 2 (2)                     ; 838880            ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated                    ; altsyncram_i2s1  ; work         ;
+;             |decode_8la:decode2|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|decode_8la:decode2 ; decode_8la       ; work         ;
+;             |mux_5hb:mux3|                ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|mux_5hb:mux3       ; mux_5hb          ; work         ;
+;    |Decode:decode|                        ; 26 (0)              ; 480 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode                                                                              ; Decode           ; work         ;
+;       |ControlUnit:CU|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|ControlUnit:CU                                                               ; ControlUnit      ; work         ;
+;       |RegFile:RF|                        ; 15 (15)             ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|RegFile:RF                                                                   ; RegFile          ; work         ;
+;       |mux_:muxA1|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA1                                                                   ; mux_             ; work         ;
+;       |mux_:muxA2|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Decode:decode|mux_:muxA2                                                                   ; mux_             ; work         ;
+;    |Execute:execute|                      ; 383 (0)             ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute                                                                            ; Execute          ; work         ;
+;       |Alu:ALU|                           ; 337 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU                                                                    ; Alu              ; work         ;
+;          |muxALU:muxalu|                  ; 178 (178)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu                                                      ; muxALU           ; work         ;
+;          |resALU:resAlu|                  ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|resALU:resAlu                                                      ; resALU           ; work         ;
+;          |shiftL:sl|                      ; 54 (54)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl                                                          ; shiftL           ; work         ;
+;          |shiftR:sr|                      ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr                                                          ; shiftR           ; work         ;
+;          |sumALU:sumAlu|                  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|Alu:ALU|sumALU:sumAlu                                                      ; sumALU           ; work         ;
+;       |CondUnit:unidadCond|               ; 14 (2)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|CondUnit:unidadCond                                                        ; CondUnit         ; work         ;
+;          |flipflop:ff2|                   ; 12 (12)             ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|CondUnit:unidadCond|flipflop:ff2                                           ; flipflop         ; work         ;
+;       |mux_:muxRegOrInmExt|               ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Execute:execute|mux_:muxRegOrInmExt                                                        ; mux_             ; work         ;
+;    |Fetch:fetch|                          ; 68 (0)              ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch                                                                                ; Fetch            ; work         ;
+;       |InstrucMemory2:ROM2|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory2:ROM2                                                            ; InstrucMemory2   ; work         ;
+;       |InstrucMemory:ROM1|                ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|InstrucMemory:ROM1                                                             ; InstrucMemory    ; work         ;
+;       |PC:pcflipflop|                     ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|PC:pcflipflop                                                                  ; PC               ; work         ;
+;       |mux_:muxMode|                      ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|mux_:muxMode                                                                   ; mux_             ; work         ;
+;       |sumador:add1|                      ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|Fetch:fetch|sumador:add1                                                                   ; sumador          ; work         ;
+;    |ForwardUnit:forwardU|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|ForwardUnit:forwardU                                                                       ; ForwardUnit      ; work         ;
+;    |StallUnit:ldrHazard|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|StallUnit:ldrHazard                                                                        ; StallUnit        ; work         ;
+;    |mux3_1:muxRD1E|                       ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux3_1:muxRD1E                                                                             ; mux3_1           ; work         ;
+;    |mux3_1:muxRD2E|                       ; 87 (87)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux3_1:muxRD2E                                                                             ; mux3_1           ; work         ;
+;    |mux_:muxMemoryOrAlu|                  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxMemoryOrAlu                                                                        ; mux_             ; work         ;
+;    |mux_:muxModeMem|                      ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxModeMem                                                                            ; mux_             ; work         ;
+;    |mux_:muxPC2|                          ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|mux_:muxPC2                                                                                ; mux_             ; work         ;
+;    |pipeCondUnitEtoM:pipeCondEtoM|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeCondUnitEtoM:pipeCondEtoM                                                              ; pipeCondUnitEtoM ; work         ;
+;    |pipeContUnitDtoE:pipeCUDtoE|          ; 5 (5)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeContUnitDtoE:pipeCUDtoE                                                                ; pipeContUnitDtoE ; work         ;
+;    |pipeDecotoExe:pipeDtoE|               ; 360 (360)           ; 81 (81)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeDecotoExe:pipeDtoE                                                                     ; pipeDecotoExe    ; work         ;
+;    |pipeExetoMem:pipeEtoM|                ; 0 (0)               ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeExetoMem:pipeEtoM                                                                      ; pipeExetoMem     ; work         ;
+;    |pipeLine:pipeInstrFtoD|               ; 19 (19)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeInstrFtoD                                                                     ; pipeLine         ; work         ;
+;    |pipeLine:pipeOpDtoE|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeOpDtoE                                                                        ; pipeLine         ; work         ;
+;    |pipeLine:pipePCFtoD|                  ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipePCFtoD                                                                        ; pipeLine         ; work         ;
+;    |pipeLine:pipeRA1DtoE|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeRA1DtoE                                                                       ; pipeLine         ; work         ;
+;    |pipeLine:pipeRA2DtoE|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipeRA2DtoE                                                                       ; pipeLine         ; work         ;
+;    |pipeLine:pipetxtDtoE|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeLine:pipetxtDtoE                                                                       ; pipeLine         ; work         ;
+;    |pipeMemtoWBack:pipeMtoW|              ; 0 (0)               ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |Procesador|pipeMemtoWBack:pipeMtoW                                                                    ; pipeMemtoWBack   ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -366,528 +381,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------------+
 ; Name                                                                                ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                       ;
 +-------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------------+
-; DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_rgr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 26215        ; 32           ; 26215        ; 32           ; 838880 ; db/ASIP.ram0_DataMemory2_9b9dc690.hdl.mif ;
-; DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_mdr1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 26215        ; 32           ; 26215        ; 32           ; 838880 ; db/ASIP.ram0_DataMemory_5d7c1658.hdl.mif  ;
+; DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_n5s1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 26215        ; 32           ; 26215        ; 32           ; 838880 ; db/ASIP.ram0_DataMemory2_9b9dc690.hdl.mif ;
+; DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 26215        ; 32           ; 26215        ; 32           ; 838880 ; db/ASIP.ram0_DataMemory_5d7c1658.hdl.mif  ;
 +-------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                              ;
-+--------------------------------------------------------------+--------------------------------------------------+
-; Register name                                                ; Reason for Removal                               ;
-+--------------------------------------------------------------+--------------------------------------------------+
-; pipeDecotoExe:pipeDtoE|immExt[17..31]                        ; Merged with pipeDecotoExe:pipeDtoE|immExt[16]    ;
-; pipeContUnitDtoE:pipeCUDtoE|NoWrite                          ; Merged with pipeContUnitDtoE:pipeCUDtoE|FlagW    ;
-; pipeLine:pipeInstrFtoD|state[0..2,5,7,9..21,23..25,27,29,31] ; Stuck at GND due to stuck port data_in           ;
-; pipeContUnitDtoE:pipeCUDtoE|MemWrite                         ; Stuck at GND due to stuck port data_in           ;
-; pipeLine:pipeRA2DtoE|state[1,3]                              ; Stuck at GND due to stuck port data_in           ;
-; pipeContUnitDtoE:pipeCUDtoE|ALUControl[0..2]                 ; Stuck at GND due to stuck port data_in           ;
-; pipeDecotoExe:pipeDtoE|immExt[0]                             ; Stuck at GND due to stuck port data_in           ;
-; pipeLine:pipeRA1DtoE|state[1..3]                             ; Stuck at GND due to stuck port data_in           ;
-; pipeDecotoExe:pipeDtoE|immExt[2,4..16]                       ; Stuck at GND due to stuck port data_in           ;
-; pipeContUnitDtoE:pipeCUDtoE|Branch                           ; Stuck at GND due to stuck port data_in           ;
-; Execute:execute|CondUnit:unidadCond|flipflop:ff2|state[1]    ; Lost fanout                                      ;
-; pipeContUnitDtoE:pipeCUDtoE|Cond                             ; Lost fanout                                      ;
-; pipeLine:pipeOpDtoE|state[1]                                 ; Stuck at GND due to stuck port data_in           ;
-; pipeDecotoExe:pipeDtoE|WA3[1,3]                              ; Stuck at GND due to stuck port data_in           ;
-; pipeContUnitDtoE:pipeCUDtoE|FlagW                            ; Stuck at GND due to stuck port data_in           ;
-; pipeCondUnitEtoM:pipeCondEtoM|PCSrc                          ; Stuck at GND due to stuck port data_in           ;
-; pipeCondUnitEtoM:pipeCondEtoM|MemWrite                       ; Stuck at GND due to stuck port data_in           ;
-; pipeExetoMem:pipeEtoM|WA3[1,3]                               ; Stuck at GND due to stuck port data_in           ;
-; pipeMemtoWBack:pipeMtoW|WA3[1,3]                             ; Stuck at GND due to stuck port data_in           ;
-; pipeMemtoWBack:pipeMtoW|PCSrc                                ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][0]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][0]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][0]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][0]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][0]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][0]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][0]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][0]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][0]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][0]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][0]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][1]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][1]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][1]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][1]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][1]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][1]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][1]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][1]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][1]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][1]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][1]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][2]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][2]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][2]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][2]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][2]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][2]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][2]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][2]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][2]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][2]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][2]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][3]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][3]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][3]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][3]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][3]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][3]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][3]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][3]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][3]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][3]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][3]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][4]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][4]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][4]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][4]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][4]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][4]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][4]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][4]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][4]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][4]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][4]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][5]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][5]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][5]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][5]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][5]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][5]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][5]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][5]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][5]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][5]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][5]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][6]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][6]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][6]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][6]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][6]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][6]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][6]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][6]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][6]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][6]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][6]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][7]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][7]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][7]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][7]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][7]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][7]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][7]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][7]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][7]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][7]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][7]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][8]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][8]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][8]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][8]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][8]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][8]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][8]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][8]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][8]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][8]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][8]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][9]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][9]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][9]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][9]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][9]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][9]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][9]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][9]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][9]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][9]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][9]                          ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][10]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][10]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][10]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][10]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][10]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][10]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][10]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][10]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][10]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][10]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][10]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][11]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][11]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][11]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][11]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][11]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][11]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][11]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][11]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][11]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][11]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][11]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][12]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][12]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][12]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][12]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][12]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][12]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][12]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][12]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][12]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][12]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][12]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][13]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][13]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][13]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][13]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][13]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][13]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][13]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][13]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][13]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][13]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][13]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][14]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][14]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][14]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][14]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][14]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][14]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][14]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][14]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][14]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][14]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][14]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][15]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][15]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][15]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][15]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][15]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][15]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][15]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][15]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][15]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][15]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][15]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][16]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][16]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][16]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][16]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][16]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][16]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][16]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][16]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][16]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][16]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][16]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][17]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][17]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][17]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][17]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][17]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][17]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][17]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][17]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][17]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][17]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][17]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][18]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][18]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][18]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][18]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][18]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][18]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][18]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][18]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][18]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][18]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][18]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][19]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][19]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][19]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][19]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][19]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][19]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][19]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][19]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][19]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][19]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][19]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][20]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][20]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][20]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][20]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][20]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][20]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][20]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][20]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][20]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][20]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][20]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][21]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][21]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][21]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][21]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][21]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][21]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][21]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][21]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][21]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][21]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][21]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][22]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][22]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][22]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][22]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][22]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][22]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][22]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][22]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][22]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][22]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][22]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][23]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][23]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][23]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][23]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][23]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][23]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][23]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][23]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][23]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][23]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][23]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][24]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][24]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][24]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][24]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][24]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][24]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][24]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][24]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][24]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][24]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][24]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][25]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][25]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][25]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][25]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][25]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][25]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][25]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][25]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][25]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][25]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][25]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][26]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][26]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][26]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][26]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][26]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][26]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][26]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][26]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][26]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][26]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][26]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][27]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][27]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][27]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][27]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][27]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][27]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][27]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][27]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][27]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][27]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][27]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][28]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][28]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][28]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][28]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][28]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][28]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][28]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][28]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][28]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][28]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][28]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][29]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][29]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][29]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][29]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][29]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][29]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][29]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][29]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][29]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][29]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][29]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][30]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][30]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][30]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][30]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][30]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][30]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][30]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][30]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][30]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][30]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][30]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[14][31]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[13][31]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[12][31]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[11][31]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[10][31]                        ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[9][31]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[8][31]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[7][31]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[6][31]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[3][31]                         ; Stuck at GND due to stuck port data_in           ;
-; Decode:decode|RegFile:RF|regF[2][31]                         ; Stuck at GND due to stuck port data_in           ;
-; pipeLine:pipePCFtoD|state[0..31]                             ; Lost fanout                                      ;
-; pipeLine:pipeOpDtoE|state[0]                                 ; Merged with pipeContUnitDtoE:pipeCUDtoE|MemtoReg ;
-; pipeDecotoExe:pipeDtoE|immExt[1,3]                           ; Merged with pipeContUnitDtoE:pipeCUDtoE|ALUSrc   ;
-; pipeLine:pipeInstrFtoD|state[6,8]                            ; Merged with pipeLine:pipeInstrFtoD|state[4]      ;
-; pipeLine:pipeInstrFtoD|state[30]                             ; Merged with pipeLine:pipeInstrFtoD|state[28]     ;
-; Fetch:fetch|PC:pcflipflop|q[10..31]                          ; Lost fanout                                      ;
-; Total Number of Removed Registers = 490                      ;                                                  ;
-+--------------------------------------------------------------+--------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                    ;
-+--------------------------------------+---------------------------+-----------------------------------------------------------------------------+
-; Register name                        ; Reason for Removal        ; Registers Removed due to This Register                                      ;
-+--------------------------------------+---------------------------+-----------------------------------------------------------------------------+
-; pipeDecotoExe:pipeDtoE|WA3[3]        ; Stuck at GND              ; pipeExetoMem:pipeEtoM|WA3[3], pipeMemtoWBack:pipeMtoW|WA3[3],               ;
-;                                      ; due to stuck port data_in ; Decode:decode|RegFile:RF|regF[6][0], Decode:decode|RegFile:RF|regF[3][0],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][0], Decode:decode|RegFile:RF|regF[6][1],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][1], Decode:decode|RegFile:RF|regF[2][1],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][2], Decode:decode|RegFile:RF|regF[3][2],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][2], Decode:decode|RegFile:RF|regF[6][3],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][3], Decode:decode|RegFile:RF|regF[2][3],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][4], Decode:decode|RegFile:RF|regF[3][4],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][4], Decode:decode|RegFile:RF|regF[6][5],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][5], Decode:decode|RegFile:RF|regF[2][5],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][6], Decode:decode|RegFile:RF|regF[3][6],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][6], Decode:decode|RegFile:RF|regF[6][7],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][7], Decode:decode|RegFile:RF|regF[2][7],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][8], Decode:decode|RegFile:RF|regF[3][8],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][8], Decode:decode|RegFile:RF|regF[6][9],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][9], Decode:decode|RegFile:RF|regF[2][9],   ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][10], Decode:decode|RegFile:RF|regF[3][10], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][10], Decode:decode|RegFile:RF|regF[6][11], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][11], Decode:decode|RegFile:RF|regF[2][11], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][12], Decode:decode|RegFile:RF|regF[3][12], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][12], Decode:decode|RegFile:RF|regF[6][13], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][13], Decode:decode|RegFile:RF|regF[2][13], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][14], Decode:decode|RegFile:RF|regF[3][14], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][14], Decode:decode|RegFile:RF|regF[6][15], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][15], Decode:decode|RegFile:RF|regF[2][15], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][16], Decode:decode|RegFile:RF|regF[3][16], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][16], Decode:decode|RegFile:RF|regF[6][17], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][17], Decode:decode|RegFile:RF|regF[2][17], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][18], Decode:decode|RegFile:RF|regF[3][18], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][18], Decode:decode|RegFile:RF|regF[6][19], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][19], Decode:decode|RegFile:RF|regF[2][19], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][20], Decode:decode|RegFile:RF|regF[3][20], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][20], Decode:decode|RegFile:RF|regF[6][21], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][21], Decode:decode|RegFile:RF|regF[2][21], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][22], Decode:decode|RegFile:RF|regF[3][22], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][22], Decode:decode|RegFile:RF|regF[6][23], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][23], Decode:decode|RegFile:RF|regF[2][23], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][24], Decode:decode|RegFile:RF|regF[3][24], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][24], Decode:decode|RegFile:RF|regF[6][25], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][25], Decode:decode|RegFile:RF|regF[2][25], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][26], Decode:decode|RegFile:RF|regF[3][26], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][26], Decode:decode|RegFile:RF|regF[6][27], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][27], Decode:decode|RegFile:RF|regF[2][27], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][28], Decode:decode|RegFile:RF|regF[3][28], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][28], Decode:decode|RegFile:RF|regF[6][29], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][29], Decode:decode|RegFile:RF|regF[2][29], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[6][30], Decode:decode|RegFile:RF|regF[3][30], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[2][30], Decode:decode|RegFile:RF|regF[6][31], ;
-;                                      ;                           ; Decode:decode|RegFile:RF|regF[3][31], Decode:decode|RegFile:RF|regF[2][31]  ;
-; pipeLine:pipeInstrFtoD|state[25]     ; Stuck at GND              ; pipeLine:pipeRA1DtoE|state[3], pipeLine:pipePCFtoD|state[0],                ;
-;                                      ; due to stuck port data_in ; pipeLine:pipePCFtoD|state[1], pipeLine:pipePCFtoD|state[2],                 ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[3], pipeLine:pipePCFtoD|state[4],                 ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[5], pipeLine:pipePCFtoD|state[6],                 ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[7], pipeLine:pipePCFtoD|state[8],                 ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[9], pipeLine:pipePCFtoD|state[10],                ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[11], pipeLine:pipePCFtoD|state[12],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[13], pipeLine:pipePCFtoD|state[14],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[15], pipeLine:pipePCFtoD|state[16],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[17], pipeLine:pipePCFtoD|state[18],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[19], pipeLine:pipePCFtoD|state[20],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[21], pipeLine:pipePCFtoD|state[22],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[23], pipeLine:pipePCFtoD|state[24],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[25], pipeLine:pipePCFtoD|state[26],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[27], pipeLine:pipePCFtoD|state[28],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[29], pipeLine:pipePCFtoD|state[30],               ;
-;                                      ;                           ; pipeLine:pipePCFtoD|state[31]                                               ;
-; pipeContUnitDtoE:pipeCUDtoE|Branch   ; Stuck at GND              ; pipeCondUnitEtoM:pipeCondEtoM|PCSrc, pipeMemtoWBack:pipeMtoW|PCSrc,         ;
-;                                      ; due to stuck port data_in ; Fetch:fetch|PC:pcflipflop|q[31], Fetch:fetch|PC:pcflipflop|q[26],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[25], Fetch:fetch|PC:pcflipflop|q[24],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[23], Fetch:fetch|PC:pcflipflop|q[22],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[21], Fetch:fetch|PC:pcflipflop|q[20],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[19], Fetch:fetch|PC:pcflipflop|q[18],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[17], Fetch:fetch|PC:pcflipflop|q[16],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[15], Fetch:fetch|PC:pcflipflop|q[14],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[13], Fetch:fetch|PC:pcflipflop|q[12],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[11], Fetch:fetch|PC:pcflipflop|q[10]            ;
-; pipeLine:pipeInstrFtoD|state[2]      ; Stuck at GND              ; pipeContUnitDtoE:pipeCUDtoE|ALUControl[2], Fetch:fetch|PC:pcflipflop|q[30], ;
-;                                      ; due to stuck port data_in ; Fetch:fetch|PC:pcflipflop|q[29], Fetch:fetch|PC:pcflipflop|q[28],           ;
-;                                      ;                           ; Fetch:fetch|PC:pcflipflop|q[27]                                             ;
-; pipeLine:pipeInstrFtoD|state[0]      ; Stuck at GND              ; pipeContUnitDtoE:pipeCUDtoE|ALUControl[0],                                  ;
-;                                      ; due to stuck port data_in ; Execute:execute|CondUnit:unidadCond|flipflop:ff2|state[1],                  ;
-;                                      ;                           ; pipeContUnitDtoE:pipeCUDtoE|FlagW                                           ;
-; pipeLine:pipeInstrFtoD|state[31]     ; Stuck at GND              ; pipeLine:pipeRA2DtoE|state[3], pipeLine:pipeOpDtoE|state[1]                 ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[19]     ; Stuck at GND              ; pipeLine:pipeRA2DtoE|state[1], pipeDecotoExe:pipeDtoE|immExt[14]            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[5]      ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[0], pipeContUnitDtoE:pipeCUDtoE|Cond          ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeDecotoExe:pipeDtoE|WA3[1]        ; Stuck at GND              ; pipeExetoMem:pipeEtoM|WA3[1], pipeMemtoWBack:pipeMtoW|WA3[1]                ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[24]     ; Stuck at GND              ; pipeLine:pipeRA1DtoE|state[2]                                               ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[23]     ; Stuck at GND              ; pipeLine:pipeRA1DtoE|state[1]                                               ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[21]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[16]                                           ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[20]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[15]                                           ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[18]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[13]                                           ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[1]      ; Stuck at GND              ; pipeContUnitDtoE:pipeCUDtoE|ALUControl[1]                                   ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[7]      ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[2]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[9]      ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[4]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[10]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[5]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[11]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[6]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[12]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[7]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[13]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[8]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[14]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[9]                                            ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[15]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[10]                                           ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[16]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[11]                                           ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeLine:pipeInstrFtoD|state[17]     ; Stuck at GND              ; pipeDecotoExe:pipeDtoE|immExt[12]                                           ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-; pipeContUnitDtoE:pipeCUDtoE|MemWrite ; Stuck at GND              ; pipeCondUnitEtoM:pipeCondEtoM|MemWrite                                      ;
-;                                      ; due to stuck port data_in ;                                                                             ;
-+--------------------------------------+---------------------------+-----------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++-------------------------------------------+-------------------------------------------------------+
+; Register name                             ; Reason for Removal                                    ;
++-------------------------------------------+-------------------------------------------------------+
+; pipeContUnitDtoE:pipeCUDtoE|NoWrite       ; Merged with pipeContUnitDtoE:pipeCUDtoE|FlagW         ;
+; pipeDecotoExe:pipeDtoE|immExt[17..31]     ; Merged with pipeDecotoExe:pipeDtoE|immExt[16]         ;
+; pipeLine:pipeInstrFtoD|state[2]           ; Merged with pipeLine:pipeInstrFtoD|state[1]           ;
+; pipeLine:pipeInstrFtoD|state[16,17,21]    ; Merged with pipeLine:pipeInstrFtoD|state[14]          ;
+; pipeLine:pipeInstrFtoD|state[20]          ; Merged with pipeLine:pipeInstrFtoD|state[15]          ;
+; pipeContUnitDtoE:pipeCUDtoE|ALUControl[2] ; Merged with pipeContUnitDtoE:pipeCUDtoE|ALUControl[1] ;
+; pipeDecotoExe:pipeDtoE|immExt[9,12,16]    ; Merged with pipeDecotoExe:pipeDtoE|immExt[11]         ;
+; pipeDecotoExe:pipeDtoE|immExt[15]         ; Merged with pipeDecotoExe:pipeDtoE|immExt[10]         ;
+; Total Number of Removed Registers = 26    ;                                                       ;
++-------------------------------------------+-------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -895,12 +408,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 356   ;
-; Number of registers using Synchronous Clear  ; 198   ;
+; Total registers                              ; 821   ;
+; Number of registers using Synchronous Clear  ; 631   ;
 ; Number of registers using Synchronous Load   ; 32    ;
-; Number of registers using Asynchronous Clear ; 224   ;
+; Number of registers using Asynchronous Clear ; 337   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 143   ;
+; Number of registers using Clock Enable       ; 570   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -915,24 +428,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+--------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[0][0]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[1][15] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[4][15] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[5][14] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD1[6]        ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD2[5]        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|mux3_1:muxRD2E|Mux31                 ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|mux3_1:muxRD1E|Mux2                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Procesador|pipeLine:pipetxtDtoE|state[0]                 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Procesador|pipeContUnitDtoE:pipeCUDtoE|FlagW             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[0][5]           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[1][18]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[2][11]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[3][10]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[4][17]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[5][24]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[6][11]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[7][7]           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[8][15]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[9][27]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[10][26]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[11][23]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[12][11]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[13][5]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Procesador|Decode:decode|RegFile:RF|regF[14][17]         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Procesador|Fetch:fetch|PC:pcflipflop|q[27]               ;
+; 3:1                ; 40 bits   ; 80 LEs        ; 0 LEs                ; 80 LEs                 ; Yes        ; |Procesador|pipeLine:pipeInstrFtoD|state[16]              ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Procesador|pipeLine:pipeInstrFtoD|state[29]              ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Procesador|pipeLine:pipeInstrFtoD|state[7]               ;
+; 18:1               ; 32 bits   ; 384 LEs       ; 320 LEs              ; 64 LEs                 ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD2[15]                ;
+; 19:1               ; 32 bits   ; 384 LEs       ; 320 LEs              ; 64 LEs                 ; Yes        ; |Procesador|pipeDecotoExe:pipeDtoE|RD1[28]                ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|mux3_1:muxRD2E|Mux31                          ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Procesador|mux3_1:muxRD1E|Mux3                           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl|ShiftLeft0  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl|ShiftLeft0  ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftR:sr|ShiftRight0 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Procesador|Execute:execute|Alu:ALU|shiftL:sl|ShiftLeft0  ;
+; 23:1               ; 12 bits   ; 180 LEs       ; 120 LEs              ; 60 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux11   ;
+; 23:1               ; 12 bits   ; 180 LEs       ; 120 LEs              ; 60 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux18   ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux1    ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; No         ; |Procesador|Execute:execute|Alu:ALU|muxALU:muxalu|Mux31   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
-; Source assignments for DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_rgr1:auto_generated ;
+; Source assignments for DataMemory2:DataRAM2|altsyncram:RAM_rtl_0|altsyncram_n5s1:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------+
 ; Assignment                      ; Value              ; From ; To                                ;
 +---------------------------------+--------------------+------+-----------------------------------+
@@ -941,7 +481,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------+
-; Source assignments for DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_mdr1:auto_generated ;
+; Source assignments for DataMemory:DataRAM1|altsyncram:RAM_rtl_0|altsyncram_i2s1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------+
 ; Assignment                      ; Value              ; From ; To                               ;
 +---------------------------------+--------------------+------+----------------------------------+
@@ -1076,6 +616,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------+
 ; bits           ; 2     ; Signed Integer                          ;
 +----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeLine:pipetxtDtoE ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; bits           ; 1     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1345,7 +895,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                     ; Untyped        ;
 ; WIDTH_ECCSTATUS                    ; 3                                         ; Untyped        ;
 ; DEVICE_FAMILY                      ; Cyclone V                                 ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_rgr1                           ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_n5s1                           ; Untyped        ;
 +------------------------------------+-------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1406,7 +956,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                    ; Untyped        ;
 ; WIDTH_ECCSTATUS                    ; 3                                        ; Untyped        ;
 ; DEVICE_FAMILY                      ; Cyclone V                                ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_mdr1                          ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_i2s1                          ; Untyped        ;
 +------------------------------------+------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1460,6 +1010,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------+
+; Port Connectivity Checks: "pipeLine:pipetxtDtoE" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; en   ; Input ; Info     ; Stuck at GND           ;
++------+-------+----------+------------------------+
+
+
 +-------------------------------------------------+
 ; Port Connectivity Checks: "pipeLine:pipeOpDtoE" ;
 +------+-------+----------+-----------------------+
@@ -1511,29 +1070,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 356                         ;
-;     CLR               ; 107                         ;
-;     CLR SCLR          ; 70                          ;
+; arriav_ff             ; 821                         ;
+;     CLR               ; 119                         ;
+;     CLR SCLR          ; 96                          ;
 ;     CLR SLD           ; 32                          ;
-;     ENA CLR           ; 15                          ;
-;     ENA SCLR          ; 128                         ;
+;     ENA CLR           ; 35                          ;
+;     ENA CLR SCLR      ; 55                          ;
+;     ENA SCLR          ; 480                         ;
 ;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 355                         ;
-;     arith             ; 42                          ;
-;         1 data inputs ; 10                          ;
-;         5 data inputs ; 32                          ;
-;     normal            ; 313                         ;
+; arriav_lcell_comb     ; 1199                        ;
+;     arith             ; 97                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 32                          ;
+;         5 data inputs ; 64                          ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 1098                        ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 99                          ;
-;         4 data inputs ; 9                           ;
-;         5 data inputs ; 102                         ;
-;         6 data inputs ; 66                          ;
-; boundary_port         ; 35                          ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 141                         ;
+;         4 data inputs ; 173                         ;
+;         5 data inputs ; 131                         ;
+;         6 data inputs ; 596                         ;
+; boundary_port         ; 36                          ;
 ; stratixv_ram_block    ; 256                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.10                        ;
-; Average LUT depth     ; 2.62                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 5.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1542,7 +1105,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -1552,7 +1115,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue May 11 01:32:59 2021
+    Info: Processing started: Tue May 11 05:25:55 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1655,38 +1218,42 @@ Info (12021): Found 1 design units, including 1 entities, in source file instruc
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory2.sv
     Info (12023): Found entity 1: DataMemory2 File: C:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv Line: 1
 Info (12127): Elaborating entity "Procesador" for the top level hierarchy
-Info (12128): Elaborating entity "mux_" for hierarchy "mux_:muxPC1" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 20
-Info (12128): Elaborating entity "Fetch" for hierarchy "Fetch:fetch" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 24
+Info (12128): Elaborating entity "mux_" for hierarchy "mux_:muxPC1" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 21
+Info (12128): Elaborating entity "Fetch" for hierarchy "Fetch:fetch" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 25
 Info (12128): Elaborating entity "PC" for hierarchy "Fetch:fetch|PC:pcflipflop" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 8
 Info (12128): Elaborating entity "sumador" for hierarchy "Fetch:fetch|sumador:add1" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 9
 Info (12128): Elaborating entity "InstrucMemory" for hierarchy "Fetch:fetch|InstrucMemory:ROM1" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 10
-Warning (10850): Verilog HDL warning at InstrucMemory.sv(6): number of words (2) in memory file does not match the number of elements in the address range [0:1023] File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 6
+Warning (10850): Verilog HDL warning at InstrucMemory.sv(6): number of words (11) in memory file does not match the number of elements in the address range [0:1023] File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 6
 Warning (10030): Net "ROM.data_a" at InstrucMemory.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 4
 Warning (10030): Net "ROM.waddr_a" at InstrucMemory.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 4
 Warning (10030): Net "ROM.we_a" at InstrucMemory.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv Line: 4
 Info (12128): Elaborating entity "InstrucMemory2" for hierarchy "Fetch:fetch|InstrucMemory2:ROM2" File: C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv Line: 11
-Warning (10850): Verilog HDL warning at InstrucMemory2.sv(6): number of words (2) in memory file does not match the number of elements in the address range [0:1023] File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv Line: 6
+Warning (10850): Verilog HDL warning at InstrucMemory2.sv(6): number of words (16) in memory file does not match the number of elements in the address range [0:1023] File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv Line: 6
 Warning (10030): Net "ROM.data_a" at InstrucMemory2.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv Line: 4
 Warning (10030): Net "ROM.waddr_a" at InstrucMemory2.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv Line: 4
 Warning (10030): Net "ROM.we_a" at InstrucMemory2.sv(4) has no driver or initial value, using a default initial value '0' File: C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv Line: 4
-Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeInstrFtoD" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 28
-Info (12128): Elaborating entity "Decode" for hierarchy "Decode:decode" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 36
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeInstrFtoD" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 29
+Info (12128): Elaborating entity "Decode" for hierarchy "Decode:decode" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 37
 Info (12128): Elaborating entity "ControlUnit" for hierarchy "Decode:decode|ControlUnit:CU" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 13
 Info (12128): Elaborating entity "mux_" for hierarchy "Decode:decode|mux_:muxA1" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 15
 Info (12128): Elaborating entity "RegFile" for hierarchy "Decode:decode|RegFile:RF" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 18
 Info (12128): Elaborating entity "Extend" for hierarchy "Decode:decode|Extend:EI" File: C:/QuartusProjects/Proyecto2Arqui1/Decode.sv Line: 20
-Info (12128): Elaborating entity "pipeDecotoExe" for hierarchy "pipeDecotoExe:pipeDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 41
-Info (12128): Elaborating entity "pipeContUnitDtoE" for hierarchy "pipeContUnitDtoE:pipeCUDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 46
-Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeRA1DtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 48
+Info (12128): Elaborating entity "pipeDecotoExe" for hierarchy "pipeDecotoExe:pipeDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 42
+Info (12128): Elaborating entity "pipeContUnitDtoE" for hierarchy "pipeContUnitDtoE:pipeCUDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 47
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeRA1DtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 49
 Warning (10230): Verilog HDL assignment warning at pipeLine.sv(6): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 6
 Warning (10230): Verilog HDL assignment warning at pipeLine.sv(9): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 9
 Warning (10230): Verilog HDL assignment warning at pipeLine.sv(11): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 11
-Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeOpDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 50
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipeOpDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 51
 Warning (10230): Verilog HDL assignment warning at pipeLine.sv(6): truncated value with size 32 to match size of target (2) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 6
 Warning (10230): Verilog HDL assignment warning at pipeLine.sv(9): truncated value with size 32 to match size of target (2) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 9
 Warning (10230): Verilog HDL assignment warning at pipeLine.sv(11): truncated value with size 32 to match size of target (2) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 11
-Info (12128): Elaborating entity "mux3_1" for hierarchy "mux3_1:muxRD1E" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 54
-Info (12128): Elaborating entity "Execute" for hierarchy "Execute:execute" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 59
+Info (12128): Elaborating entity "pipeLine" for hierarchy "pipeLine:pipetxtDtoE" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(6): truncated value with size 32 to match size of target (1) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 6
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(9): truncated value with size 32 to match size of target (1) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 9
+Warning (10230): Verilog HDL assignment warning at pipeLine.sv(11): truncated value with size 32 to match size of target (1) File: C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv Line: 11
+Info (12128): Elaborating entity "mux3_1" for hierarchy "mux3_1:muxRD1E" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 56
+Info (12128): Elaborating entity "Execute" for hierarchy "Execute:execute" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 61
 Info (12128): Elaborating entity "Alu" for hierarchy "Execute:execute|Alu:ALU" File: C:/QuartusProjects/Proyecto2Arqui1/Execute.sv Line: 13
 Info (12128): Elaborating entity "sumALU" for hierarchy "Execute:execute|Alu:ALU|sumALU:sumAlu" File: C:/QuartusProjects/Proyecto2Arqui1/Alu.sv Line: 11
 Info (12128): Elaborating entity "resALU" for hierarchy "Execute:execute|Alu:ALU|resALU:resAlu" File: C:/QuartusProjects/Proyecto2Arqui1/Alu.sv Line: 12
@@ -1707,15 +1274,15 @@ Info (12128): Elaborating entity "CondCheck" for hierarchy "Execute:execute|Cond
 Warning (10036): Verilog HDL or VHDL warning at CondCheck.sv(5): object "neg" assigned a value but never read File: C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv Line: 5
 Warning (10036): Verilog HDL or VHDL warning at CondCheck.sv(5): object "carry_" assigned a value but never read File: C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv Line: 5
 Warning (10036): Verilog HDL or VHDL warning at CondCheck.sv(5): object "overflow" assigned a value but never read File: C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv Line: 5
-Info (12128): Elaborating entity "pipeExetoMem" for hierarchy "pipeExetoMem:pipeEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 64
-Info (12128): Elaborating entity "pipeCondUnitEtoM" for hierarchy "pipeCondUnitEtoM:pipeCondEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 67
-Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DataRAM1" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 71
+Info (12128): Elaborating entity "pipeExetoMem" for hierarchy "pipeExetoMem:pipeEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 66
+Info (12128): Elaborating entity "pipeCondUnitEtoM" for hierarchy "pipeCondUnitEtoM:pipeCondEtoM" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 69
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DataRAM1" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 73
 Warning (10850): Verilog HDL warning at DataMemory.sv(10): number of words (70) in memory file does not match the number of elements in the address range [0:26214] File: C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv Line: 10
-Info (12128): Elaborating entity "DataMemory2" for hierarchy "DataMemory2:DataRAM2" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 72
+Info (12128): Elaborating entity "DataMemory2" for hierarchy "DataMemory2:DataRAM2" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 74
 Warning (10850): Verilog HDL warning at DataMemory2.sv(10): number of words (70) in memory file does not match the number of elements in the address range [0:26214] File: C:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv Line: 10
-Info (12128): Elaborating entity "pipeMemtoWBack" for hierarchy "pipeMemtoWBack:pipeMtoW" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 78
-Info (12128): Elaborating entity "ForwardUnit" for hierarchy "ForwardUnit:forwardU" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 86
-Info (12128): Elaborating entity "StallUnit" for hierarchy "StallUnit:ldrHazard" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 87
+Info (12128): Elaborating entity "pipeMemtoWBack" for hierarchy "pipeMemtoWBack:pipeMtoW" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 80
+Info (12128): Elaborating entity "ForwardUnit" for hierarchy "ForwardUnit:forwardU" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 88
+Info (12128): Elaborating entity "StallUnit" for hierarchy "StallUnit:ldrHazard" File: C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv Line: 89
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/QuartusProjects/Proyecto2Arqui1/db/ASIP.ram0_InstrucMemory2_cc65f594.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/QuartusProjects/Proyecto2Arqui1/db/ASIP.ram0_InstrucMemory_a9da4952.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (19000): Inferred 2 megafunctions from design logic
@@ -1771,8 +1338,8 @@ Info (12133): Instantiated megafunction "DataMemory2:DataRAM2|altsyncram:RAM_rtl
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/ASIP.ram0_DataMemory2_9b9dc690.hdl.mif"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rgr1.tdf
-    Info (12023): Found entity 1: altsyncram_rgr1 File: C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_rgr1.tdf Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_n5s1.tdf
+    Info (12023): Found entity 1: altsyncram_n5s1 File: C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_n5s1.tdf Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_8la.tdf
     Info (12023): Found entity 1: decode_8la File: C:/QuartusProjects/Proyecto2Arqui1/db/decode_8la.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_5hb.tdf
@@ -1795,24 +1362,23 @@ Info (12133): Instantiated megafunction "DataMemory:DataRAM1|altsyncram:RAM_rtl_
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/ASIP.ram0_DataMemory_5d7c1658.hdl.mif"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mdr1.tdf
-    Info (12023): Found entity 1: altsyncram_mdr1 File: C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_mdr1.tdf Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i2s1.tdf
+    Info (12023): Found entity 1: altsyncram_i2s1 File: C:/QuartusProjects/Proyecto2Arqui1/db/altsyncram_i2s1.tdf Line: 32
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 56 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/QuartusProjects/Proyecto2Arqui1/output_files/ASIP.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 887 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2146 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 596 logic cells
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 1854 logic cells
     Info (21064): Implemented 256 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Tue May 11 01:33:28 2021
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:52
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4866 megabytes
+    Info: Processing ended: Tue May 11 05:26:33 2021
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:01:01
 
 
 +------------------------------------------+

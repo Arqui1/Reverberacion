@@ -1,39 +1,40 @@
 |Procesador
-clk => clk.IN15
-rst => rst.IN13
+clk => clk.IN16
+rst => rst.IN14
 modeSelector => modeSelector.IN2
-ResultW[0] << ResultW[0].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[1] << ResultW[1].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[2] << ResultW[2].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[3] << ResultW[3].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[4] << ResultW[4].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[5] << ResultW[5].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[6] << ResultW[6].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[7] << ResultW[7].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[8] << ResultW[8].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[9] << ResultW[9].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[10] << ResultW[10].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[11] << ResultW[11].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[12] << ResultW[12].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[13] << ResultW[13].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[14] << ResultW[14].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[15] << ResultW[15].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[16] << ResultW[16].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[17] << ResultW[17].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[18] << ResultW[18].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[19] << ResultW[19].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[20] << ResultW[20].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[21] << ResultW[21].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[22] << ResultW[22].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[23] << ResultW[23].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[24] << ResultW[24].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[25] << ResultW[25].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[26] << ResultW[26].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[27] << ResultW[27].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[28] << ResultW[28].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[29] << ResultW[29].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[30] << ResultW[30].DB_MAX_OUTPUT_PORT_TYPE
-ResultW[31] << ResultW[31].DB_MAX_OUTPUT_PORT_TYPE
+txtE <= pipeLine:pipetxtDtoE.port5
+SrcBE[0] <= SrcBE[0].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[1] <= SrcBE[1].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[2] <= SrcBE[2].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[3] <= SrcBE[3].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[4] <= SrcBE[4].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[5] <= SrcBE[5].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[6] <= SrcBE[6].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[7] <= SrcBE[7].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[8] <= SrcBE[8].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[9] <= SrcBE[9].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[10] <= SrcBE[10].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[11] <= SrcBE[11].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[12] <= SrcBE[12].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[13] <= SrcBE[13].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[14] <= SrcBE[14].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[15] <= SrcBE[15].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[16] <= SrcBE[16].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[17] <= SrcBE[17].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[18] <= SrcBE[18].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[19] <= SrcBE[19].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[20] <= SrcBE[20].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[21] <= SrcBE[21].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[22] <= SrcBE[22].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[23] <= SrcBE[23].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[24] <= SrcBE[24].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[25] <= SrcBE[25].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[26] <= SrcBE[26].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[27] <= SrcBE[27].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[28] <= SrcBE[28].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[29] <= SrcBE[29].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[30] <= SrcBE[30].DB_MAX_OUTPUT_PORT_TYPE
+SrcBE[31] <= SrcBE[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Procesador|mux_:muxPC1
@@ -1361,10 +1362,10 @@ A3[0] => A3[0].IN1
 A3[1] => A3[1].IN1
 A3[2] => A3[2].IN1
 A3[3] => A3[3].IN1
-ALUControl[0] <= ControlUnit:CU.port12
-ALUControl[1] <= ControlUnit:CU.port12
-ALUControl[2] <= ControlUnit:CU.port12
-ALUControl[3] <= ControlUnit:CU.port12
+ALUControl[0] <= ControlUnit:CU.port13
+ALUControl[1] <= ControlUnit:CU.port13
+ALUControl[2] <= ControlUnit:CU.port13
+ALUControl[3] <= ControlUnit:CU.port13
 RA1[0] <= RA1[0].DB_MAX_OUTPUT_PORT_TYPE
 RA1[1] <= RA1[1].DB_MAX_OUTPUT_PORT_TYPE
 RA1[2] <= RA1[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1476,6 +1477,7 @@ MemWrite <= ControlUnit:CU.port6
 Branch <= ControlUnit:CU.port7
 ALUSrc <= ControlUnit:CU.port8
 NoWrite <= ControlUnit:CU.port9
+txt <= ControlUnit:CU.port12
 
 
 |Procesador|Decode:decode|ControlUnit:CU
@@ -1491,22 +1493,27 @@ Op[1] => Decoder0.IN0
 Op[1] => RegWrite.DATAIN
 func[0] => Decoder1.IN1
 func[0] => ALUControl.DATAB
-func[0] => Equal0.IN1
+func[0] => Equal0.IN3
+func[0] => Equal1.IN1
 func[1] => ALUControl.DATAB
-func[1] => Equal0.IN3
+func[1] => Equal0.IN2
+func[1] => Equal1.IN3
 func[2] => ALUControl.DATAB
-func[2] => Equal0.IN2
+func[2] => Equal0.IN1
+func[2] => Equal1.IN2
 func[3] => Decoder1.IN0
 func[3] => Equal0.IN0
+func[3] => Equal1.IN0
 FlagW <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 RegWrite <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
 MemtoReg <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-MemWrite <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+MemWrite <= generalOut.DB_MAX_OUTPUT_PORT_TYPE
 Branch <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 ALUSrc <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 NoWrite <= generalOut.DB_MAX_OUTPUT_PORT_TYPE
 RegSrcA1 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 RegSrcA2 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+txt <= generalOut.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[2] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
@@ -4536,6 +4543,15 @@ stateIn[0] => state.DATAB
 stateIn[1] => state.DATAB
 stateOut[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 stateOut[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Procesador|pipeLine:pipetxtDtoE
+clk => state[0].CLK
+rst => state[0].ACLR
+en => state.OUTPUTSELECT
+flush => state.OUTPUTSELECT
+stateIn[0] => state.DATAA
+stateOut[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Procesador|mux3_1:muxRD1E
