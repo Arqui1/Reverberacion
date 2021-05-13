@@ -1,9 +1,6 @@
 .global _start
 _start:
 
-.global _start
-_start:
-
 //Descomposicion de punto flotante
 mov r11, #0x4f0
 mov r12, #0x500		//direccion de memoria
@@ -91,3 +88,28 @@ mul r2, r2, r3		//multiplicacion en r2
 mov r2, r2, lsr #6	//el lsr debe de ser la suma de la cantidad de numeros que tienen los binarios entre 2
 add r12, r12, #8
 str r2, [r11]
+
+//***********************Buffer Circular*******************************
+mov r1, #0			//contador
+mov r2, #100		//numero de iteraciones
+mov r3, #0x1000		//pos de memoria original
+add r4, r3, #16		//DEFINIR EL TAMANO DEL BUFFER, este caso es de 4
+cBuff:
+cmp r1, r2			//si llego al numero de interaciones deseadas
+beq finish
+
+cmp r3, r4			//para devolverse a la pos originar y seguir con el Buff circular
+beq cBuffAux
+
+//Buffer para suma de r5, aumenta 1 en 1
+str r1, [r3]
+add r1, r1, #1
+add r3, r3, #4
+b cBuff
+
+//Devolverse a la pos original
+cBuffAux:
+mov r3, #0x1000
+b cBuff
+
+finish:
