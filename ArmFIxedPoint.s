@@ -3,13 +3,13 @@ _start:
 
 //Descomposicion de punto flotante
 mov r11, #0x4f0
-mov r12, #0x500		//direccion de memoria
+mov r12, #0x500			//direccion de memoria
 
-mov r1, #0b00100000	// 0.100000 --> 0.5
+mov r1, #0b101100000	// 0.100000 --> 0.5
 str r1, [r11]
 add r11, r11, #4
 
-mov r1, #0b10001101	// 0.001101 -->  0.203125
+mov r1, #0b000001101	// 0.001101 -->  0.203125
 str r1, [r11]
 add r11, r11, #4
 
@@ -19,13 +19,13 @@ mov r10, #0			//contador
 fixedpoint:
 ldr r1, [r11]			//obtengo el primer numero
 
-mov r2, r1, lsr #6		//tengo los bits mas significativos signo y entero
-mov r2, r2, lsl #6		//corriento a la izquierda de 6 bits
+mov r2, r1, lsr #8		//tengo los bits mas significativos signo
+//mov r2, r2, lsl #8		//corriento a la izquierda de 6 bits
 str r2, [r12]			//se almacena en r12
 add r12, r12, #4		//se suma 4 a r12, siguiente pos de memoria
 
 mov r3, r1				//en r3 se almacena lo de r1
-and r3, r3, #0b00111111	//and para obtener la parte fraccionaria	
+and r3, r3, #0b01111111	//and para obtener la parte entera y fraccionaria	
 str r3, [r12]			//se almacena en r12
 add r12, r12, #4		//se suma 4 a r12, siguiente pos de memoria
 
@@ -38,56 +38,67 @@ b fixedpoint
 
 //Suma en punto flotante para dos numeros seguidos (se tiene que arreglar para que siga la formula)
 sumaFp:
-//suma de signo y parte entera
 mov r12, #0x500		//direccion de memoria 
+add r12, r12, #4
 ldr r1, [r12]		
 add r12, r12, #8
 ldr r2, [r12]
-add r1, r1, r2		//suma en r1 falta
+add r1, r1, r2		//suma en r1
+//str r1, [r12]
+
+mov r12, #0x500		//direccion de memoria 
+ldr r2, [r12]		
+add r12, r12, #8
+ldr r3, [r12]
+add r2, r2, r3		//parte esta mal hay que verificar el signo de cada numero por aparte
+mov r2, r2, lsl #8
+add r1, r1, r2		//suma en r1
+mov r12, #0x510		//direccion de memoria donde se almacena la suma
+str r1, [r12]
+b mulFP				//QUITARLO
+
+
+
+resta1:
+cmp r2, #1
+beq restaNegativos
+
+//resta1 parte entera
+mov r12, #0x500		//direccion de memoria 
+ldr r1, [r12]	
+and r1, #0b011111111
+add r12, r12, #8
+ldr r2, [r12]
+and r2, #0b011111111
+sub r1, r1, r2		//resta en r1
 add r12, r12, #8
 str r1, [r12]
 
-//suma de parte fraccionaria
-mov r12, #0x500		//direccion de memoria
-add r12, r12, #4
-ldr r2, [r12]
-add r12, r12, #8
-ldr r3, [r12]
-add r2, r2, r3		//suma en r2
-add r12, r12, #8
-str r2, [r12]
+restaNegativos:
 
-//union de sumas
-mov r12, #0x510		//direccion de memoria
-ldr r1, [r12]
-add r12, r12, #4
-ldr r2, [r12]
-orr r3, r1, r2
-add r12, r12, #4
-str r3, [r12]
 
 //Multiplicacion en punto flotante
 mulFP:
-//Multiplicacion de parte entera y bit de signo
-mov r11, #0x520
 mov r12, #0x500		//direccion de memoria 
-ldr r1, [r12]		
-add r12, r12, #8
-ldr r2, [r12]
-mul r1, r1, r2		//multiplicacion en r1
-str r1, [r11]
+add r12, r12, #4	//se le suma a la direccion de memoria para obtener la parte entera y decimal
+ldr r1, [r12]		//se guarda el primer numero en el registo r1
+add r12, r12, #8	//se suma 8 para acceder al siguiente numero 
+ldr r2, [r12]		//segundo numero en r2
+mul r1, r1, r2		//multiplicacion almacenada en r1
+mov r1, r1, lsr #6	//corrimiento a la derecho para mantener el numero de bits de entero y decimal
 
-add r11, r11, #4
-mov r12, #0x500		//direccion de memoria
-add r12, r12, #4
-ldr r2, [r12]
+mov r12, #0x500		//direccion de memoria 
+ldr r2, [r12]		//
 add r12, r12, #8
 ldr r3, [r12]
-mul r2, r2, r3		//multiplicacion en r2
+add r2, r2, r3		
+mov r2, r2, lsl #8
+orr r1, r1, r2		//suma en r1
+mov r12, #0x520		//direccion de memoria donde se almacena la suma
+str r1, [r12]
 
-mov r2, r2, lsr #6	//el lsr debe de ser la suma de la cantidad de numeros que tienen los binarios entre 2
-add r12, r12, #8
-str r2, [r11]
+
+
 
 //***********************Buffer Circular*******************************
 mov r1, #0			//contador
