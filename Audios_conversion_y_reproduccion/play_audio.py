@@ -3,8 +3,6 @@ import sounddevice as sd
 import os
 import time
 
-#fileName = r"C:\Test\test.txt"
-
 #ruta = "C:/QuartusProjects/Files/"
 ruta = ""
 audio_sin_reverb = ruta + "RAMDatos1.txt"
