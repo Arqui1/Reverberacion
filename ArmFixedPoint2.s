@@ -20,7 +20,6 @@ fixedpoint:
 ldr r1, [r11]			//obtengo el primer numero
 
 mov r2, r1, lsr #8		//tengo los bits mas significativos signo
-//mov r2, r2, lsl #8		//corriento a la izquierda de 6 bits
 str r2, [r12]			//se almacena en r12
 add r12, r12, #4		//se suma 4 a r12, siguiente pos de memoria
 
@@ -37,12 +36,11 @@ add r10, r10, #1		//suma al contador
 
 
 
-//Reverberacion
+//*****************Insercion-Reverberacion**************************************************
 //k=2205 alpha = 0.6 
 //y(n) = (1-alpha)x(n) + alpha * y(n-k)
 
-mov r8, #2000			//n VALOR ES CERO INICIAL
-add r8, r8, #206			//USADO PARA SIMULAR BORRAR
+mov r8, #0			//n VALOR ES CERO INICIAL
 mov r9, #2000			//K
 add r9, r9, #205
 mov r10, #0b000100110	//alpha
@@ -50,23 +48,25 @@ mov r11, #0x500			//aca empieza el audio en memoria
 mov r12, #0x1000
 
 rever:
+//cmp r9	//comparar el numero de iteraciones ME FALTAN DOS REGISTROS PARA COMPARAR 441000*6
+
 cmp r8, r9			//para devolverse a la pos originar y seguir con el Buff circular
 beq cBuffAux
 
 mov r1, #0b001000000
 sub r1, r1, r10			//(1-alpha)
 
-add r11, r11, #4
+add r11, r11, #4		//se le suma 4 para obtener el numero, sino solo tendria el signo
 ldr r2, [r11] 			//x(n)
 
 mul r3, r1, r2			//(1-alpha) * x(n)
 mov r3, r3, lsr #6		//para mantener el numero de bits necesarios
 
 cmp r8, r9
-blt masZero
+blt masZeroCon
 
 sub r4, r8, r9			//(n-k)
-mov r1, #4
+mov r1, #4				//para pc+4
 mul r4, r4, r1
 mov r11, #0x500	
 add r4, r4, r11			//(n-k) + 0x500
@@ -82,11 +82,46 @@ add r12, r12, #4
 add r8, r8, #1
 b rever
 
-masZero:
+masZeroCon:
 str r3, [r12]
 add r12, r12, #4
 add r8, r8, #1
 b rever
+
+
+//**************************Reducion-Reverberacion***************
+mov r8, #0			//n VALOR ES CERO INICIAL
+mov r9, #2000			//K
+add r9, r9, #205
+mov r10, #0b000100110	//alpha
+mov r11, #0x500			//aca empieza el audio en memoria
+mov r12, #0x1000
+
+
+sinRever:
+cmp r8, r9			//para devolverse a la pos originar y seguir con el Buff circular
+beq cBuffAux
+//PRIMERO TIENE QUE IR LA MULTIPLICACION CON 1/(1-alpha) FALTAAAAA
+
+add r11, r11, #4		//se le suma 4 para obtener el numero, sino solo tendria el signo
+ldr r2, [r11] 			//x(n)
+
+cmp r8, r9
+blt masZero
+
+sub r4, r8, r9			//(n-k)
+mov r1, #4				//para pc+4
+mul r4, r4, r1
+mov r11, #0x500	
+add r4, r4, r12			//(n-k) + 0x1000
+add r4, r4, #8
+ldr r5, [r4]			//x(n-k)
+
+masZeroSin:
+str r3, [r12]
+add r12, r12, #4
+add r8, r8, #1
+b SinRever
 
 //Devolverse a la pos original
 cBuffAux:
@@ -94,8 +129,9 @@ mov r12, #0x1000
 b rever
 
 
-
-
+//para pasarlo al txt
+txtFile:
+//aka ace algo
 
 //Suma en punto flotante para dos numeros seguidos (se tiene que arreglar para que siga la formula)
 sumaFp:
