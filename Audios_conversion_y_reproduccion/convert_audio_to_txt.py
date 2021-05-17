@@ -158,3 +158,9 @@ conversion(nombre_archivo, data)
 conversion(nombre_archivo2, data2)
 
 print("Fin")
+<<<<<<< HEAD:Conversion_Float_a_Binario/convert_audio_to_txt.py
+
+
+=======
+>>>>>>> 126762b6762f639c5abdc263f483a8657ae3a7fe:Audios_conversion_y_reproduccion/convert_audio_to_txt.py
+
