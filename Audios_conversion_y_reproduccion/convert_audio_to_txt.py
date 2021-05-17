@@ -102,15 +102,18 @@ nombre_archivo='audio_sin_reverb.wav'
 data, freq = sf.read(nombre_archivo)
 
 nombre_archivo2='audio_con_reverb.wav'
-data2, freq2 = sf.read(nombre_archivo)
+data2, freq2 = sf.read(nombre_archivo2)
 
 def conversion(nombre_archivo, data):
+    #ruta = "C:/QuartusProjects/Files/"
+    ruta = ""
     freq=44100
     #se crean lista
     derecha=[]
     izquierda=[]
     mono=[]
     if nombre_archivo == "audio_sin_reverb.wav":
+        path1 = ruta + "RAMDatos1.txt"
         if (data.ndim > 1):
             #se divide el canal derecho e izquierdo de la variable data de audio
             for i in range(len(data)):
@@ -121,15 +124,16 @@ def conversion(nombre_archivo, data):
                 suma=(izquierda[j]+derecha[j])/2
                 mono.append(round(suma, 6))
             #se escribe el canal mono en una lista
-            with open('RAM1.txt', 'w') as archivo:
+            with open(path1, 'w') as archivo:
                 for item in mono:
                     archivo.write(aux(item)+"\n")
         else:
-            with open('RAM1.txt', 'w') as archivo:
+            with open(path1, 'w') as archivo:
                 for item in data:
                     archivo.write(aux(item)+"\n")
     elif nombre_archivo == "audio_con_reverb.wav":
         #audio con rever conocida
+        path2 = ruta + "RAMDatos2.txt"
         if (data.ndim > 1):
             #se divide el canal derecho e izquierdo de la variable data de audio
             for i in range(len(data)):
@@ -141,17 +145,17 @@ def conversion(nombre_archivo, data):
                 mono.append(round(suma, 6))
             #se escribe el canal mono en una lista
             reverberacion= reverb(mono, freq)
-            with open('RAM2.txt', 'w') as archivo:
+            with open(path2, 'w') as archivo:
                 for item in reverberacion:
                     archivo.write(aux(item)+"\n")
         else:
             reverberacion= reverb(data.tolist(), freq)
-            with open('RAM2.txt', 'w') as archivo:
+            with open(path2, 'w') as archivo:
                 for item in reverberacion:
                     archivo.write(aux(item)+"\n")
 
 conversion(nombre_archivo, data)
 conversion(nombre_archivo2, data2)
 
-
+print("Fin")
 
