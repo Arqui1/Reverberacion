@@ -59,6 +59,7 @@ sub r1, r1, r10			//(1-alpha)
 add r11, r11, #4		//se le suma 4 para obtener el numero, sino solo tendria el signo
 ldr r2, [r11] 			//x(n)
 
+
 mul r3, r1, r2			//(1-alpha) * x(n)
 mov r3, r3, lsr #6		//para mantener el numero de bits necesarios
 
@@ -78,12 +79,14 @@ mov r6, r6, lsr #6
 add r7, r6, r3			//(1-alpha)x(n) + alpha * y(n-k)
 
 str r7, [r12]
+add r11, r11, #4
 add r12, r12, #4
 add r8, r8, #1
 b rever
 
 masZeroCon:
 str r3, [r12]
+add r11, r11, #4
 add r12, r12, #4
 add r8, r8, #1
 b rever
