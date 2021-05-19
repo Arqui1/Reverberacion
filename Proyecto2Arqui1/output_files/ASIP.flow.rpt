@@ -1,5 +1,5 @@
 Flow report for ASIP
-Tue May 11 05:26:33 2021
+Tue May 18 12:14:34 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue May 11 05:26:32 2021       ;
+; Flow Status                     ; Successful - Tue May 18 12:14:34 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ASIP                                        ;
 ; Top-level Entity Name           ; Procesador                                  ;
@@ -49,11 +49,11 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 821                                         ;
+; Total registers                 ; 803                                         ;
 ; Total pins                      ; 36                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,677,760                                   ;
-; Total DSP Blocks                ; 0                                           ;
+; Total block memory bits         ; 8,576,032                                   ;
+; Total DSP Blocks                ; 2                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/11/2021 05:25:56 ;
+; Start date & time ; 05/18/2021 12:13:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ASIP                ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 220812856342080.162073235607152        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 220812856342080.162136161712196        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Alu_tb                            ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; pipeDecotoExe_tb                  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; RegFile_tb                        ;
@@ -134,8 +134,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4866 MB             ; 00:00:59                           ;
-; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:59                           ;
+; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 4910 MB             ; 00:01:09                           ;
+; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

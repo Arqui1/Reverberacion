@@ -1,5 +1,6 @@
 module Execute (input logic clk,rst,FlagWE,RegWriteE,
-						MemWriteE,BranchE,ALUSrcE,NoWriteE,CondE,
+						MemWriteE,BranchE,ALUSrcE,NoWriteE,
+						input logic [1:0] CondE,
 						input logic [3:0] ALUControlE,
 						input logic [31:0]immExtE,RD2E,RD1E,
 						output logic [31:0] ALUResultE,
@@ -12,8 +13,8 @@ module Execute (input logic clk,rst,FlagWE,RegWriteE,
 	
 	Alu #(32) ALU(ALUControlE,RD1E,SrcBE,ALUResultE,AluFlags);
 	
-	CondUnit unidadCond(clk,rst,CondE,FlagWE,NoWriteE,BranchE,
-								MemWriteE,RegWriteE,AluFlags,PCSrcE,
+	CondUnit unidadCond(clk,rst,FlagWE,NoWriteE,BranchE,
+								MemWriteE,RegWriteE,CondE,AluFlags,PCSrcE,
 								RegWE,MemWE);
 	
 endmodule

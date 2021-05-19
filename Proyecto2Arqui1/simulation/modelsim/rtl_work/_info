@@ -11,12 +11,12 @@ cModel Technology
 Z0 dC:/QuartusProjects/Proyecto2Arqui1/simulation/modelsim
 vAlu
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1620732425
+Z2 !s110 1621370985
 !i10b 1
 !s100 iJ8zD:_Zh@;bZBeQ34=3;2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 INIzXkl02?FLUkFPZfkO[H1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1620030714
@@ -24,107 +24,107 @@ w1620030714
 FC:/QuartusProjects/Proyecto2Arqui1/Alu.sv
 !i122 0
 L0 1 44
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1620732425.000000
+Z6 !s108 1621370985.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Alu.sv|
 !i113 1
-Z5 o-sv -work work
-Z6 !s92 -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1
-Z7 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/QuartusProjects/Proyecto2Arqui1
+Z9 tCvgOpt 0
 n@alu
 vandALU
 R1
-!s110 1620732426
+R2
 !i10b 1
 !s100 ceVb_57imK>PFPQ8IK:@j1
-R2
-IRhV`lTa7j3KnQY=aoN@II1
 R3
+IRhV`lTa7j3KnQY=aoN@II1
+R4
 S1
 R0
 w1619977432
 8C:/QuartusProjects/Proyecto2Arqui1/andALU.sv
 FC:/QuartusProjects/Proyecto2Arqui1/andALU.sv
 !i122 1
-Z8 L0 1 7
-R4
+Z10 L0 1 7
+R5
 r1
 !s85 0
 31
-!s108 1620732426.000000
+R6
 !s107 C:/QuartusProjects/Proyecto2Arqui1/andALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/andALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nand@a@l@u
 vCondCheck
 R1
-Z9 !s110 1620732435
+Z11 !s110 1621371003
 !i10b 1
-!s100 d;OSm]Zf:S=>nJ0J48Wf81
-R2
-ImWgdadY>>N_Ud>E5o]o^a3
+!s100 =WL;MVm;H9iUoLdQo4PK50
 R3
+I?Y^2m9ooNFAhni0dg84ff2
+R4
 S1
 R0
-w1620350371
+w1621203435
 8C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv
 FC:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv
 !i122 29
-Z10 L0 1 15
-R4
+Z12 L0 1 17
+R5
 r1
 !s85 0
 31
-Z11 !s108 1620732435.000000
+Z13 !s108 1621371003.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/CondCheck.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@cond@check
 vCondUnit
 R1
-Z12 !s110 1620732434
+!s110 1621371001
 !i10b 1
-!s100 z6X8nHkDzbAb6RHMc@;[h1
-R2
-IED0n^Z[kbz:=zjQU=>1NR2
+!s100 YH^WI;UOi6@C`>TE@Q3Di2
 R3
+I=UK=Li?SLU4MjAPBN[h622
+R4
 S1
 R0
-w1620400793
+w1621200393
 8C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv
 FC:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv
 !i122 27
-Z13 L0 1 18
-R4
+L0 1 19
+R5
 r1
 !s85 0
 31
-Z14 !s108 1620732434.000000
+!s108 1621371000.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/CondUnit.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@cond@unit
 vControlUnit
 R1
-Z15 !s110 1620732433
+Z14 !s110 1621370998
 !i10b 1
 !s100 g>CnP5h=]I7Tl2nM<`O`S3
-R2
-IU^]SPQGRR>n;SXaDP[e4?1
 R3
+IU^]SPQGRR>n;SXaDP[e4?1
+R4
 S1
 R0
 w1620727563
@@ -132,215 +132,215 @@ w1620727563
 FC:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv
 !i122 23
 L0 1 63
-R4
+R5
 r1
 !s85 0
 31
-Z16 !s108 1620732433.000000
+Z15 !s108 1621370998.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/ControlUnit.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@control@unit
 vDataMemory
 R1
-Z17 !s110 1620732437
+Z16 !s110 1621371006
 !i10b 1
-!s100 l@Ek<C;[EN<9Ff;VK3GgK3
-R2
-I:JVlI^Tb1OKCG59N@?PKQ1
+!s100 S??J;9TFe1GSI2S>a@YJ^1
 R3
+I00;c:E?d<zM;4kAg7Ko;G2
+R4
 S1
 R0
-w1620717541
+w1621292968
 8C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv
 FC:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv
 !i122 36
-Z18 L0 1 19
-R4
+Z17 L0 1 22
+R5
 r1
 !s85 0
 31
-Z19 !s108 1620732437.000000
+Z18 !s108 1621371006.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/DataMemory.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@data@memory
 vDataMemory2
 R1
-Z20 !s110 1620732438
+Z19 !s110 1621371007
 !i10b 1
-!s100 PfeF:[ThRQ^zkl_gP^A4e0
-R2
-Ij23jS_G7[9Z9:f3n>eFGi1
+!s100 gIb6c5`50dgU0X_ag;ZGN3
 R3
+I;jiaV;LPC1h]cbZ:X:>GC1
+R4
 S1
 R0
-w1620717594
+w1621292971
 8C:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv
 FC:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv
 !i122 39
-R18
-R4
+R17
+R5
 r1
 !s85 0
 31
-Z21 !s108 1620732438.000000
+Z20 !s108 1621371007.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/DataMemory2.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@data@memory2
 vDecode
 R1
-Z22 !s110 1620732432
+Z21 !s110 1621370997
 !i10b 1
 !s100 JYGJo0]MWoXz<=0]iNgcQ3
-R2
-Ij@dAIHTYXAcOJTFeY6E=X1
 R3
+Ij@dAIHTYXAcOJTFeY6E=X1
+R4
 S1
 R0
 w1620727576
 8C:/QuartusProjects/Proyecto2Arqui1/Decode.sv
 FC:/QuartusProjects/Proyecto2Arqui1/Decode.sv
 !i122 21
-L0 1 22
-R4
+R17
+R5
 r1
 !s85 0
 31
-Z23 !s108 1620732432.000000
+Z22 !s108 1621370996.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Decode.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Decode.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@decode
 vdivALU
 R1
-Z24 !s110 1620732427
+Z23 !s110 1621370986
 !i10b 1
 !s100 ^Em@C=E7kQGKe8D7g4WP21
-R2
-I]g_=Ho5I]Fj_fZ?OPBob60
 R3
+I]g_=Ho5I]Fj_fZ?OPBob60
+R4
 S1
 R0
 w1619977478
 8C:/QuartusProjects/Proyecto2Arqui1/divALU.sv
 FC:/QuartusProjects/Proyecto2Arqui1/divALU.sv
 !i122 2
-Z25 L0 1 5
-R4
+Z24 L0 1 5
+R5
 r1
 !s85 0
 31
-Z26 !s108 1620732427.000000
+Z25 !s108 1621370986.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/divALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/divALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 ndiv@a@l@u
 vExecute
 R1
-R12
+!s110 1621371000
 !i10b 1
-!s100 @G6Z^Qb8o7P:E>0o3bzm@1
-R2
-Ianz9[KFR5z6JX[6Pl``7^1
+!s100 gPBn?^aY4BWA?94MXFm]l0
 R3
+IKEFTP4NP:4o8M3mJR^el31
+R4
 S1
 R0
-w1620340474
+w1621200420
 8C:/QuartusProjects/Proyecto2Arqui1/Execute.sv
 FC:/QuartusProjects/Proyecto2Arqui1/Execute.sv
 !i122 26
-R18
-R4
+L0 1 20
+R5
 r1
 !s85 0
 31
-R14
+Z26 !s108 1621370999.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Execute.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Execute.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@execute
 vExtend
 R1
-R15
+R21
 !i10b 1
 !s100 >[mFQBNl8FGIz`aK?kLDf3
-R2
-I8HekD^SXNgIK^Z@oQ2Km60
 R3
+I8HekD^SXNgIK^Z@oQ2Km60
+R4
 S1
 R0
 w1620237269
 8C:/QuartusProjects/Proyecto2Arqui1/Extend.sv
 FC:/QuartusProjects/Proyecto2Arqui1/Extend.sv
 !i122 22
-R25
-R4
+R24
+R5
 r1
 !s85 0
 31
-R16
+!s108 1621370997.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Extend.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Extend.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@extend
 vFetch
 R1
-R22
+Z27 !s110 1621370995
 !i10b 1
 !s100 F;8jbMVLHN2^IVbK;SUH:1
-R2
-Ia6?;ZeIUfgNhzX93T0ST83
 R3
+Ia6?;ZeIUfgNhzX93T0ST83
+R4
 S1
 R0
 w1620716033
 8C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv
 FC:/QuartusProjects/Proyecto2Arqui1/Fetch.sv
 !i122 19
-Z27 L0 1 14
-R4
+Z28 L0 1 14
+R5
 r1
 !s85 0
 31
-R23
+!s108 1621370995.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Fetch.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@fetch
 vflagN
 R1
-Z28 !s110 1620732430
+!s110 1621370991
 !i10b 1
 !s100 a3a_T?kRbRmGgF^O?nWl`1
-R2
-IdmM88dlSLE_DMJIPmgXT[2
 R3
+IdmM88dlSLE_DMJIPmgXT[2
+R4
 S1
 R0
 w1619978984
@@ -348,26 +348,26 @@ w1619978984
 FC:/QuartusProjects/Proyecto2Arqui1/flagN.sv
 !i122 12
 L0 1 8
-R4
+R5
 r1
 !s85 0
 31
-Z29 !s108 1620732430.000000
+Z29 !s108 1621370991.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/flagN.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/flagN.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nflag@n
 vflagO
 R1
-R28
+Z30 !s110 1621370992
 !i10b 1
 !s100 D0d];:ZQa1f4KzWzSkmDI2
-R2
-I_iEkJQZT0cEZamY_OBIRI1
 R3
+I_iEkJQZT0cEZamY_OBIRI1
+R4
 S1
 R0
 w1619992147
@@ -375,7 +375,7 @@ w1619992147
 FC:/QuartusProjects/Proyecto2Arqui1/flagO.sv
 !i122 13
 L0 1 32
-R4
+R5
 r1
 !s85 0
 31
@@ -383,18 +383,18 @@ R29
 !s107 C:/QuartusProjects/Proyecto2Arqui1/flagO.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/flagO.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nflag@o
 vflagZ
 R1
-R24
+R23
 !i10b 1
 !s100 B@IM@9z`9f1TIo`nRolS=0
-R2
-I>ZBiFeWAXl1HKeIhWbLlQ2
 R3
+I>ZBiFeWAXl1HKeIhWbLlQ2
+R4
 S1
 R0
 w1619992150
@@ -402,52 +402,52 @@ w1619992150
 FC:/QuartusProjects/Proyecto2Arqui1/flagZ.sv
 !i122 3
 L0 1 11
-R4
+R5
 r1
 !s85 0
 31
-R26
+R25
 !s107 C:/QuartusProjects/Proyecto2Arqui1/flagZ.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/flagZ.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nflag@z
 vflipflop
 R1
-R9
+!s110 1621371002
 !i10b 1
 !s100 Blb>8FU><z8?g`KS52Y@Z1
-R2
-I7V:UgYf;;4Q@52PXWg64;3
 R3
+I7V:UgYf;;4Q@52PXWg64;3
+R4
 S1
 R0
 w1620348090
 8C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv
 FC:/QuartusProjects/Proyecto2Arqui1/flipflop.sv
 !i122 28
-R13
-R4
+Z31 L0 1 18
+R5
 r1
 !s85 0
 31
-R14
+!s108 1621371002.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/flipflop.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 vForwardUnit
 R1
-Z30 !s110 1620732436
+Z32 !s110 1621371005
 !i10b 1
 !s100 @IQELJa=N]jR;@bJ^IGcQ2
-R2
-I^Y4jkF28V0bbaOM7Q97Sm2
 R3
+I^Y4jkF28V0bbaOM7Q97Sm2
+R4
 S1
 R0
 w1620598520
@@ -455,133 +455,133 @@ w1620598520
 FC:/QuartusProjects/Proyecto2Arqui1/ForwardUnit.sv
 !i122 33
 L0 1 34
-R4
+R5
 r1
 !s85 0
 31
-Z31 !s108 1620732436.000000
+Z33 !s108 1621371004.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/ForwardUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/ForwardUnit.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@forward@unit
 vInstrucMemory
 R1
-R17
+R16
 !i10b 1
-!s100 bSiXnO<6S]ePlEOnjNTSo3
-R2
-IXK=A[H]leII<eid?<^eJS2
+!s100 O?D[bdP_2QEP`IYUWOQlE0
 R3
+I>_VAn<:=aJWMhW;Y?z<O40
+R4
 S1
 R0
-w1620714497
+w1621238345
 8C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv
 FC:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv
 !i122 37
-Z32 L0 1 9
-R4
+Z34 L0 1 9
+R5
 r1
 !s85 0
 31
-R19
+R18
 !s107 C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@instruc@memory
 vInstrucMemory2
 R1
-R20
+R19
 !i10b 1
-!s100 OB?>@gI8hi]j79@TE1[de2
-R2
-Ic_T::CebJ[j9a1o?jVU@G0
+!s100 j[Il<YV;_Mn]loGSVcPf61
 R3
+IUADiDliXCYZcd1o3Eg4Oo1
+R4
 S1
 R0
-w1620714376
+w1621238341
 8C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv
 FC:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv
 !i122 38
-R32
-R4
+R34
+R5
 r1
 !s85 0
 31
-R19
+R20
 !s107 C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/InstrucMemory2.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@instruc@memory2
 vmulALU
 R1
-R24
+Z35 !s110 1621370987
 !i10b 1
 !s100 K]`f<]3POiNIl3O?zhW5o0
-R2
-I[zSABhdoimJ5;UYlBM>Bg0
 R3
+I[zSABhdoimJ5;UYlBM>Bg0
+R4
 S1
 R0
 w1619977613
 8C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv
 FC:/QuartusProjects/Proyecto2Arqui1/mulALU.sv
 !i122 4
-R25
-R4
+R24
+R5
 r1
 !s85 0
 31
-R26
+Z36 !s108 1621370987.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/mulALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nmul@a@l@u
 vmux3_1
 R1
-R30
+R32
 !i10b 1
 !s100 ]OfE92WV1M72g;oeA`TnB1
-R2
-I;V[zZhRIZ>lR?I7jUYmk@0
 R3
+I;V[zZhRIZ>lR?I7jUYmk@0
+R4
 S1
 R0
 w1620598991
 8C:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv
 FC:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv
 !i122 34
-R27
-R4
+R28
+R5
 r1
 !s85 0
 31
-R31
+Z37 !s108 1621371005.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/mux3_1.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 vmux_
 R1
-Z33 !s110 1620732431
+!s110 1621370994
 !i10b 1
 !s100 MLKndQjh]M8HQOAkb?MF<1
-R2
-I`KPzADF92kSPAn=Sf;og[1
 R3
+I`KPzADF92kSPAn=Sf;og[1
+R4
 S1
 R0
 w1620024583
@@ -589,25 +589,25 @@ w1620024583
 FC:/QuartusProjects/Proyecto2Arqui1/mux_.sv
 !i122 17
 L0 1 13
-R4
+R5
 r1
 !s85 0
 31
-Z34 !s108 1620732431.000000
+Z38 !s108 1621370994.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/mux_.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/mux_.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 vmuxALU
 R1
-Z35 !s110 1620732428
+R35
 !i10b 1
 !s100 Q<Q^3@<SHZaiY5T?Z_1a<0
-R2
-IXGm7W6D>WbGFo6Yf;_SSa2
 R3
+IXGm7W6D>WbGFo6Yf;_SSa2
+R4
 S1
 R0
 w1619987711
@@ -615,106 +615,106 @@ w1619987711
 FC:/QuartusProjects/Proyecto2Arqui1/muxALU.sv
 !i122 5
 L0 1 21
-R4
+R5
 r1
 !s85 0
 31
-R26
+R36
 !s107 C:/QuartusProjects/Proyecto2Arqui1/muxALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/muxALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nmux@a@l@u
 vmuxflag
 R1
-R33
+Z39 !s110 1621370993
 !i10b 1
 !s100 d[KOdBc_6hHaczb_bePgF1
-R2
-IbTmEDhndm]d40Pa7`l:G=1
 R3
+IbTmEDhndm]d40Pa7`l:G=1
+R4
 S1
 R0
 w1619989763
 8C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv
 FC:/QuartusProjects/Proyecto2Arqui1/muxflag.sv
 !i122 16
-R10
-R4
+L0 1 15
+R5
 r1
 !s85 0
 31
-R34
+!s108 1621370993.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/muxflag.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 vorALU
 R1
-R35
+Z40 !s110 1621370988
 !i10b 1
 !s100 C5nLmz7Kg]M;NKj`^]n_B0
-R2
-I?G`zj16[LMjUdGEa77MGT1
 R3
+I?G`zj16[LMjUdGEa77MGT1
+R4
 S1
 R0
 w1619977673
 8C:/QuartusProjects/Proyecto2Arqui1/orALU.sv
 FC:/QuartusProjects/Proyecto2Arqui1/orALU.sv
 !i122 6
-R8
-R4
+R10
+R5
 r1
 !s85 0
 31
-Z36 !s108 1620732428.000000
+R36
 !s107 C:/QuartusProjects/Proyecto2Arqui1/orALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/orALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nor@a@l@u
 vPC
 R1
-R28
+R30
 !i10b 1
 !s100 PbX83N@g>fLh7z:`_4Zjg3
-R2
-IoK9?MPaP@eM`<2aZVCUIH2
 R3
+IoK9?MPaP@eM`<2aZVCUIH2
+R4
 S1
 R0
 w1620682524
 8C:/QuartusProjects/Proyecto2Arqui1/PC.sv
 FC:/QuartusProjects/Proyecto2Arqui1/PC.sv
 !i122 14
-R32
-R4
+R34
+R5
 r1
 !s85 0
 31
-R29
+Z41 !s108 1621370992.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/PC.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/PC.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@p@c
 vpipeCondUnitEtoM
 R1
-R9
+Z42 !s110 1621371004
 !i10b 1
 !s100 :]9I5Ak51930lIW1f0^ZS2
-R2
-IV>R8l4h]k@WSXN0AA`6Y82
 R3
+IV>R8l4h]k@WSXN0AA`6Y82
+R4
 S1
 R0
 w1620367503
@@ -722,53 +722,53 @@ w1620367503
 FC:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv
 !i122 31
 L0 1 23
-R4
+R5
 r1
 !s85 0
 31
-R11
+R13
 !s107 C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/pipeCondUnitEtoM.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 npipe@cond@unit@eto@m
 vpipeContUnitDtoE
 R1
-R12
+!s110 1621370999
 !i10b 1
-!s100 NI3W:7=W`7KmHH@hGGm`S3
-R2
-I`[2Qb?mQPz`EWj`>534?C3
+!s100 k:JA:R7_naD2nD;ILJ^2U3
 R3
+IT@Okhln:`9Y4<3JJZF>MB2
+R4
 S1
 R0
-w1620702275
+w1621199673
 8C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv
 FC:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv
 !i122 25
-L0 1 46
-R4
+L0 1 49
+R5
 r1
 !s85 0
 31
-R16
+R26
 !s107 C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/pipeContUnitDtoE.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 npipe@cont@unit@dto@e
 vpipeDecotoExe
 R1
-R15
+R14
 !i10b 1
 !s100 Pa[Ca:W@27ngD@C>V2K6G0
-R2
-I1G<eRKQDM;We0N4eh^^5>1
 R3
+I1G<eRKQDM;We0N4eh^^5>1
+R4
 S1
 R0
 w1620702183
@@ -776,26 +776,26 @@ w1620702183
 FC:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv
 !i122 24
 L0 1 39
-R4
+R5
 r1
 !s85 0
 31
-R16
+R15
 !s107 C:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/pipeDecotoExe.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 npipe@decoto@exe
 vpipeExetoMem
 R1
-R9
+R11
 !i10b 1
 !s100 JEQ:13QZ4on=>3z`;@IlO0
-R2
-IJeTT?9JEW2hbKhZHX3KeK2
 R3
+IJeTT?9JEW2hbKhZHX3KeK2
+R4
 S1
 R0
 w1620357309
@@ -803,53 +803,53 @@ w1620357309
 FC:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv
 !i122 30
 L0 1 29
-R4
+R5
 r1
 !s85 0
 31
-R11
+R13
 !s107 C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/pipeExetoMem.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 npipe@exeto@mem
 vpipeLine
 R1
-R22
+!s110 1621370996
 !i10b 1
 !s100 9J8;5Kl7@d[:8hE0>kM751
-R2
-I0b57Wb7^DL^ONSPZNf_]b3
 R3
+I0b57Wb7^DL^ONSPZNf_]b3
+R4
 S1
 R0
 w1620702187
 8C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv
 FC:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv
 !i122 20
-R13
-R4
+R31
+R5
 r1
 !s85 0
 31
-R23
+R22
 !s107 C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/pipeLine.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 npipe@line
 vpipeMemtoWBack
 R1
-R30
+R42
 !i10b 1
 !s100 <14z:`^Mg^YjMMng3O60T1
-R2
-IH_df:G?=F8KZGAohAI[``3
 R3
+IH_df:G?=F8KZGAohAI[``3
+R4
 S1
 R0
 w1620367692
@@ -857,80 +857,80 @@ w1620367692
 FC:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv
 !i122 32
 L0 1 37
-R4
+R5
 r1
 !s85 0
 31
-R31
+R33
 !s107 C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/pipeMemtoWBack.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 npipe@memto@w@back
 vProcesador
 R1
-R33
+R27
 !i10b 1
-!s100 jP?H@Y8G^W^Ag9g89hWbm0
-R2
-IEZ3W@LiE^`]n^0?[IWzdP3
+!s100 ?jORHOO0j7`=Pg>m@U5=N1
 R3
+IF^WU9793V^z@7Mil;@L8^3
+R4
 S1
 R0
-w1620732346
+w1621238947
 8C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv
 FC:/QuartusProjects/Proyecto2Arqui1/Procesador.sv
 !i122 18
 L0 1 91
-R4
+R5
 r1
 !s85 0
 31
-R34
+R38
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Procesador.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@procesador
 vProcesador_tb
 R1
-R20
+!s110 1621371008
 !i10b 1
-!s100 ?[Wn6<O_ii]7kZGbUE7M<0
-R2
-I8PJm;UB:XM6`E0@0NhOH62
+!s100 @CbAbNTJ7H6H]f@k8oLG93
 R3
+I?>4i`C9VnaPFkhA]YDoMi2
+R4
 S1
 R0
-w1620730456
+w1621361557
 8C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv
 FC:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv
 !i122 40
 L0 1 45
-R4
+R5
 r1
 !s85 0
 31
-R21
+R20
 !s107 C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/Procesador_tb.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@procesador_tb
 vRegFile
 R1
-R35
+R40
 !i10b 1
 !s100 JAnIGO=@6Y?^6]b]kUbC:3
-R2
-I37ak>j5C8<ThV1>Ga7OSc3
 R3
+I37ak>j5C8<ThV1>Ga7OSc3
+R4
 S1
 R0
 w1620573977
@@ -938,176 +938,176 @@ w1620573977
 FC:/QuartusProjects/Proyecto2Arqui1/RegFile.sv
 !i122 7
 L0 1 40
-R4
+R5
 r1
 !s85 0
 31
-R36
+Z43 !s108 1621370988.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/RegFile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/RegFile.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@reg@file
 vresALU
 R1
-R35
+Z44 !s110 1621370989
 !i10b 1
 !s100 DJlO6QdU`_eJc>n?SadEM0
-R2
-IdcEo6EO6<X<@:`c1heiLo3
 R3
+IdcEo6EO6<X<@:`c1heiLo3
+R4
 S1
 R0
 w1619977732
 8C:/QuartusProjects/Proyecto2Arqui1/resALU.sv
 FC:/QuartusProjects/Proyecto2Arqui1/resALU.sv
 !i122 8
-R25
-R4
+R24
+R5
 r1
 !s85 0
 31
-R36
+R43
 !s107 C:/QuartusProjects/Proyecto2Arqui1/resALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/resALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nres@a@l@u
 vshiftL
 R1
-Z37 !s110 1620732429
+R44
 !i10b 1
 !s100 ZdlZF<AGj4TOTJ7NBSeO41
-R2
-IHPAS[6E`NzzBEkb`1`h_F0
 R3
+IHPAS[6E`NzzBEkb`1`h_F0
+R4
 S1
 R0
 w1619977754
 8C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv
 FC:/QuartusProjects/Proyecto2Arqui1/shiftL.sv
 !i122 9
-Z38 L0 1 6
-R4
+Z45 L0 1 6
+R5
 r1
 !s85 0
 31
-Z39 !s108 1620732429.000000
+!s108 1621370989.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/shiftL.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nshift@l
 vshiftR
 R1
-R37
+Z46 !s110 1621370990
 !i10b 1
 !s100 DFdXn[dHm`6DINZU^1b5D1
-R2
-I[>@T1JDH[LZne8c6CUOae1
 R3
+I[>@T1JDH[LZne8c6CUOae1
+R4
 S1
 R0
 w1619977783
 8C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv
 FC:/QuartusProjects/Proyecto2Arqui1/shiftR.sv
 !i122 10
-R38
-R4
+R45
+R5
 r1
 !s85 0
 31
-R39
+Z47 !s108 1621370990.000000
 !s107 C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/shiftR.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nshift@r
 vStallUnit
 R1
-R17
+R16
 !i10b 1
 !s100 NMBBSom4IJeaQ;0g0EMZj3
-R2
-I3^9]P@BdWhmQn[JRb29>L0
 R3
+I3^9]P@BdWhmQn[JRb29>L0
+R4
 S1
 R0
 w1620702374
 8C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv
 FC:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv
 !i122 35
-L0 1 17
-R4
+R12
+R5
 r1
 !s85 0
 31
-R31
+R37
 !s107 C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/StallUnit.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 n@stall@unit
 vsumador
 R1
-R33
+R39
 !i10b 1
 !s100 hKmGlYzR[aQKiAVm1CBXB2
-R2
-Io1SRZg6TPbAN[aXc;m1633
 R3
+Io1SRZg6TPbAN[aXc;m1633
+R4
 S1
 R0
 w1620434662
 8C:/QuartusProjects/Proyecto2Arqui1/sumador.sv
 FC:/QuartusProjects/Proyecto2Arqui1/sumador.sv
 !i122 15
-R25
-R4
+R24
+R5
 r1
 !s85 0
 31
-R29
+R41
 !s107 C:/QuartusProjects/Proyecto2Arqui1/sumador.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/sumador.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 vsumALU
 R1
-R37
+R46
 !i10b 1
 !s100 ISGU1OzfSKfk4O6ZL]ZgY2
-R2
-IOkW_O>enAN[oiE;_^@eTO1
 R3
+IOkW_O>enAN[oiE;_^@eTO1
+R4
 S1
 R0
 w1619977806
 8C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv
 FC:/QuartusProjects/Proyecto2Arqui1/sumALU.sv
 !i122 11
-R38
-R4
+R45
+R5
 r1
 !s85 0
 31
-R39
+R47
 !s107 C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/QuartusProjects/Proyecto2Arqui1|C:/QuartusProjects/Proyecto2Arqui1/sumALU.sv|
 !i113 1
-R5
-R6
 R7
+R8
+R9
 nsum@a@l@u

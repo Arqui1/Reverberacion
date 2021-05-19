@@ -1,5 +1,6 @@
-module CondUnit(input logic clk,rst,CondE,FlagWE,NoWriteE,
+module CondUnit(input logic clk,rst,FlagWE,NoWriteE,
 						BranchE,MemWriteE,RegWriteE,
+						input logic [1:0] CondE,
 						input logic [3:0] AluFlags,
 						output logic PCSrcE,RegWE,MemWE);
 	

@@ -13,14 +13,14 @@ Procesador processor(clk,rst,modeSelector,write,Data);
 		rst = 1;
 		#2
 		rst = 0;
-		modeSelector = 1;
+		modeSelector = 0;
 	end
 	
 	always
 	begin
 		#5 clk=!clk;
 		
-		if(Status == 1'b0)begin // "Limpiar" el archivo
+		if(Status == 1'b0)begin
 			Status = 1'b1; 
 			file1 = $fopen("C:/QuartusProjects/Files/OUT1.txt","w");
 			$fclose(file1);

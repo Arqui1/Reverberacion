@@ -3,23 +3,23 @@ module Procesador(input logic clk,rst,modeSelector,
 						output logic [31:0] SrcBE);
 	
 	logic FlagWD,MemtoRegD,ALUSrcD,RegWriteD,BranchD,MemWriteD,NoWriteD,txtD,
-			FlagWE,RegWriteE,MemtoRegE,MemWriteE,BranchE,ALUSrcE,NoWriteE,CondE,
+			FlagWE,RegWriteE,MemtoRegE,MemWriteE,BranchE,ALUSrcE,NoWriteE,
 			PCSrcE,RegWE,MentoRE,MemWE,
 			MemWriteM,MemtoRegM,RegWriteM,PCSrcM,
 			MemtoRegW,RegWriteW,PCSrcW,
 			Stall;
-	logic [1:0] RD1ESelect,RD2ESelect,OpE;
+	logic [1:0] RD1ESelect,RD2ESelect,OpE,CondE;
 	logic [3:0] ALUControlD,ALUControlE,WA3E,WA3M,WA3W,
 					RA1D,RA2D,RA1E,RA2E;
-	logic [31:0] pc,pcmas1,pcNext,pcNextPrev,pcD;
+	logic [31:0] pc,pcmas1,pcNext,pcD; //pcNextPrev
 	logic [31:0] instrF,instrD,RD1D,immExtD,RD2D,
 					 immExtE,RD1E,ALUResultE,SrcAE,RD2E,//SrcBE,
 					 WriteDataM,ALUResultM,RDataM,RDataM1,RDataM2,
 					 ALUResultW,RDataW,ResultW;
 	
 	
-	mux_ #(32) muxPC1(PCSrcW,pcmas1,ResultW,pcNextPrev);
-	mux_ #(32) muxPC2(PCSrcE,pcNextPrev,ALUResultE,pcNext);
+//	mux_ #(32) muxPC1(PCSrcW,pcmas1,ResultW,pcNextPrev);
+	mux_ #(32) muxPC2(PCSrcE,pcmas1,ALUResultE,pcNext);
 	
 	//Etapa de Fetch----------------------------------------------------------
 	Fetch fetch(clk,rst,Stall,modeSelector,pcNext,instrF,pc,pcmas1);
@@ -42,7 +42,7 @@ module Procesador(input logic clk,rst,modeSelector,
 										  immExtE,RD2E,RD1E,WA3E);
 	
 	pipeContUnitDtoE pipeCUDtoE(clk,rst,(Stall|PCSrcE),FlagWD,RegWriteD,MemtoRegD,MemWriteD,
-										 BranchD,ALUSrcD,NoWriteD,instrD[4],ALUControlD,
+										 BranchD,ALUSrcD,NoWriteD,instrD[4:3],ALUControlD,
 										 FlagWE,RegWriteE,MemtoRegE,MemWriteE,BranchE,
 										 ALUSrcE,NoWriteE,CondE,ALUControlE);// Flags' ?
 	
@@ -70,8 +70,8 @@ module Procesador(input logic clk,rst,modeSelector,
 	//------------------------------------------------------------------------
 											
 	//Etapa de Memory---------------------------------------------------------
-	DataMemory  DataRAM1(clk,MemWriteM,ALUResultM,WriteDataM,RDataM1);
-	DataMemory2 DataRAM2(clk,MemWriteM,ALUResultM,WriteDataM,RDataM2);
+	DataMemory  DataRAM1(clk,(MemWriteM && !modeSelector),ALUResultM,WriteDataM,RDataM1);
+	DataMemory2 DataRAM2(clk,(MemWriteM && modeSelector),ALUResultM,WriteDataM,RDataM2);
 	mux_ #(32) muxModeMem(modeSelector,RDataM1,RDataM2,RDataM);
 	//------------------------------------------------------------------------
 	
