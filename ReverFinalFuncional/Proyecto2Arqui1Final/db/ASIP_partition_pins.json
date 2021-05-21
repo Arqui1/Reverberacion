@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "txtE",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[16]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[17]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[18]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[19]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[20]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[21]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[22]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[23]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[24]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[25]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[26]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[27]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[28]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[29]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[30]",
+					"strict" : false
+				},
+				{
+					"name" : "SrcBE[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "modeSelector",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

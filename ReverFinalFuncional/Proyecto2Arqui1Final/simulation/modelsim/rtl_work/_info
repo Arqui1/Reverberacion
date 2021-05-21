@@ -1,0 +1,1113 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/simulation/modelsim
+vAlu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1621617644
+!i10b 1
+!s100 iJ8zD:_Zh@;bZBeQ34=3;2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=RT4[dk_fzUo8I`hN45KF0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1621461548
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Alu.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Alu.sv
+!i122 0
+L0 1 44
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1621617644.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Alu.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work {+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final}
+Z10 tCvgOpt 0
+n@alu
+vandALU
+R1
+R2
+!i10b 1
+!s100 ceVb_57imK>PFPQ8IK:@j1
+R3
+I[03IFc84SaE39DU;[biWU0
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/andALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/andALU.sv
+!i122 1
+Z11 L0 1 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/andALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/andALU.sv|
+!i113 1
+R8
+R9
+R10
+nand@a@l@u
+vCondCheck
+R1
+Z12 !s110 1621617648
+!i10b 1
+!s100 =WL;MVm;H9iUoLdQo4PK50
+R3
+I=?@<jSCmIEIFP8kn[T>VV3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondCheck.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondCheck.sv
+!i122 29
+Z13 L0 1 17
+R6
+r1
+!s85 0
+31
+Z14 !s108 1621617648.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondCheck.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondCheck.sv|
+!i113 1
+R8
+R9
+R10
+n@cond@check
+vCondUnit
+R1
+R12
+!i10b 1
+!s100 YH^WI;UOi6@C`>TE@Q3Di2
+R3
+IA4>0MDB^C^T1eJ^b5[^Vj2
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondUnit.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondUnit.sv
+!i122 27
+L0 1 19
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondUnit.sv|
+!i113 1
+R8
+R9
+R10
+n@cond@unit
+vControlUnit
+R1
+R12
+!i10b 1
+!s100 g>CnP5h=]I7Tl2nM<`O`S3
+R3
+IbenkQ>STRn?:NogUESY9>3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ControlUnit.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ControlUnit.sv
+!i122 23
+L0 1 63
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ControlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ControlUnit.sv|
+!i113 1
+R8
+R9
+R10
+n@control@unit
+vDataMemory
+R1
+Z15 !s110 1621617649
+!i10b 1
+!s100 FO`D:0>6=`>US7:E2<T]R3
+R3
+I>eIdDEa3JfAjC=dFMRTZZ3
+R4
+S1
+R0
+w1621611788
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv
+!i122 36
+Z16 L0 1 22
+R6
+r1
+!s85 0
+31
+Z17 !s108 1621617649.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv|
+!i113 1
+R8
+R9
+R10
+n@data@memory
+vDataMemory2
+R1
+Z18 !s110 1621617650
+!i10b 1
+!s100 SR@2Rn66EK69?2e1;?6>I0
+R3
+INCFCA<NhiNVGBVad5ZTIK3
+R4
+S1
+R0
+w1621611803
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv
+!i122 39
+R16
+R6
+r1
+!s85 0
+31
+Z19 !s108 1621617650.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv|
+!i113 1
+R8
+R9
+R10
+n@data@memory2
+vDecode
+R1
+Z20 !s110 1621617647
+!i10b 1
+!s100 JYGJo0]MWoXz<=0]iNgcQ3
+R3
+I0QTZa8Fa8T;dIY`VYF1SG2
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Decode.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Decode.sv
+!i122 21
+R16
+R6
+r1
+!s85 0
+31
+Z21 !s108 1621617647.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Decode.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Decode.sv|
+!i113 1
+R8
+R9
+R10
+n@decode
+vdivALU
+R1
+R2
+!i10b 1
+!s100 ^Em@C=E7kQGKe8D7g4WP21
+R3
+IW?m:MCo:gKQ`TZigImIIa2
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/divALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/divALU.sv
+!i122 2
+Z22 L0 1 5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/divALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/divALU.sv|
+!i113 1
+R8
+R9
+R10
+ndiv@a@l@u
+vExecute
+R1
+R12
+!i10b 1
+!s100 gPBn?^aY4BWA?94MXFm]l0
+R3
+In;`caVXaGHEf[OC<f`Hgf1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Execute.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Execute.sv
+!i122 26
+L0 1 20
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Execute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Execute.sv|
+!i113 1
+R8
+R9
+R10
+n@execute
+vExtend
+R1
+R12
+!i10b 1
+!s100 >[mFQBNl8FGIz`aK?kLDf3
+R3
+In9ezESdTDd]5zLSznhGZZ1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Extend.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Extend.sv
+!i122 22
+R22
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Extend.sv|
+!i113 1
+R8
+R9
+R10
+n@extend
+vFetch
+R1
+R20
+!i10b 1
+!s100 F;8jbMVLHN2^IVbK;SUH:1
+R3
+ILQz<iO_zoKQ3;bQloUG>i1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Fetch.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Fetch.sv
+!i122 19
+Z23 L0 1 14
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Fetch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Fetch.sv|
+!i113 1
+R8
+R9
+R10
+n@fetch
+vflagN
+R1
+Z24 !s110 1621617646
+!i10b 1
+!s100 a3a_T?kRbRmGgF^O?nWl`1
+R3
+Im5mggW;dG`HJZ=@C;P<G>1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagN.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagN.sv
+!i122 12
+L0 1 8
+R6
+r1
+!s85 0
+31
+Z25 !s108 1621617646.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagN.sv|
+!i113 1
+R8
+R9
+R10
+nflag@n
+vflagO
+R1
+R24
+!i10b 1
+!s100 D0d];:ZQa1f4KzWzSkmDI2
+R3
+Il`:Pn1gOR7lWdhPb86f`D1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagO.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagO.sv
+!i122 13
+L0 1 32
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagO.sv|
+!i113 1
+R8
+R9
+R10
+nflag@o
+vflagZ
+R1
+Z26 !s110 1621617645
+!i10b 1
+!s100 B@IM@9z`9f1TIo`nRolS=0
+R3
+IWebc[BJJ]ZF2FekoBB9>Z1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagZ.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagZ.sv
+!i122 3
+L0 1 11
+R6
+r1
+!s85 0
+31
+Z27 !s108 1621617645.000000
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagZ.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagZ.sv|
+!i113 1
+R8
+R9
+R10
+nflag@z
+vflipflop
+R1
+R12
+!i10b 1
+!s100 Blb>8FU><z8?g`KS52Y@Z1
+R3
+I:kkX]kP_ecCe8kf^:4T3k0
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flipflop.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flipflop.sv
+!i122 28
+Z28 L0 1 18
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flipflop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flipflop.sv|
+!i113 1
+R8
+R9
+R10
+vForwardUnit
+R1
+R15
+!i10b 1
+!s100 @IQELJa=N]jR;@bJ^IGcQ2
+R3
+IBNPndM9<E7NbfPVmJFPQo1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ForwardUnit.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ForwardUnit.sv
+!i122 33
+L0 1 34
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ForwardUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ForwardUnit.sv|
+!i113 1
+R8
+R9
+R10
+n@forward@unit
+vInstrucMemory
+R1
+R18
+!i10b 1
+!s100 ^nMK8hh`aj4?Y1kZ=5X_@0
+R3
+I0bVU4];l0?SQTiF3DD2e42
+R4
+S1
+R0
+w1621611779
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory.sv
+!i122 37
+Z29 L0 1 9
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory.sv|
+!i113 1
+R8
+R9
+R10
+n@instruc@memory
+vInstrucMemory2
+R1
+R18
+!i10b 1
+!s100 H7ifFmZ^lT^KO5D6oiWK>1
+R3
+IZ1Z3eaV:<3DOfLTEJJP3C2
+R4
+S1
+R0
+w1621611810
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory2.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory2.sv
+!i122 38
+R29
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory2.sv|
+!i113 1
+R8
+R9
+R10
+n@instruc@memory2
+vmulALU
+R1
+R26
+!i10b 1
+!s100 K]`f<]3POiNIl3O?zhW5o0
+R3
+I9K17gM`gC22]_d_l[kNX52
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mulALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mulALU.sv
+!i122 4
+R22
+R6
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mulALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mulALU.sv|
+!i113 1
+R8
+R9
+R10
+nmul@a@l@u
+vmux3_1
+R1
+R15
+!i10b 1
+!s100 ]OfE92WV1M72g;oeA`TnB1
+R3
+I`FK8a5[j?mP1>@N?dIE;M1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux3_1.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux3_1.sv
+!i122 34
+R23
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux3_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux3_1.sv|
+!i113 1
+R8
+R9
+R10
+vmux_
+R1
+R20
+!i10b 1
+!s100 MLKndQjh]M8HQOAkb?MF<1
+R3
+IAYoCX3`72OLH`9[@a>AXd0
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux_.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux_.sv
+!i122 17
+L0 1 13
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux_.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux_.sv|
+!i113 1
+R8
+R9
+R10
+vmuxALU
+R1
+R26
+!i10b 1
+!s100 Q<Q^3@<SHZaiY5T?Z_1a<0
+R3
+IbBDI@fAEXJmWeE4SGiTka0
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxALU.sv
+!i122 5
+L0 1 21
+R6
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxALU.sv|
+!i113 1
+R8
+R9
+R10
+nmux@a@l@u
+vmuxflag
+R1
+R20
+!i10b 1
+!s100 d[KOdBc_6hHaczb_bePgF1
+R3
+I^]jQ@;7T6^LU3An^A<;7Y2
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxflag.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxflag.sv
+!i122 16
+L0 1 15
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxflag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxflag.sv|
+!i113 1
+R8
+R9
+R10
+vorALU
+R1
+R26
+!i10b 1
+!s100 C5nLmz7Kg]M;NKj`^]n_B0
+R3
+I<U@R]b034jO_S3jKaUUef1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/orALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/orALU.sv
+!i122 6
+R11
+R6
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/orALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/orALU.sv|
+!i113 1
+R8
+R9
+R10
+nor@a@l@u
+vPC
+R1
+R24
+!i10b 1
+!s100 PbX83N@g>fLh7z:`_4Zjg3
+R3
+I3jCIhQOa3blMmPgZIOXU71
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/PC.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/PC.sv
+!i122 14
+R29
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/PC.sv|
+!i113 1
+R8
+R9
+R10
+n@p@c
+vpipeCondUnitEtoM
+R1
+R15
+!i10b 1
+!s100 :]9I5Ak51930lIW1f0^ZS2
+R3
+IF`Bng=O5[CXSEcOUfcZ8H0
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeCondUnitEtoM.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeCondUnitEtoM.sv
+!i122 31
+L0 1 23
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeCondUnitEtoM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeCondUnitEtoM.sv|
+!i113 1
+R8
+R9
+R10
+npipe@cond@unit@eto@m
+vpipeContUnitDtoE
+R1
+R12
+!i10b 1
+!s100 k:JA:R7_naD2nD;ILJ^2U3
+R3
+IXS8BM3gDZK^T7_bN;m8FG3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeContUnitDtoE.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeContUnitDtoE.sv
+!i122 25
+L0 1 49
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeContUnitDtoE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeContUnitDtoE.sv|
+!i113 1
+R8
+R9
+R10
+npipe@cont@unit@dto@e
+vpipeDecotoExe
+R1
+R12
+!i10b 1
+!s100 Pa[Ca:W@27ngD@C>V2K6G0
+R3
+IZ]PBm?5`K]Qgf5]3Q0HAL0
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeDecotoExe.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeDecotoExe.sv
+!i122 24
+L0 1 39
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeDecotoExe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeDecotoExe.sv|
+!i113 1
+R8
+R9
+R10
+npipe@decoto@exe
+vpipeExetoMem
+R1
+R15
+!i10b 1
+!s100 JEQ:13QZ4on=>3z`;@IlO0
+R3
+IjU6a^geDDNMhf^agRN8eL1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeExetoMem.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeExetoMem.sv
+!i122 30
+L0 1 29
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeExetoMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeExetoMem.sv|
+!i113 1
+R8
+R9
+R10
+npipe@exeto@mem
+vpipeLine
+R1
+R20
+!i10b 1
+!s100 9J8;5Kl7@d[:8hE0>kM751
+R3
+IF^:ZL<E?e^7dz_RMYM6E@2
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeLine.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeLine.sv
+!i122 20
+R28
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeLine.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeLine.sv|
+!i113 1
+R8
+R9
+R10
+npipe@line
+vpipeMemtoWBack
+R1
+R15
+!i10b 1
+!s100 <14z:`^Mg^YjMMng3O60T1
+R3
+ImH>fN=4L<EaXE2@:j2Q4I3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeMemtoWBack.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeMemtoWBack.sv
+!i122 32
+L0 1 37
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeMemtoWBack.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeMemtoWBack.sv|
+!i113 1
+R8
+R9
+R10
+npipe@memto@w@back
+vProcesador
+R1
+R20
+!i10b 1
+!s100 ?jORHOO0j7`=Pg>m@U5=N1
+R3
+IZT3Qg]1GGCzS`Ae4aYHeH3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv
+!i122 18
+L0 1 91
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv|
+!i113 1
+R8
+R9
+R10
+n@procesador
+vProcesador_tb
+R1
+R18
+!i10b 1
+!s100 ?;1_BZ?ldg9khe`bJohi22
+R3
+Ie4N0W8TKl=QGo>Tc06mDo2
+R4
+S1
+R0
+w1621615748
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador_tb.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador_tb.sv
+!i122 40
+L0 1 45
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador_tb.sv|
+!i113 1
+R8
+R9
+R10
+n@procesador_tb
+vRegFile
+R1
+R24
+!i10b 1
+!s100 JAnIGO=@6Y?^6]b]kUbC:3
+R3
+IhS5YIj>I0TH9PGnPkM@<b3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/RegFile.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/RegFile.sv
+!i122 7
+L0 1 40
+R6
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/RegFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/RegFile.sv|
+!i113 1
+R8
+R9
+R10
+n@reg@file
+vresALU
+R1
+R24
+!i10b 1
+!s100 DJlO6QdU`_eJc>n?SadEM0
+R3
+I0]V8oYBBb`:CzmUKH:m261
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/resALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/resALU.sv
+!i122 8
+R22
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/resALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/resALU.sv|
+!i113 1
+R8
+R9
+R10
+nres@a@l@u
+vshiftL
+R1
+R24
+!i10b 1
+!s100 ZdlZF<AGj4TOTJ7NBSeO41
+R3
+Iic5[[K]8HMR58jg;G]oWH1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftL.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftL.sv
+!i122 9
+Z30 L0 1 6
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftL.sv|
+!i113 1
+R8
+R9
+R10
+nshift@l
+vshiftR
+R1
+R24
+!i10b 1
+!s100 DFdXn[dHm`6DINZU^1b5D1
+R3
+I8:KKcFDclhMS]]XlKH5Jm1
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftR.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftR.sv
+!i122 10
+R30
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftR.sv|
+!i113 1
+R8
+R9
+R10
+nshift@r
+vStallUnit
+R1
+R15
+!i10b 1
+!s100 NMBBSom4IJeaQ;0g0EMZj3
+R3
+I=TTb^IKKFbGk7eCnOW5oD3
+R4
+S1
+R0
+R5
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/StallUnit.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/StallUnit.sv
+!i122 35
+R13
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/StallUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/StallUnit.sv|
+!i113 1
+R8
+R9
+R10
+n@stall@unit
+vsumador
+R1
+R20
+!i10b 1
+!s100 hKmGlYzR[aQKiAVm1CBXB2
+R3
+I;bBmS;:SD;[?Xf@41iCbP2
+R4
+S1
+R0
+Z31 w1621461549
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumador.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumador.sv
+!i122 15
+R22
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumador.sv|
+!i113 1
+R8
+R9
+R10
+vsumALU
+R1
+R24
+!i10b 1
+!s100 ISGU1OzfSKfk4O6ZL]ZgY2
+R3
+I<?J0VZ1?MAAOV=eP?M_AA2
+R4
+S1
+R0
+R31
+8C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumALU.sv
+FC:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumALU.sv
+!i122 11
+R30
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final|C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumALU.sv|
+!i113 1
+R8
+R9
+R10
+nsum@a@l@u

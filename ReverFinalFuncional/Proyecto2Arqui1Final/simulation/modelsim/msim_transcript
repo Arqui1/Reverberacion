@@ -1,0 +1,483 @@
+# Reading pref.tcl
+# do ASIP_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Intel/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:44 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Alu.sv 
+# -- Compiling module Alu
+# 
+# Top level modules:
+# 	Alu
+# End time: 11:20:44 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/andALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:44 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/andALU.sv 
+# -- Compiling module andALU
+# 
+# Top level modules:
+# 	andALU
+# End time: 11:20:44 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/divALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:44 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/divALU.sv 
+# -- Compiling module divALU
+# 
+# Top level modules:
+# 	divALU
+# End time: 11:20:44 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagZ.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:45 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagZ.sv 
+# -- Compiling module flagZ
+# 
+# Top level modules:
+# 	flagZ
+# End time: 11:20:45 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mulALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:45 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mulALU.sv 
+# -- Compiling module mulALU
+# 
+# Top level modules:
+# 	mulALU
+# End time: 11:20:45 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:45 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxALU.sv 
+# -- Compiling module muxALU
+# 
+# Top level modules:
+# 	muxALU
+# End time: 11:20:45 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/orALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:45 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/orALU.sv 
+# -- Compiling module orALU
+# 
+# Top level modules:
+# 	orALU
+# End time: 11:20:45 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/RegFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:45 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/RegFile.sv 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/resALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/resALU.sv 
+# -- Compiling module resALU
+# 
+# Top level modules:
+# 	resALU
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftL.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftL.sv 
+# -- Compiling module shiftL
+# 
+# Top level modules:
+# 	shiftL
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/shiftR.sv 
+# -- Compiling module shiftR
+# 
+# Top level modules:
+# 	shiftR
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumALU.sv 
+# -- Compiling module sumALU
+# 
+# Top level modules:
+# 	sumALU
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagN.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagN.sv 
+# -- Compiling module flagN
+# 
+# Top level modules:
+# 	flagN
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flagO.sv 
+# -- Compiling module flagO
+# 
+# Top level modules:
+# 	flagO
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/PC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:46 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/PC.sv 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 11:20:46 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/sumador.sv 
+# -- Compiling module sumador
+# 
+# Top level modules:
+# 	sumador
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxflag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/muxflag.sv 
+# -- Compiling module muxflag
+# 
+# Top level modules:
+# 	muxflag
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux_.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux_.sv 
+# -- Compiling module mux_
+# 
+# Top level modules:
+# 	mux_
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv 
+# -- Compiling module Procesador
+# 
+# Top level modules:
+# 	Procesador
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Fetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Fetch.sv 
+# -- Compiling module Fetch
+# 
+# Top level modules:
+# 	Fetch
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeLine.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeLine.sv 
+# -- Compiling module pipeLine
+# 
+# Top level modules:
+# 	pipeLine
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Decode.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Decode.sv 
+# -- Compiling module Decode
+# 
+# Top level modules:
+# 	Decode
+# End time: 11:20:47 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:47 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Extend.sv 
+# -- Compiling module Extend
+# 
+# Top level modules:
+# 	Extend
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ControlUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ControlUnit.sv 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeDecotoExe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeDecotoExe.sv 
+# -- Compiling module pipeDecotoExe
+# 
+# Top level modules:
+# 	pipeDecotoExe
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeContUnitDtoE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeContUnitDtoE.sv 
+# -- Compiling module pipeContUnitDtoE
+# 
+# Top level modules:
+# 	pipeContUnitDtoE
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Execute.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Execute.sv 
+# -- Compiling module Execute
+# 
+# Top level modules:
+# 	Execute
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondUnit.sv 
+# -- Compiling module CondUnit
+# 
+# Top level modules:
+# 	CondUnit
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flipflop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/flipflop.sv 
+# -- Compiling module flipflop
+# 
+# Top level modules:
+# 	flipflop
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondCheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/CondCheck.sv 
+# -- Compiling module CondCheck
+# 
+# Top level modules:
+# 	CondCheck
+# End time: 11:20:48 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeExetoMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:48 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeExetoMem.sv 
+# -- Compiling module pipeExetoMem
+# 
+# Top level modules:
+# 	pipeExetoMem
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeCondUnitEtoM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeCondUnitEtoM.sv 
+# -- Compiling module pipeCondUnitEtoM
+# 
+# Top level modules:
+# 	pipeCondUnitEtoM
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeMemtoWBack.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/pipeMemtoWBack.sv 
+# -- Compiling module pipeMemtoWBack
+# 
+# Top level modules:
+# 	pipeMemtoWBack
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ForwardUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/ForwardUnit.sv 
+# -- Compiling module ForwardUnit
+# 
+# Top level modules:
+# 	ForwardUnit
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux3_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/mux3_1.sv 
+# -- Compiling module mux3_1
+# 
+# Top level modules:
+# 	mux3_1
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/StallUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/StallUnit.sv 
+# -- Compiling module StallUnit
+# 
+# Top level modules:
+# 	StallUnit
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv 
+# -- Compiling module DataMemory
+# 
+# Top level modules:
+# 	DataMemory
+# End time: 11:20:49 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:49 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory.sv 
+# -- Compiling module InstrucMemory
+# 
+# Top level modules:
+# 	InstrucMemory
+# End time: 11:20:50 on May 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:50 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/InstrucMemory2.sv 
+# -- Compiling module InstrucMemory2
+# 
+# Top level modules:
+# 	InstrucMemory2
+# End time: 11:20:50 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:50 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv 
+# -- Compiling module DataMemory2
+# 
+# Top level modules:
+# 	DataMemory2
+# End time: 11:20:50 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui\ 1/Proyectos/Proyecto\ Grupal/Proyecto2Arqui1Final {C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:50 on May 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final" C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador_tb.sv 
+# -- Compiling module Procesador_tb
+# 
+# Top level modules:
+# 	Procesador_tb
+# End time: 11:20:50 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Procesador_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Procesador_tb 
+# Start time: 11:20:50 on May 21,2021
+# Loading sv_std.std
+# Loading work.Procesador_tb
+# Loading work.Procesador
+# Loading work.mux_
+# Loading work.Fetch
+# Loading work.PC
+# Loading work.sumador
+# Loading work.InstrucMemory
+# Loading work.InstrucMemory2
+# Loading work.pipeLine
+# Loading work.Decode
+# Loading work.ControlUnit
+# Loading work.RegFile
+# Loading work.Extend
+# Loading work.pipeDecotoExe
+# Loading work.pipeContUnitDtoE
+# Loading work.mux3_1
+# Loading work.Execute
+# Loading work.Alu
+# Loading work.sumALU
+# Loading work.resALU
+# Loading work.mulALU
+# Loading work.divALU
+# Loading work.andALU
+# Loading work.orALU
+# Loading work.flagN
+# Loading work.flagZ
+# Loading work.flagO
+# Loading work.shiftL
+# Loading work.shiftR
+# Loading work.muxflag
+# Loading work.muxALU
+# Loading work.CondUnit
+# Loading work.flipflop
+# Loading work.CondCheck
+# Loading work.pipeExetoMem
+# Loading work.pipeCondUnitEtoM
+# Loading work.DataMemory
+# Loading work.DataMemory2
+# Loading work.pipeMemtoWBack
+# Loading work.ForwardUnit
+# Loading work.StallUnit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (32) for port 'WData'. The port definition is at: C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/DataRAM1 File: C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv Line: 73
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (32) for port 'WData'. The port definition is at: C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/DataMemory2.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/processor/DataRAM2 File: C:/Users/danie/OneDrive/Documentos/TEC/Arqui 1/Proyectos/Proyecto Grupal/Proyecto2Arqui1Final/Procesador.sv Line: 74
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position end  sim:/Procesador_tb/processor/decode/RF/regF
+# End time: 11:51:27 on May 21,2021, Elapsed time: 0:30:37
+# Errors: 0, Warnings: 2

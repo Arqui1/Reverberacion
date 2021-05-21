@@ -1,0 +1,25 @@
+module RegFile (input logic clk, rst, WE3,
+					input logic [3:0] A1, A2, A3,
+					input logic [31:0] WD3,R15,
+					output logic [31:0] RD1, RD2);
+	
+	logic [31:0] regF [14:0] = '{default:0};
+	int n;
+		
+	always_ff @(posedge clk) begin
+		if(rst)begin
+			for (n = 0; n < 15; n = n + 1) begin
+				regF[n] <= 32'b0;
+			end
+		end
+		else begin
+			if(WE3)
+				regF[A3] <= WD3;
+		end
+	end
+	
+	assign RD1 =  (A1==4'b1111)? R15: regF[A1];
+	assign RD2 =  (A2==4'b1111)? R15: regF[A2];
+	
+endmodule
+

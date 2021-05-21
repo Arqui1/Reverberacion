@@ -1,0 +1,16 @@
+module flagN #(parameter bits = 32)
+				(input logic [3:0] s,
+				input logic [bits-1:0] sumres,multO,divO,
+				output logic flag);
+
+	always_comb begin
+		case(s)
+			4'b0000: flag = sumres[bits-1];
+			4'b0001: flag = sumres[bits-1];
+			4'b0010: flag = multO[bits-1];
+			4'b0011: flag = divO[bits-1];
+			default: flag = 0;
+		endcase
+	end
+
+endmodule 

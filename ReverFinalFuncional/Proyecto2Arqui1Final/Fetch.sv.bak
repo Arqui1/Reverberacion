@@ -1,0 +1,11 @@
+module Fetch (input logic clk,
+					input logic rst,
+					//input logic pcWrite,
+					input logic [31:0]pcNext,
+					output logic [31:0]instruction, nextPcOut);
+					
+	PC #(32) pc(clk, rst, pcNext, pc);
+	adder add1(pc, 32'h1, nextPcOut);
+	ROM rom1(pc,instruction);
+	
+endmodule

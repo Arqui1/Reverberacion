@@ -1,0 +1,5 @@
+module Extend(input logic [17:0] datain,
+                output logic [31:0] dataout);
+   assign dataout = {{14{datain[17]}}, datain};
+   
+endmodule

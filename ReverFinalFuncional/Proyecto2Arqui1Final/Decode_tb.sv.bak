@@ -1,0 +1,15 @@
+module Decode_tb();
+
+	logic clk,rst,WE3;
+	logic [31:0]instr,pc,WD3;
+	logic [3:0] A3;
+	logic [3:0]RD1,RD2,ALUControl;
+	logic [31:0] immExt;
+	logic FlagW,RegWrite,MemtoReg,MemWrite,Branch,ALUSrc;
+	
+	Decode deco(clk,rst,WE3,instr,pc,WD3,A3,
+					RD1,RD2,ALUControl,immExt;
+					FlagW,RegWrite,MemtoReg,MemWrite,
+					Branch,ALUSrc);
+					
+endmodule
