@@ -3,19 +3,26 @@ import sounddevice as sd
 import os
 import time
 
+#Variables Globales
+#----------------------------------------------------
 #ruta = "C:/QuartusProjects/Files/"
 ruta = ""
-audio_sin_reverb = ruta + "RAMDatos1.txt"
-audio_con_reverb_aplicada = ruta + "OUT1.txt"
-audio_con_reverb_conocida= ruta + "RAMDatos2.txt"
-audio_sin_reverb_aplicada = ruta + "OUT2.txt"
+
+entrada1 = "RAMDatos1.txt"
+entrada2 = "RAMDatos2.txt"
+salida1 = "OUT1.txt"
+salida2 = "OUT2.txt"
+
+audio_sin_reverb = ruta + entrada1
+audio_con_reverb_aplicada = ruta + salida1
+audio_con_reverb_conocida= ruta + entrada2
+audio_sin_reverb_aplicada = ruta + salida2
 
 freq = 44100
+precision=7
+#----------------------------------------------------
 
-
-#CAMBIAR EL NOMBRE DEL ARCHIVO con reverberacion o sin reverberacion
-#audio_salida = audio_sin_reverb #'audio_original.txt'
-#Aqui se deberia leer el archivo de salida luego de que se le realice la reverberacion o se le quite la reverberacion
+#Funcion encargada de pasar el txt con binarios a lista
 def txt_to_list(txt):
     
     if os.path.isfile(txt):
@@ -28,15 +35,49 @@ def txt_to_list(txt):
             del data[-1]
         return data
     else:
-        #print("aqui")
         return ["0"]
-#print(data[0:10])
-
+#Funcion encargada de pasar el txt con decimal base 10 a lista    
+def txt_to_list_decimal_bin(txt):
+    
+    if os.path.isfile(txt):
+        with open(txt, "r") as f:
+            data = f.read()
+            f.close()
+            data = data.split('\n')
+            for i in range(0, len(data)):
+                data[i] = str(data[i]).lstrip()
+            del data[-1]
+        return data
+    else:
+        return ["0"]
+#Funcion encargada de pasar decimal a binario    
+def binarizar(decimal):
+    decimal=int(decimal)
+    binario = ''
+    while decimal // 2 != 0:
+        binario = str(decimal % 2) + binario
+        decimal = decimal // 2
+    return str(decimal) + binario
+#Funcion para agregar ceros a la izquierda faltantes
+def agregar_cero(tam):
+    a=""
+    for i in range(tam):
+        a="0"+a
+    return a
+#Funcion encargada de pasar decimal puro a binario
+def decimal_puro_a_binario(numero_decimal_puro):
+    n = binarizar(numero_decimal_puro)
+    largo=len(n)
+    faltante=(7-largo)-1
+    if largo<=7:
+        n = agregar_cero(faltante)+n
+        return n
+#Funcion encargada de string a lista     
 def Convert(string):
     list1=[]
     list1[:0]=string
     return list1
-
+#Funcion encargada de pasar punto decimal a flotante
 def punto_dec_to_float(dec):
     num=0
     i=2
@@ -44,6 +85,7 @@ def punto_dec_to_float(dec):
         if dec[i]=='1':
             num=num+2**(-i-1)
     return str(num)
+#Funcion para pasar parte entera a binario
 def decbin_to_float(entero):
     num=0
     entero= entero[::-1]
@@ -51,29 +93,48 @@ def decbin_to_float(entero):
         if entero[i]=='1':
             num=num+2**(i)
     return str(num)
+#funcion principal encargada de pasar binario a flotante
+def binary_to_float(lista, tipo):
+    if (tipo == "RAMDatos1.txt") or (tipo == "RAMDatos2.txt"):
+        lis_float=[]
+        for i in range(len(lista)):
+            conv = Convert(lista[i])
+            signo= conv[0]
+            signx=""
+            if signo=='1':
+                signx='-'
+            entero=decbin_to_float(['0', '0'])
+            decimal=conv[1:precision]
+            punto_dec = punto_dec_to_float(decimal)
+            nuevo_num=float(signx+str(float(entero)+float(punto_dec)))
+            
+            lis_float.append(round(nuevo_num,9))
 
-def binary_to_float(lista):
-    lis_float=[]
-    for i in range(len(lista)):
-        conv = Convert(lista[i])
-        signo= conv[0]
-        signx=""
-        if signo=='1':
-            signx='-'
-        entero=decbin_to_float(conv[1:3])
-        decimal=conv[3:9]
-        punto_dec = punto_dec_to_float(decimal)
-        nuevo_num=float(signx+str(float(entero)+float(punto_dec)))
-        
-        lis_float.append(round(nuevo_num,6))
-    return lis_float
-        
-        
+        return lis_float
+            
+    elif (tipo == "OUT1.txt") or (tipo == "OUT2.txt"):
+        lis_float=[]
+        for i in range(len(lista)):
+            decimal_a_bin = decimal_puro_a_binario(int(lista[i]))
+            conv = Convert(decimal_a_bin)
+            signo= conv[0]
+            signx=""
+            if signo=='1':
+                signx='-'
+            entero=decbin_to_float(['0', '0'])
+            decimal=conv[1:precision]
+            punto_dec = punto_dec_to_float(decimal)
+            nuevo_num=float(signx+str(float(entero)+float(punto_dec)))
+            
+            lis_float.append(round(nuevo_num,9))
 
-lista_sin_reverb = binary_to_float(txt_to_list(audio_sin_reverb))
-lista_con_reverb_aplicada = binary_to_float(txt_to_list(audio_con_reverb_aplicada))
-lista_con_reverb_conocida = binary_to_float(txt_to_list(audio_con_reverb_conocida))
-lista_sin_reverb_aplicada = binary_to_float(txt_to_list(audio_sin_reverb_aplicada))
+        return lis_float      
+#Cargado de lista respectivas para posteriormente escucharlas en la aplicacion de consola
+lista_sin_reverb = binary_to_float(txt_to_list(audio_sin_reverb), entrada1)
+lista_con_reverb_aplicada = binary_to_float(txt_to_list_decimal_bin(audio_con_reverb_aplicada), salida1)
+lista_con_reverb_conocida = binary_to_float(txt_to_list(audio_con_reverb_conocida), entrada2)
+lista_sin_reverb_aplicada = binary_to_float(txt_to_list_decimal_bin(audio_sin_reverb_aplicada), salida2)
+#Funcion encargada de pedir opciones al usuario
 def pedirOpcion():
     correcto=False
     num=0
@@ -88,12 +149,12 @@ def pedirOpcion():
  
 salir = False
 opcion = 0
-
+#Aplicacion de consola 
 while not salir:
     time.sleep(2)
     print ("----------------------------------------------------------------------------------")
-    print ("Presione 1, para escuchar el audio sin rerverberación y con reverberación aplicada")
-    print ("Presione 2, para escuchar el audio con rerverberación conocida y sin reverberación aplicada")
+    print ("Presione 1, para escuchar los audios sin rerverberación y con reverberación aplicada en bajo nivel")
+    print ("Presione 2, para escuchar los audio con rerverberación conocida y sin reverberación aplicada en bajo nivel")
     print ("Presione 3, para salir \n")
      
     print ("Elige una opcion")
@@ -111,15 +172,16 @@ while not salir:
                 sd.play(lista_sin_reverb, freq)
                 status = sd.wait()
 
-                time.sleep(2)
+                print("Espere 3 segundo para escuchar el audio con reverberación aplicada en bajo nivel")
+                time.sleep(3)
 
                 if lista_con_reverb_aplicada == "Error":
                     print("Error el archivo no existe \n")
                 else:
                     if len(lista_con_reverb_aplicada)==0:
-                        print("No hay contenido en el archivo, audio con reverberación aplicada \n")
+                        print("No hay contenido en el archivo, audio con reverberación aplicada en bajo nivel \n")
                     else:
-                        print("Audio con reverberación aplicada \n")
+                        print("Audio con reverberación aplicada en bajo nivel\n")
                         sd.play(lista_con_reverb_aplicada, freq)
                         status = sd.wait()
     elif opcion == 2:
@@ -133,15 +195,16 @@ while not salir:
                 sd.play(lista_con_reverb_conocida, freq)
                 status = sd.wait()
 
-                time.sleep(2)
-
+                print("Espere 3 segundo para escuchar el audio sin reverberación aplicada en bajo nivel")
+                time.sleep(3)
+                
                 if lista_sin_reverb_aplicada == "Error":
                     print("Error el archivo no existe \n")
                 else:
                     if len(lista_sin_reverb_aplicada)==0:
-                        print("No hay contenido en el archivo, audio sin reverberación aplicada \n")
+                        print("No hay contenido en el archivo, audio sin reverberación aplicada en bajo nivel \n")
                     else:
-                        print("Audio sin reverberación aplicada \n")
+                        print("Audio sin reverberación aplicada en bajo nivel \n")
                         sd.play(lista_sin_reverb_aplicada, freq)
                         status = sd.wait()
     elif opcion == 3:
